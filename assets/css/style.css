@@ -2,13 +2,17 @@
 
 nav {
   position: absolute;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   right: 0;
   left: 0;
+  top: 5px;
+  z-index: 99;
+  height: 60px;
   width: 100%;
   padding: 0 20px;
-  align-items: center; /* Aligns logo and menu vertically in the center */
+  align-items: center; /* Aligns logo and menu in the center */
   box-sizing: border-box; /* keeps content from overflowing */
 }
 
@@ -23,23 +27,22 @@ nav {
 }
 
 /*logo size*/
-nav .logo {
+nav .logo-image {
   height: 32px;
   width: 32px;
   display: inline-block;
-  vertical-align: baseline;
-}
+  }
 
 #menu {
   display: none;
   list-style-type: none;
   font-size: 1.2rem;
-  padding: 10px 0;
+  padding: 10px 20px 0;
   position: absolute;
-  top: 15px;
+  top: 30px;
   left: 0;
-  border-radius: 5px;
-  margin-left: 20px;
+  background-color: #ffffff;
+  width: 100%;
 }
 
 #menu > li {
@@ -60,6 +63,28 @@ nav a {
   display: block;
 }
 
+/* Hero Cover */
+
+header {
+     /* Add padding at the top to prevent content from being covered by the navbar */
+     padding-top: 47px;
+     /*for testing*/
+     height: 600px;
+     width: 100%;
+     position:relative;
+     background: url("../images/pexels-leeloothefirst-7304974.jpg") no-repeat center center/cover;
+    }
+
+.hero-text {
+    position: absolute;
+    bottom: 30px;
+    width: 70%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    color:#ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 /*Media query for tablets (screens 768px or larger)*/
 
 @media screen and (min-width: 768px) {
@@ -72,6 +97,8 @@ nav a {
     position: static; /* Remove absolute positioning */
     margin: 0;
     padding: 0;
+    vertical-align: middle;
+
   }
 
   #menu > li {
