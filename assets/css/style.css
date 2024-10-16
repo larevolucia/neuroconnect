@@ -31,7 +31,12 @@ nav .logo-image {
   height: 32px;
   width: 32px;
   display: inline-block;
-  }
+   padding-right: 5px; 
+}
+
+nav .logo-name {
+font-size: 1.5rem;
+vertical-align:super; }
 
 #menu {
   display: none;
