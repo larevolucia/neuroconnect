@@ -73,7 +73,6 @@ nav a {
 header {
      /* Add padding at the top to prevent content from being covered by the navbar */
      padding-top: 47px;
-     /*for testing*/
      height: 600px;
      width: 100%;
      position:relative;
@@ -83,10 +82,12 @@ header {
 .hero-text {
     position: absolute;
     bottom: 30px;
+    right:0;
     width: 70%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
+    max-width: 350px;
+    min-height: 160px;
+    padding-top: 15px;
+    padding-left: 36px;
     color:#ffffff;
     background-color: rgba(0, 0, 0, 0.7);
 }
