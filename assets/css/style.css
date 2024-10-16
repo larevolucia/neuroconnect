@@ -1,64 +1,81 @@
-
-
-
 /*Navigation*/
 
 nav {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    right:0;
-    left: 0;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;  /* keeps content from overflowing */
-    }
-    
-    /* Hide the checkbox */
-    #nav-toggle {
-        display: none;
-    }
-    
-    .nav-toggle-label {
-        font-size: 2rem;
-        cursor: pointer;
-        
-    }
-    
-    /*logo size*/
-    nav .logo{
-        height: 32px;
-        width: 32px;
-        display: inline-block;
-        vertical-align: baseline;
-    }
-    
-    #menu {
-        display: none;
-        list-style-type: none;
-        font-size: 1.2rem;
-        padding: 0;
-        position: absolute;
-        top: 15px;
-        left: 0;
-        padding: 8px 0;
-        border-radius: 5px;
-        margin-left: 20px;
-    }
-    
-    #menu > li {
-    margin-bottom: 1rem;
-    }
-    
-    nav a {
-        text-decoration: none;
-        color: inherit;
-    }
-    .active {
-    border-bottom: 1px solid black;
-    }
-    
-    /*Nav menu appears when checkbox is selected*/
-    #nav-toggle:checked + .nav-toggle-label + #menu {
-        display: block;
-    }
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  align-items: center; /* Aligns logo and menu vertically in the center */
+  box-sizing: border-box; /* keeps content from overflowing */
+}
+
+/* Hide the checkbox */
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/*logo size*/
+nav .logo {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+#menu {
+  display: none;
+  list-style-type: none;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+#menu > li {
+  margin-bottom: 1rem;
+}
+
+/*style for menu links*/
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+.active {
+  border-bottom: 1px solid black;
+}
+
+/*Nav menu appears when checkbox is selected*/
+#nav-toggle:checked + .nav-toggle-label + #menu {
+  display: block;
+}
+
+/*Media query for tablets (screens 768px or larger)*/
+
+@media screen and (min-width: 768px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  #menu {
+    display: flex; /* Makes menu horizontal */
+    position: static; /* Remove absolute positioning */
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu > li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+}
