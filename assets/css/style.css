@@ -1,19 +1,22 @@
+
+
+*{
+  box-sizing: border-box;
+}
 /*Navigation*/
 
 nav {
   position: absolute;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  right: 0;
   left: 0;
   top: 5px;
   z-index: 99;
   height: 60px;
   width: 100%;
   padding: 0 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
   align-items: center; /* Aligns logo and menu in the center */
-  box-sizing: border-box; /* keeps content from overflowing */
 }
 
 /* Hide the checkbox */
@@ -26,17 +29,11 @@ nav {
   cursor: pointer;
 }
 
-/*logo size*/
-nav .logo-image {
-  height: 32px;
-  width: 32px;
-  display: inline-block;
-   padding-right: 5px; 
-}
+/*brand container*/
 
 nav .logo-name {
-font-size: 1.5rem;
-vertical-align:super; }
+  font-size: 1.2rem;
+}
 
 #menu {
   display: none;
@@ -71,44 +68,61 @@ nav a {
 /* Hero Cover */
 
 header {
-     /* Add padding at the top to prevent content from being covered by the navbar */
-     padding-top: 47px;
-     height: 600px;
-     width: 100%;
-     position:relative;
-     background: url("../images/pexels-leeloothefirst-7304974.jpg") no-repeat center center/cover;
-    }
+  /* Add padding at the top to prevent content from being covered by the navbar */
+  padding-top: 47px;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  background: url("../images/pexels-leeloothefirst-7304974.jpg") no-repeat
+    center center/cover;
+}
 
 .hero-text {
-    position: absolute;
-    bottom: 30px;
-    right:0;
-    width: 70%;
-    max-width: 350px;
-    min-height: 160px;
-    padding-top: 15px;
-    padding-left: 36px;
-    color:#ffffff;
-    background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  width: 70%;
+  min-height: 160px;
+  margin-right: 15px;
+  padding: 15px; /*Adjusts padding to avoid content overflow*/
+  box-sizing: border-box; /* Ensures padding is included in width calculations */
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 /*Media query for tablets (screens 768px or larger)*/
 
 @media screen and (min-width: 768px) {
+
+  /*Navbar*/
   .nav-toggle-label {
     display: none;
   }
 
   #menu {
-    display: flex; /* Makes menu horizontal */
-    position: static; /* Remove absolute positioning */
-    margin: 0;
+    display: inline-block;
+    position: static;
     padding: 0;
-    vertical-align: middle;
-
   }
 
   #menu > li {
     display: inline-block;
     padding: 0 15px;
+    margin: 0;
   }
+
+  /* Hero Cover */
+.hero-text {
+  max-width: 360px;
+  margin-right: 10%;
+}
+}
+
+
+/*Media query for large screens (screens 992px or larger)*/
+
+@media screen and (min-width: 992px) {
+  /* Hero Cover */
+.hero-text {
+  margin-right: 15%;
+}
 }
