@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
-  --primary-darker: #19381B;
-  --primary-normal: #337136;
-  --primary-light: #81c784;
-  --secondary-darker: #055276;
-  --secondary-normal: #077BB0;
-  --secondary-light: #b3e5fc;
+  --primary-darker: #055276;
+  --primary-normal: #077BB0;
+  --primary-light: #b3e5fc;
+  --seconday-darker: #19381B;
+  --secondary-normal: #337136;
+  --secondary-light: #81c784;
   --text-color: #4f4f4f;
 }
 
@@ -65,7 +65,7 @@ nav {
   left: 0;
   top: 0;
   z-index: 99;
-  height: 60px;
+  height: 70px;
   width: 100%;
   padding: 0 10px;
   background-color: #ffffff;
@@ -107,18 +107,26 @@ nav #logo-name {
 }
 
 /*style for menu links*/
-nav a {
+nav a, #menu a {
   text-decoration: none;
-  color: inherit;
-}
-nav a:hover, nav a:focus {
-  text-decoration: none;
-  background-color: var(--secondary-light);
+  color: var(--text-color);
+} 
+
+#menu a {
+  border-radius: 25px;
+  padding: 6px 18px; 
 }
 
-.active {
- background-color: var(--secondary-normal);
+#menu .active {
+  color: #ffffff;
+  background-color: var(--primary-normal);
 }
+
+#menu a:hover {
+  background-color: var(--primary-light);
+  color: var(--text-color);
+}
+
 
 /*Nav menu appears when checkbox is selected*/
 #nav-toggle:checked + #nav-toggle-label + #menu {
@@ -195,6 +203,11 @@ nav a:hover, nav a:focus {
   color: #000000;
 }
 
+.button:focus {
+  color: #000000;
+  border: #000000;
+  background-color:var(--secondary-light) ;
+}
 
 /*Media query for tablets (screens 768px or larger)*/
 
@@ -207,7 +220,6 @@ nav a:hover, nav a:focus {
   #menu {
     display: inline-block;
     position: static;
-    padding: 0;
     width: auto;
     justify-content: flex-end;
   }
@@ -223,7 +235,6 @@ nav a:hover, nav a:focus {
     margin-right: 10%;
   }
 
-  /*About us*/
 
 }
 
