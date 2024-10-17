@@ -1,37 +1,49 @@
 
 
+/*General Styling*/
 *{
   box-sizing: border-box;
 }
-/*Navigation*/
+h2 {text-align: center;}
 
+/*utility class*/
+.hidden {
+  display: none;
+}
+.center {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/*Navigation*/
 nav {
   position: absolute;
   left: 0;
-  top: 5px;
+  top: 0;
   z-index: 99;
   height: 60px;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center; /* Aligns logo and menu in the center */
 }
 
-/* Hide the checkbox */
 #nav-toggle {
+  /* Hide the checkbox */
   display: none;
 }
 
-.nav-toggle-label {
+#nav-toggle-label {
   font-size: 2rem;
   cursor: pointer;
 }
 
-/*brand container*/
-
-nav .logo-name {
+nav #logo-name {
   font-size: 1.2rem;
 }
 
@@ -56,18 +68,34 @@ nav a {
   text-decoration: none;
   color: inherit;
 }
+
 .active {
   border-bottom: 1px solid black;
 }
+/*buttons*/
+
+.button {
+  background-color: aquamarine;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: all 100ms ease-in-out;
+}
+
+.button:hover {
+  background-color: red;
+}
+.card-container a {
+  text-decoration: none;
+}
 
 /*Nav menu appears when checkbox is selected*/
-#nav-toggle:checked + .nav-toggle-label + #menu {
+#nav-toggle:checked + #nav-toggle-label + #menu {
   display: block;
 }
 
 /* Hero Cover */
 
-header {
+.hero-image {
   /* Add padding at the top to prevent content from being covered by the navbar */
   padding-top: 47px;
   height: 600px;
@@ -77,7 +105,7 @@ header {
     center center/cover;
 }
 
-.hero-text {
+#hero-heading {
   position: absolute;
   bottom: 30px;
   right: 0;
@@ -89,12 +117,20 @@ header {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* Content Cards*/
+.card-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /*adjust later*/
+}
+
 /*Media query for tablets (screens 768px or larger)*/
 
 @media screen and (min-width: 768px) {
 
   /*Navbar*/
-  .nav-toggle-label {
+  #nav-toggle-label {
     display: none;
   }
 
@@ -113,7 +149,7 @@ header {
   }
 
   /* Hero Cover */
-.hero-text {
+#hero-heading {
   max-width: 360px;
   margin-right: 10%;
 }
@@ -124,7 +160,7 @@ header {
 
 @media screen and (min-width: 992px) {
   /* Hero Cover */
-.hero-text {
+#hero-text {
   margin-right: 15%;
 }
 }
