@@ -127,6 +127,10 @@ nav a, #menu a {
   color: var(--text-color);
 }
 
+#menu a:focus {
+  background-color: var(--secondary-light);
+  color: #000000;
+}
 
 /*Nav menu appears when checkbox is selected*/
 #nav-toggle:checked + #nav-toggle-label + #menu {
@@ -235,7 +239,6 @@ nav a, #menu a {
     margin-right: 10%;
   }
 
-
 }
 
 /*Media query for large screens (screens 992px or larger)*/
@@ -254,11 +257,15 @@ nav a, #menu a {
   
   #about-us p {
     text-align: left;
-  padding:0 20%;
+    padding:0 20%;
   }
   /* equal space for sections*/
   #services-summary,
   #events-summary {
     width: 48%; /* Each section takes almost half the width */
+  }
+  /*card*/
+  .card-body {
+  min-height: 240px;
   }
 }
