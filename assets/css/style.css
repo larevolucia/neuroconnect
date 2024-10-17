@@ -14,9 +14,7 @@ h2 {text-align: center;}
   text-align: center;
 }
 
-.flex-container {
-  display: flex;
-}
+
 
 /*Navigation*/
 nav {
@@ -84,9 +82,6 @@ nav a {
 .button:hover {
   background-color: red;
 }
-.card-container a {
-  text-decoration: none;
-}
 
 /*Nav menu appears when checkbox is selected*/
 #nav-toggle:checked + #nav-toggle-label + #menu {
@@ -102,7 +97,7 @@ nav a {
   width: 100%;
   position: relative;
   background: url("../images/pexels-leeloothefirst-7304974.jpg") no-repeat
-    center center/cover;
+  center center/cover;
 }
 
 #hero-heading {
@@ -119,12 +114,24 @@ nav a {
 }
 
 /* Content Cards*/
+.card-container {
+  text-align: center;
+  padding: 0 25px;
+}
 .card-image {
   width: 100%;
   height: auto;
   max-width: 400px; /*adjust later*/
 }
 
+.card-text {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.card-container a {
+  text-decoration: none;
+}
 /*Media query for tablets (screens 768px or larger)*/
 
 @media screen and (min-width: 768px) {
@@ -162,5 +169,15 @@ nav a {
   /* Hero Cover */
 #hero-text {
   margin-right: 15%;
+}
+/* display home sections side by side*/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* equal space for sections*/
+#services-summary, #events-summary {
+  width: 48%; /* Each section takes almost half the width */
 }
 }
