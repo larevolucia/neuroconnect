@@ -33,6 +33,10 @@ h2 {
   font-size: 160%;
 }
 
+section {
+  margin-top: 50px;
+}
+
 /* Link styling */
 a {
   color: var(--primary-normal); 
@@ -111,6 +115,9 @@ nav a, #menu a {
   text-decoration: none;
   color: var(--text-color);
 } 
+nav a:hover {
+text-decoration: none;
+}
 
 #menu a {
   border-radius: 25px;
@@ -267,5 +274,14 @@ nav a, #menu a {
   /*card*/
   .card-body {
   min-height: 240px;
+  }
+}
+/*Media query for XL screens (screens 1200px or larger)*/
+
+@media screen and (min-width: 1200px) {
+
+  /*card*/
+  .card-body {
+  min-height: auto;
   }
 }
