@@ -111,12 +111,13 @@ nav a {
   text-decoration: none;
   color: inherit;
 }
-nav a:hover {
+nav a:hover, nav a:focus {
   text-decoration: none;
+  background-color: var(--secondary-light);
 }
 
 .active {
-  border-bottom: 1px solid black;
+ background-color: var(--secondary-normal);
 }
 
 /*Nav menu appears when checkbox is selected*/
@@ -151,15 +152,23 @@ nav a:hover {
 #hero-heading p {
   font-size: 130%;
 }
+
+/*About us*/
+
+#about-us p {
+  padding: 0 8%;
+  text-align: center;
+}
+
 /* Content Cards*/
 .card-container {
   text-align: center;
   padding: 0 25px;
+  margin-bottom: 20px;
 }
 .card-image {
   width: 100%;
   height: auto;
-  max-width: 400px; /*adjust later*/
 }
 
 .card-text {
@@ -213,6 +222,9 @@ nav a:hover {
     max-width: 360px;
     margin-right: 10%;
   }
+
+  /*About us*/
+
 }
 
 /*Media query for large screens (screens 992px or larger)*/
@@ -226,8 +238,13 @@ nav a:hover {
   .flex-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
-
+  
+  #about-us p {
+    text-align: left;
+  padding:0 20%;
+  }
   /* equal space for sections*/
   #services-summary,
   #events-summary {
