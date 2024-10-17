@@ -1,10 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
 
+:root {
+  --primary-darker: #19381B;
+  --primary-normal: #337136;
+  --primary-light: #81c784;
+  --secondary-darker: #055276;
+  --secondary-normal: #077BB0;
+  --secondary-light: #b3e5fc;
+  --text-color: #4f4f4f;
+}
 
 /*General Styling*/
-*{
+* {
   box-sizing: border-box;
 }
-h2 {text-align: center;}
+
+body {
+  font-family: "Lexend", sans-serif;
+  color:var(--text-color);
+  line-height: 1.5;  /*adjust line spacing to 1.5 for better readibility*/
+  letter-spacing: 0.1em; /* Added spacing between characters to improve reading for people with dyslexia*/
+}
+
+h2, h3, h4 {
+  letter-spacing: 0.3em; /* Adjusts spacing between characters to around 30% of the font-size for better readibility*/
+  font-family: "Roboto Slab", serif;
+  color: var(--primary-normal);
+}
+
+h2 {
+  text-align: center;
+  font-size: 160%;
+}
+
+/* Link styling */
+a {
+  color: var(--primary-normal); 
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--primary-darker); 
+  text-decoration: underline; 
+}
+
+a:active {
+  color: var(--primary-normal); 
+  text-decoration: underline;
+}
+
 
 /*utility class*/
 .hidden {
@@ -13,8 +58,6 @@ h2 {text-align: center;}
 .center {
   text-align: center;
 }
-
-
 
 /*Navigation*/
 nav {
@@ -29,6 +72,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Aligns logo and menu in the center */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 #nav-toggle {
@@ -43,6 +87,7 @@ nav {
 
 nav #logo-name {
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 #menu {
@@ -66,21 +111,12 @@ nav a {
   text-decoration: none;
   color: inherit;
 }
+nav a:hover {
+  text-decoration: none;
+}
 
 .active {
   border-bottom: 1px solid black;
-}
-/*buttons*/
-
-.button {
-  background-color: aquamarine;
-  padding: 6px 10px;
-  border-radius: 5px;
-  transition: all 100ms ease-in-out;
-}
-
-.button:hover {
-  background-color: red;
 }
 
 /*Nav menu appears when checkbox is selected*/
@@ -97,7 +133,7 @@ nav a {
   width: 100%;
   position: relative;
   background: url("../images/pexels-leeloothefirst-7304974.jpg") no-repeat
-  center center/cover;
+    center center/cover;
 }
 
 #hero-heading {
@@ -110,9 +146,11 @@ nav a {
   padding: 15px; /*Adjusts padding to avoid content overflow*/
   box-sizing: border-box; /* Ensures padding is included in width calculations */
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(5, 82, 118, 0.9);
 }
-
+#hero-heading p {
+  font-size: 130%;
+}
 /* Content Cards*/
 .card-container {
   text-align: center;
@@ -132,10 +170,26 @@ nav a {
 .card-container a {
   text-decoration: none;
 }
+
+/*buttons*/
+
+.button {
+  background-color: var(--primary-normal);
+  padding: 10px 18px;
+  border-radius: 28px;
+  transition: all 100ms ease-in-out;
+  color:#ffffff;
+}
+
+.button:hover {
+  background-color: var(--primary-light); 
+  color: #000000;
+}
+
+
 /*Media query for tablets (screens 768px or larger)*/
 
 @media screen and (min-width: 768px) {
-
   /*Navbar*/
   #nav-toggle-label {
     display: none;
@@ -151,33 +205,32 @@ nav a {
 
   #menu > li {
     display: inline-block;
-    padding: 0 15px;
-    margin: 0;
+    margin-right: 15px;
   }
 
   /* Hero Cover */
-#hero-heading {
-  max-width: 360px;
-  margin-right: 10%;
+  #hero-heading {
+    max-width: 360px;
+    margin-right: 10%;
+  }
 }
-}
-
 
 /*Media query for large screens (screens 992px or larger)*/
 
 @media screen and (min-width: 992px) {
   /* Hero Cover */
-#hero-text {
-  margin-right: 15%;
-}
-/* display home sections side by side*/
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-}
+  #hero-text {
+    margin-right: 15%;
+  }
+  /* display home sections side by side*/
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-/* equal space for sections*/
-#services-summary, #events-summary {
-  width: 48%; /* Each section takes almost half the width */
-}
+  /* equal space for sections*/
+  #services-summary,
+  #events-summary {
+    width: 48%; /* Each section takes almost half the width */
+  }
 }
