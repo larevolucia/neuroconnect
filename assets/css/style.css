@@ -77,6 +77,7 @@ nav {
   justify-content: space-between;
   align-items: center; /* Aligns logo and menu in the center */
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+
 }
 
 #nav-toggle {
@@ -90,14 +91,15 @@ nav {
 }
 
 nav #logo-name {
-  font-size: 1.2rem;
+  font-size: 130%;
+  margin-left: 10px;
   font-weight: bold;
 }
 
 #menu {
   display: none;
   list-style-type: none;
-  font-size: 1.2rem;
+  font-size: 120%;
   padding: 10px 20px 0;
   position: absolute;
   top: 30px;
@@ -107,10 +109,12 @@ nav #logo-name {
 }
 
 #menu > li {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+
 }
 
 /*style for menu links*/
+
 nav a, #menu a {
   text-decoration: none;
   color: var(--text-color);
@@ -168,8 +172,11 @@ text-decoration: none;
   color: #ffffff;
   background-color: rgba(5, 82, 118, 0.9);
 }
+#hero-heading h1 {
+ font-size: 140%;
+}
 #hero-heading p {
-  font-size: 130%;
+  font-size: 120%;
 }
 
 /*About us*/
