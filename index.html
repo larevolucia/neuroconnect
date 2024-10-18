@@ -45,19 +45,19 @@
       <p>Support hub for autistic expats and family</p>
     </div>
   </header>
-  <main role="main">
+  <main role="main" class="flex-container">
     <section id="about-us" role="region">
       <h2 class="hidden">About us</h2>
       <p>NeuroConnect offers support and resources tailored to autistic individuals and their loved ones living abroad.
         Whether you're navigating a new healthcare system or seeking a sense of community, we're here to help.</p>
     </section>
-    <div class="flex-container">
+   
       <!--Services Summary-->
       <section id="services-summary" role="region">
         <h2>Our services</h2>
-        <div class="card-container">
-          <img class="card-image" src="assets/images/pexels-diva-plavalaguna-614738.jpg" alt="">
-          <div class="card-body">
+        <div class="card-container flex-container" id="services-summary-card">
+          <img class="card-image" id="services-summary-image" src="assets/images/pexels-diva-plavalaguna-614738.jpg" alt="">
+          <div class="card-body" id="services-summary-body">
             <div class="card-text">
               <p>We offer a variety of services to support autistic expats and their families:
               </p>
@@ -68,8 +68,10 @@
                 </li>
               </ul>
             </div>
+            <div class="align-center">
+              <a class="button" href="#">Explore our services</a>
+            </div>
           </div>
-          <a class="button" href="#">Explore our services</a>
         </div>
 
       </section>
@@ -77,20 +79,21 @@
       <section id="events-summary" role="region">
 
         <h2>Our events</h2>
-        <div class="card-container">
-          <img class="card-image" src="assets/images/pexels-rachel-claire-7263736.jpg" alt="">
-          <div class="card-body">
+        <div class="card-container flex-container" id="events-summary-card">
+          <img class="card-image" id="events-summary-image" src="assets/images/pexels-rachel-claire-7263736.jpg" alt="">
+          <div class="card-body" id="events-summary-body">
             <div class="card-text">
               <p>Discover new ways to engage with like-minded individuals in a supportive community. Whether you're into book clubs, game nights, or nature
                 walks, there's something for everyone. </p>
               <p>Our events are a great way to connect with others, make friends, and enjoy activities in a safe and
                 welcoming space.</p>
             </div>
+            <div class="align-center">
+              <a class="button" href="#">Explore our services</a>
+            </div>
           </div>
-          <a class="button" href="#">Explore our services</a>
         </div>
       </section>
-    </div>
   </main>
   <!--Footer-->
   <footer role="contentinfo"></footer>

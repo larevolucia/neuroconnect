@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap");
 
 :root {
   --primary-darker: #055276;
-  --primary-normal: #077BB0;
+  --primary-normal: #077bb0;
   --primary-light: #b3e5fc;
-  --seconday-darker: #19381B;
+  --seconday-darker: #19381b;
   --secondary-normal: #337136;
   --secondary-light: #81c784;
   --text-color: #4f4f4f;
@@ -17,12 +17,14 @@
 
 body {
   font-family: "Lexend", sans-serif;
-  color:var(--text-color);
-  line-height: 1.5;  /*adjust line spacing to 1.5 for better readibility*/
+  color: var(--text-color);
+  line-height: 1.5; /*adjust line spacing to 1.5 for better readibility*/
   letter-spacing: 0.1em; /* Added spacing between characters to improve reading for people with dyslexia*/
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   letter-spacing: 0.3em; /* Adjusts spacing between characters to around 30% of the font-size for better readibility*/
   font-family: "Roboto Slab", serif;
   color: var(--primary-normal);
@@ -34,33 +36,39 @@ h2 {
 }
 
 section {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 /* Link styling */
 a {
-  color: var(--primary-normal); 
+  color: var(--primary-normal);
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: var(--primary-darker); 
-  text-decoration: underline; 
-}
-
-a:active {
-  color: var(--primary-normal); 
+  color: var(--primary-darker);
   text-decoration: underline;
 }
 
+a:active {
+  color: var(--primary-normal);
+  text-decoration: underline;
+}
 
 /*utility class*/
 .hidden {
   display: none;
 }
-.center {
-  text-align: center;
+.align-center {
+  margin: 0 auto;
+  display: block;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /*Navigation*/
@@ -77,7 +85,6 @@ nav {
   justify-content: space-between;
   align-items: center; /* Aligns logo and menu in the center */
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
-
 }
 
 #nav-toggle {
@@ -110,22 +117,22 @@ nav #logo-name {
 
 #menu > li {
   margin: 1rem 0;
-
 }
 
 /*style for menu links*/
 
-nav a, #menu a {
+nav a,
+#menu a {
   text-decoration: none;
   color: var(--text-color);
-} 
+}
 nav a:hover {
-text-decoration: none;
+  text-decoration: none;
 }
 
 #menu a {
   border-radius: 25px;
-  padding: 6px 18px; 
+  padding: 6px 18px;
 }
 
 #menu .active {
@@ -173,10 +180,16 @@ text-decoration: none;
   background-color: rgba(5, 82, 118, 0.9);
 }
 #hero-heading h1 {
- font-size: 140%;
+  font-size: 140%;
 }
 #hero-heading p {
   font-size: 120%;
+}
+/*Home Main*/
+
+.flex-container section {
+  flex-basis: 100%;
+  margin-bottom: 20px;
 }
 
 /*About us*/
@@ -186,15 +199,23 @@ text-decoration: none;
   text-align: center;
 }
 
-/* Content Cards*/
+/* Home Content Cards*/
 .card-container {
   text-align: center;
   padding: 0 25px;
   margin-bottom: 20px;
 }
+
+.card-container #services-summary-card,
+.card-container #events-summary-card {
+  flex-direction: column;
+}
 .card-image {
   width: 100%;
   height: auto;
+  border-radius: 5px;
+  object-fit: cover; /* avoids image distortion */
+
 }
 
 .card-text {
@@ -206,6 +227,15 @@ text-decoration: none;
   text-decoration: none;
 }
 
+#services-summary-image,
+#events-summary-image {
+  order: 1;
+}
+#services-summary-body,
+#events-summary-body {
+  order: 2;
+}
+
 /*buttons*/
 
 .button {
@@ -213,18 +243,18 @@ text-decoration: none;
   padding: 10px 18px;
   border-radius: 28px;
   transition: all 100ms ease-in-out;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .button:hover {
-  background-color: var(--primary-light); 
+  background-color: var(--primary-light);
   color: #000000;
 }
 
 .button:focus {
   color: #000000;
   border: #000000;
-  background-color:var(--secondary-light) ;
+  background-color: var(--secondary-light);
 }
 
 /*Media query for tablets (screens 768px or larger)*/
@@ -253,6 +283,21 @@ text-decoration: none;
     margin-right: 10%;
   }
 
+  /* content cards */
+  .flex-container #services-summary-card, .flex-container #events-summary-card {
+    flex-direction: row;
+  }
+  #services-summary-image,
+  #events-summary-image {
+    order: 1;
+    flex-basis: 48%;
+    width: 48%;   /*ensures that images takes only half screen*/
+  }
+  #services-summary-body,
+  #events-summary-body {
+    flex-basis: 48%;
+    order: 2;
+  }
 }
 
 /*Media query for large screens (screens 992px or larger)*/
@@ -262,33 +307,38 @@ text-decoration: none;
   #hero-text {
     margin-right: 15%;
   }
-  /* display home sections side by side*/
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
+
   #about-us p {
     text-align: left;
-    padding:0 20%;
+    padding: 0 20%;
   }
   /* equal space for sections*/
-  #services-summary,
-  #events-summary {
-    width: 48%; /* Each section takes almost half the width */
+  .flex-container #services-summary,
+  .flex-container #events-summary {
+    flex-basis: 48%; /* Each section takes almost half the width */
   }
-  /*card*/
+  /* home content cards */
+  .flex-container #services-summary-card, .flex-container #events-summary-card {
+    flex-direction: column;
+  }
   .card-body {
-  min-height: 240px;
+    min-height: 240px;
+  }
+  #services-summary-image,
+  #events-summary-image {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  #services-summary-body,
+  #events-summary-body {
+    flex-basis: 100%;
   }
 }
 /*Media query for XL screens (screens 1200px or larger)*/
 
 @media screen and (min-width: 1200px) {
-
   /*card*/
   .card-body {
-  min-height: auto;
+    min-height: auto;
   }
 }
