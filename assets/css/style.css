@@ -16,7 +16,7 @@
 }
 
 body {
-  margin:0 auto;
+  margin: 0 auto;
   font-family: "Lexend", sans-serif;
   color: var(--text-color);
   line-height: 1.5; /*adjust line spacing to 1.5 for better readibility*/
@@ -70,6 +70,10 @@ a:active {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.grid-container {
+  display: grid;
 }
 
 /*Navigation*/
@@ -216,7 +220,6 @@ nav a:hover {
   height: auto;
   border-radius: 5px;
   object-fit: cover; /* avoids image distortion */
-
 }
 
 .card-text {
@@ -258,6 +261,36 @@ nav a:hover {
   background-color: var(--secondary-light);
 }
 
+/*footer*/
+footer {
+  background-color: var(--seconday-darker);
+  padding: 3rem 1.5rem;
+  color: #ffffff;
+}
+
+footer a {
+  color: var(--primary-light);
+}
+
+footer a:hover,
+footer a:focus {
+  color: #aedbb0;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#site-map-list li {
+  padding-bottom: 1rem;
+}
+
+footer .grid-container {
+  gap: 1rem;
+}
+
 /*Media query for tablets (screens 768px or larger)*/
 
 @media screen and (min-width: 768px) {
@@ -285,18 +318,38 @@ nav a:hover {
   }
 
   /* content cards */
-  .flex-container #services-summary-card, .flex-container #events-summary-card {
+  .flex-container #services-summary-card,
+  .flex-container #events-summary-card {
     flex-direction: row;
   }
   #services-summary-image,
   #events-summary-image {
     order: 1;
     flex-basis: 48%;
-    width: 48%;   /*ensures that images takes only half screen*/
+    width: 48%; /*ensures that images takes only half screen*/
   }
   #services-summary-body,
   #events-summary-body {
     flex-basis: 48%;
+    order: 2;
+  }
+
+  /*footer*/
+  footer {
+    padding: 3rem;
+  }
+  footer .grid-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2rem;
+  }
+  #contact-address {
+    order: 1;
+  }
+  #contact-email {
+    order: 3;
+  }
+  #site-map {
     order: 2;
   }
 }
@@ -319,7 +372,8 @@ nav a:hover {
     flex-basis: 48%; /* Each section takes almost half the width */
   }
   /* home content cards */
-  .flex-container #services-summary-card, .flex-container #events-summary-card {
+  .flex-container #services-summary-card,
+  .flex-container #events-summary-card {
     flex-direction: column;
   }
   .card-body {
@@ -333,6 +387,21 @@ nav a:hover {
   #services-summary-body,
   #events-summary-body {
     flex-basis: 100%;
+  }
+
+  /*footer*/
+  footer .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #contact-address {
+    order: 1;
+  }
+  #contact-email {
+    order: 2;
+  }
+  #site-map {
+    order: 3;
   }
 }
 /*Media query for XL screens (screens 1200px or larger)*/
