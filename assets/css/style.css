@@ -73,7 +73,7 @@ a:active {
 
 /*Navigation*/
 nav {
-  position: absolute;
+  position: sticky;
   left: 0;
   top: 0;
   z-index: 99;
