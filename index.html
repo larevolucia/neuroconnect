@@ -20,26 +20,26 @@
 
 <body>
   <!--Navigation-->
-  <nav role="navigation">
+  <nav>
     <a href="index.html">
         <span class="logo-name">NeuroConnect</span>
     </a>
     <input type="checkbox" name="nav-toggle" id="nav-toggle" />
     <label for="nav-toggle" id="nav-toggle-label"><i class="fa-solid fa-bars" aria-hidden="true"></i></label>
-    <ul class="nav-menu-list">
+    <ul class="nav-menu-list" aria-label="Main Navigation">
         <li>
-            <a class="active" href="index.html">Home</a>
+            <a class="active" href="index.html" aria-label="Home page">Home</a>
         </li>
         <li>
-            <a href="services.html">Services</a>
+            <a href="services.html" aria-label="Services page" >Services</a>
         </li>
         <li>
-            <a  href="events.html">Events</a>
+            <a  href="events.html" aria-label="Events page">Events</a>
         </li>
     </ul>
 </nav>
   <!--Hero-->
-  <header class="hero-image" id="home-hero" role="banner">
+  <header class="hero-image" id="home-hero">
     <div id="home-hero-heading">
       <h1>NeuroConnect</h1>
       <p>Support hub for autistic expats and family</p>
@@ -57,7 +57,7 @@
       <h2>Our services</h2>
       <div class="card-container flex-container" id="services-summary-card">
         <img class="card-image" id="services-summary-image" src="assets/images/pexels-diva-plavalaguna-614738.jpg"
-          alt="">
+          alt="Image of four people connecting pieces of paper shaped as puzzle pieces as a symbol of community collaboration">
         <div class="card-body" id="services-summary-body">
           <div class="card-text">
             <p>We offer a variety of services to support autistic expats and their families:
@@ -81,7 +81,7 @@
 
       <h2>Our events</h2>
       <div class="card-container flex-container" id="events-summary-card">
-        <img class="card-image" id="events-summary-image" src="assets/images/pexels-rachel-claire-7263736.jpg" alt="">
+        <img class="card-image" id="events-summary-image" src="assets/images/pexels-rachel-claire-7263736.jpg" alt="Image of two boats with NeuroConnect community on a canoing event.">
         <div class="card-body" id="events-summary-body">
           <div class="card-text">
             <p>Discover new ways to engage with like-minded individuals in a supportive community. Whether you're into
@@ -110,22 +110,23 @@
       <div class="site-map">
         <ul class="site-map-list">
           <li>
-            <a href="index.html">Home</a>
+              <a href="index.html" aria-label="Home page">Home</a>
           </li>
           <li>
-            <a href="services.html">Services</a>
+              <a href="services.html" aria-label="Services page">Services</a>
           </li>
           <li>
-            <a href="events.html">Events</a>
+              <a href="events.html" aria-label="Events page">Events</a>
           </li>
-        </ul>
+      </ul>
       </div>
       <div class="social-media">
-        <span id="social-media-text">Follow us:</span>
-        <a href="http://x.com" target="_blank" rel="noopener"><i class="fa-brands fa-square-x-twitter"></i></a>
-        <a href="http://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="http://linkedin.com" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
+        <span class="social-media-text">Follow us:</span>
+        <a href="http://x.com" target="_blank" rel="noopener" aria-label="Follow us on X (formerly Twitter)"><i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i></a>
+        <a href="http://instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram"><i
+                class="fa-brands fa-square-instagram" aria-hidden="true"></i></a>
+        <a href="http://linkedin.com" target="_blank" rel="noopener" aria-label="Follow us on LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+    </div>
     </div>
 
   </footer>
