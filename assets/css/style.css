@@ -37,6 +37,7 @@ h2 {
   font-size: 160%;
 }
 
+
 section {
   margin-top: 0px;
 }
@@ -310,6 +311,7 @@ i {
 /*Media query for tablets (screens 768px or larger)*/
 
 @media screen and (min-width: 768px) {
+  
   /*Navbar*/
   #nav-toggle-label {
     display: none;
@@ -366,6 +368,12 @@ i {
 /*Media query for large screens (screens 992px or larger)*/
 
 @media screen and (min-width: 992px) {
+
+  main{
+    margin: 0 auto;
+    width: 85%;
+  }
+  
   /* Hero Cover */
   #hero-text {
     margin-right: 15%;
@@ -385,8 +393,8 @@ i {
   .flex-container #events-summary-card {
     flex-direction: column;
   }
-  .card-body {
-    min-height: 240px;
+  .card-text {
+    min-height: 180px;
   }
   #services-summary-image,
   #events-summary-image {
