@@ -145,15 +145,11 @@ nav a:hover {
   background-color: var(--primary-normal);
 }
 
-#menu a:hover {
+#menu a:hover, #menu a:focus {
   background-color: var(--primary-light);
   color: var(--text-color);
 }
-
-#menu a:focus {
-  background-color: var(--secondary-light);
-  color: #000000;
-}
+/* 
 
 /*Nav menu appears when checkbox is selected*/
 #nav-toggle:checked + #nav-toggle-label + #menu {
@@ -250,15 +246,9 @@ nav a:hover {
   color: #ffffff;
 }
 
-.button:hover {
+.button:hover, .button:focus {
   background-color: var(--primary-light);
   color: #000000;
-}
-
-.button:focus {
-  color: #000000;
-  border: #000000;
-  background-color: var(--secondary-light);
 }
 
 /*footer*/
@@ -289,6 +279,7 @@ footer ul {
 
 footer .grid-container {
   gap: 1rem;
+  align-items: center;
 }
 
 /*Media query for tablets (screens 768px or larger)*/
