@@ -17,6 +17,7 @@
 
 body {
   margin: 0 auto;
+  font-size: 1.1rem;
   font-family: "Lexend", sans-serif;
   color: var(--text-color);
   line-height: 1.5; /*adjust line spacing to 1.5 for better readibility*/
@@ -112,7 +113,6 @@ nav #logo-name {
   display: none;
   list-style-type: none;
   font-size: 120%;
-  padding: 10px 20px 0;
   position: absolute;
   top: 30px;
   left: 0;
@@ -145,7 +145,8 @@ nav a:hover {
   background-color: var(--primary-normal);
 }
 
-#menu a:hover, #menu a:focus {
+#menu a:hover,
+#menu a:focus {
   background-color: var(--primary-light);
   color: var(--text-color);
 }
@@ -246,7 +247,8 @@ nav a:hover {
   color: #ffffff;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background-color: var(--primary-light);
   color: #000000;
 }
@@ -256,6 +258,13 @@ footer {
   background-color: var(--seconday-darker);
   padding: 3rem 1.5rem;
   color: #ffffff;
+  margin-top: 4rem;
+  position: relative;
+}
+
+footer .grid-container {
+  gap: 1rem;
+  align-items: center;
 }
 
 footer a {
@@ -277,9 +286,25 @@ footer ul {
   padding-bottom: 0.5rem;
 }
 
-footer .grid-container {
-  gap: 1rem;
+
+/*social media*/
+#social-media {
+  border: 1px solid var(--primary-light);
+  border-radius: 45px;
+  padding: 15px 25px;
+  display: flex;
   align-items: center;
+  max-width: max-content; /* Ensurew container is as wide as content */
+}
+
+#social-media-text {
+  display: block;
+  margin-right: 5px;
+}
+
+i {
+  padding: 0 5px;
+  font-size: 1.8rem;
 }
 
 /*Media query for tablets (screens 768px or larger)*/
@@ -331,17 +356,10 @@ footer .grid-container {
   }
   footer .grid-container {
     grid-template-columns: 1fr 1fr;
-    align-items: start;
     gap: 2rem;
-  }
-  #contact-address {
-    order: 1;
-  }
-  #contact-email {
-    order: 3;
-  }
-  #site-map {
-    order: 2;
+    margin: 0 10%;
+
+    
   }
 }
 
@@ -382,17 +400,11 @@ footer .grid-container {
 
   /*footer*/
   footer .grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  #contact-address {
-    order: 1;
-  }
-  #contact-email {
-    order: 2;
-  }
-  #site-map {
-    order: 3;
+  #site-map{
+    order:-2;
   }
 }
 /*Media query for XL screens (screens 1200px or larger)*/
