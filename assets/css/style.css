@@ -51,7 +51,7 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus, .skip-link:focus {
   color: var(--primary-darker);
   text-decoration: underline;
 }
@@ -91,11 +91,6 @@ a:active {
   z-index: 0;
   text-decoration: none;
   color: transparent
-}
-
-.skip-link:focus {
-  text-decoration: underline;
-  color: var(--primary-darker);
 }
 
 /*Navigation*/
