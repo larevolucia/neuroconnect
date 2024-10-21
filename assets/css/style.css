@@ -7,6 +7,8 @@
   --seconday-darker: #19381b;
   --secondary-normal: #337136;
   --secondary-light: #81c784;
+  --body-font: "Lexend", sans-serif;
+  --heading-font:"Roboto Slab", serif;
   --text-color: #4f4f4f;
 }
 
@@ -18,21 +20,17 @@
 body {
   margin: 0 auto;
   font-size: 1.1rem;
-  font-family: "Lexend", sans-serif;
+  font-family: var(--body-font);
   color: var(--text-color);
   line-height: 1.5; /*adjust line spacing to 1.5 for better readibility*/
   letter-spacing: 0.1em; /* Added spacing between characters to improve reading for people with dyslexia*/
 }
 
-h2,
-h3,
-h4 {
-  letter-spacing: 0.3em; /* Adjusts spacing between characters to around 30% of the font-size for better readibility*/
-  font-family: "Roboto Slab", serif;
-  color: var(--primary-normal);
-}
-
+h1, 
 h2 {
+  letter-spacing: 0.3em; /* Adjusts spacing between characters to around 30% of the font-size for better readibility*/
+  font-family: var(--heading-font);
+  color: var(--primary-normal);
   text-align: center;
   font-size: 160%;
 }
@@ -61,6 +59,11 @@ a:active {
   text-decoration: underline;
 }
 
+i {
+  padding: 0 5px;
+  font-size: 1.8rem;
+}
+
 /*utility class*/
 .hidden {
   display: none;
@@ -81,13 +84,13 @@ a:active {
   display: grid;
 }
 
-/*Accessibility: Skip to main content
-*/
+/*Accessibility: Skip to main content*/
 .skip-link {
   position: absolute;
   top: 8px;
-  left: 20%;
+  right: 20%;
   padding: 10px;
+  font-size: 80%;
   z-index: 0;
   text-decoration: none;
   color: transparent
@@ -128,6 +131,7 @@ nav .logo-name {
   margin-left: 10px;
   font-weight: bold;
   display: none;
+  letter-spacing: 0.1em;
 }
 
 nav .logo-image {
@@ -197,8 +201,17 @@ nav a:hover {
   height: 600px;
   width: 100%;
   position: relative;
+}
+#home-hero {
+  background: url("../images/pexels-leeloothefirst-7304974.webp") no-repeat center center/cover;
+}
+#services-hero {
+  background: url("../images/pexels-tara-winstead-8385744.webp") no-repeat
+  center left/cover;
+}
+#events-hero {
   background: url("../images/pexels-leeloothefirst-7304974.jpg") no-repeat
-    center center/cover;
+  center center/cover;
 }
 
 #home-hero-heading {
@@ -215,41 +228,50 @@ nav a:hover {
 }
 #home-hero-heading h1 {
   font-size: 140%;
+  font-family: var(--body-font);
+  color: #ffffff;
+  letter-spacing: 0.1em;
 }
 #home-hero-heading p {
   font-size: 120%;
 }
-/*Home Main*/
+
+/* sections */
 
 .flex-container section {
   flex-basis: 100%;
   margin-bottom: 20px;
 }
 
-/*About us*/
+/*About us & Page summaries */
 
-#about-us p {
+.page-summary {
   padding: 0 8%;
   margin: 0;
   text-align: center;
 }
 
-/* Home Content Cards*/
+/* Content Cards*/
 .card-container {
   text-align: center;
   padding: 0 25px;
   margin-bottom: 20px;
 }
 
-.card-container #services-summary-card,
-.card-container #events-summary-card {
-  flex-direction: column;
-}
-.card-image {
+.card-container {
+   flex-direction: column;
+ }
+
+.card-image, .card-icon {
   width: 100%;
   height: auto;
   border-radius: 5px;
   object-fit: cover; /* avoids image distortion */
+}
+
+.card-icon {
+  color:var(--primary-darker);
+  font-size: 6rem;
 }
 
 .card-text {
@@ -261,6 +283,7 @@ nav a:hover {
   text-decoration: none;
 }
 
+/* home cards */
 #services-summary-image,
 #events-summary-image {
   order: 1;
@@ -269,6 +292,10 @@ nav a:hover {
 #events-summary-body {
   order: 2;
 }
+
+/*services cards*/
+
+/*events cards*/
 
 /*buttons*/
 
@@ -334,10 +361,7 @@ footer ul {
   margin-right: 5px;
 }
 
-i {
-  padding: 0 5px;
-  font-size: 1.8rem;
-}
+
 
 /*Media query for tablets (screens 768px or larger)*/
 
@@ -368,12 +392,14 @@ i {
   }
 
   /* content cards */
-  .flex-container #services-summary-card,
-  .flex-container #events-summary-card {
-    flex-direction: row;
-  }
+
+    .flex-container {
+     flex-direction: row;
+   }
+
+   /*home content cards*/
   #services-summary-image,
-  #events-summary-image {
+  #events-summary-image  {
     order: 1;
     flex-basis: 48%;
     width: 48%; /*ensures that images takes only half screen*/
@@ -383,6 +409,18 @@ i {
     flex-basis: 48%;
     order: 2;
   }
+/*services content cards */
+  #free-guidance-icon, #support-groups-icon  {
+    order: 1;
+    flex-basis: 28%;
+    width: 28%; 
+  }
+
+  #free-guidance-body, #support-groups-body {
+    flex-basis: 68%;
+    order: 2;
+  }
+  .card-icon {margin: auto 0;}
 
   /*footer*/
   footer {
@@ -408,10 +446,7 @@ i {
     width: 85%;
   }
 
-  #about-us p {
-    text-align: left;
-    padding: 0 20%;
-  }
+
   /* equal space for sections*/
   .flex-container #services-summary,
   .flex-container #events-summary {
@@ -434,6 +469,7 @@ i {
   #events-summary-body {
     flex-basis: 100%;
   }
+  
 
   /*footer*/
   footer .grid-container {
@@ -447,6 +483,11 @@ i {
 /*Media query for XL screens (screens 1200px or larger)*/
 
 @media screen and (min-width: 1200px) {
+  .page-summary {
+    text-align: left;
+    padding: 0 20%;
+  }
+
   /*card*/
   .card-body {
     min-height: auto;
