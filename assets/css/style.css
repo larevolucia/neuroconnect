@@ -8,7 +8,7 @@
   --secondary-normal: #337136;
   --secondary-light: #81c784;
   --body-font: "Lexend", sans-serif;
-  --heading-font:"Roboto Slab", serif;
+  --heading-font: "Roboto Slab", serif;
   --text-color: #4f4f4f;
 }
 
@@ -26,7 +26,7 @@ body {
   letter-spacing: 0.1em; /* Added spacing between characters to improve reading for people with dyslexia*/
 }
 
-h1, 
+h1,
 h2 {
   letter-spacing: 0.3em; /* Adjusts spacing between characters to around 30% of the font-size for better readibility*/
   font-family: var(--heading-font);
@@ -49,7 +49,8 @@ a {
 }
 
 a:hover,
-a:focus, .skip-link:focus {
+a:focus,
+.skip-link:focus {
   color: var(--primary-darker);
   text-decoration: underline;
 }
@@ -93,7 +94,7 @@ i {
   font-size: 80%;
   z-index: 0;
   text-decoration: none;
-  color: transparent
+  color: transparent;
 }
 
 /*Navigation*/
@@ -137,10 +138,10 @@ nav .logo-name {
 nav .logo-image {
   margin-left: 15px;
   height: 32px;
-  float:left;
+  float: left;
 }
 
-nav ul   {
+nav ul {
   padding-left: 15px;
 }
 
@@ -203,15 +204,16 @@ nav a:hover {
   position: relative;
 }
 #home-hero {
-  background: url("../images/pexels-leeloothefirst-7304974.webp") no-repeat center center/cover;
+  background: url("../images/pexels-leeloothefirst-7304974.webp") no-repeat
+    center center/cover;
 }
 #services-hero {
   background: url("../images/pexels-tara-winstead-8385744.webp") no-repeat
-  center left/cover;
+    center left/cover;
 }
 #events-hero {
   background: url("../images/pexels-leeloothefirst-7304974.jpg") no-repeat
-  center center/cover;
+    center center/cover;
 }
 
 #home-hero-heading {
@@ -259,10 +261,11 @@ nav a:hover {
 }
 
 .card-container {
-   flex-direction: column;
- }
+  flex-direction: column;
+}
 
-.card-image, .card-icon {
+.card-image,
+.card-icon {
   width: 100%;
   height: auto;
   border-radius: 5px;
@@ -270,7 +273,7 @@ nav a:hover {
 }
 
 .card-icon {
-  color:var(--primary-darker);
+  color: var(--primary-darker);
   font-size: 6rem;
 }
 
@@ -361,8 +364,6 @@ footer ul {
   margin-right: 5px;
 }
 
-
-
 /*Media query for tablets (screens 768px or larger)*/
 
 @media screen and (min-width: 768px) {
@@ -393,13 +394,13 @@ footer ul {
 
   /* content cards */
 
-    .flex-container {
-     flex-direction: row;
-   }
+  .flex-container {
+    flex-direction: row;
+  }
 
-   /*home content cards*/
+  /*home content cards*/
   #services-summary-image,
-  #events-summary-image  {
+  #events-summary-image {
     order: 1;
     flex-basis: 48%;
     width: 48%; /*ensures that images takes only half screen*/
@@ -409,18 +410,22 @@ footer ul {
     flex-basis: 48%;
     order: 2;
   }
-/*services content cards */
-  #free-guidance-icon, #support-groups-icon  {
+  /*services content cards */
+  #free-guidance-icon,
+  #support-groups-icon {
     order: 1;
     flex-basis: 28%;
-    width: 28%; 
+    width: 28%;
   }
 
-  #free-guidance-body, #support-groups-body {
+  #free-guidance-body,
+  #support-groups-body {
     flex-basis: 68%;
     order: 2;
   }
-  .card-icon {margin: auto 0;}
+  .card-icon {
+    margin: auto 0;
+  }
 
   /*footer*/
   footer {
@@ -436,16 +441,14 @@ footer ul {
 /*Media query for large screens (screens 992px or larger)*/
 
 @media screen and (min-width: 992px) {
-
   nav .logo-name {
     display: inline-block;
   }
-  
+
   main {
     margin: 0 auto;
     width: 85%;
   }
-
 
   /* equal space for sections*/
   .flex-container #services-summary,
@@ -469,7 +472,6 @@ footer ul {
   #events-summary-body {
     flex-basis: 100%;
   }
-  
 
   /*footer*/
   footer .grid-container {
@@ -491,5 +493,10 @@ footer ul {
   /*card*/
   .card-body {
     min-height: auto;
+  }
+  /* equal space for sections*/
+  .flex-container #free-guidance,
+  .flex-container #support-groups {
+    flex-basis: 48%; /* Each section takes almost half the width */
   }
 }
