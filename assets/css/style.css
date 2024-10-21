@@ -26,13 +26,19 @@ body {
   letter-spacing: 0.1em; /* Added spacing between characters to improve reading for people with dyslexia*/
 }
 
-h1,
-h2 {
-  letter-spacing: 0.3em; /* Adjusts spacing between characters to around 30% of the font-size for better readibility*/
-  font-family: var(--heading-font);
-  color: var(--primary-normal);
+h1, h2 {
+  letter-spacing: 0.2em; /* Adjusts spacing between characters for better readibility*/
   text-align: center;
-  font-size: 160%;
+  color: var(--primary-normal);
+}
+h1 {
+  font-family: var(--body-font);
+  font-size: 180%;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-size: 150%;
 }
 
 section {
@@ -301,7 +307,6 @@ nav a:hover {
   order: 2;
 }
 
-/*events cards*/
 
 /*buttons*/
 
@@ -318,6 +323,15 @@ nav a:hover {
   background-color: var(--primary-light);
   color: #000000;
 }
+
+/*Forms*/
+
+form {
+  padding: 10px;
+  margin-left: 15px;
+}
+
+
 
 /*footer*/
 footer {

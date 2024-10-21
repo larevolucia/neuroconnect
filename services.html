@@ -87,6 +87,58 @@
             </div>
 
         </section>
+        <form method="POST" action="">
+            <!-- Full Name -->
+            <div>
+                <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name" required>
+            </div>
+        
+            <!-- Phone Number -->
+            <div>
+                <label for="phone-number">Phone Number</label>
+                <input type="number" name="phone-number" id="phone-number" required>
+            </div>
+        
+            <!-- Email -->
+            <div>
+                <label for="email-address">E-mail</label>
+                <input type="email" name="email-address" id="email-address" required>
+            </div>
+        
+            <!-- Select Service-->
+            <fieldset>
+                <legend>Select a service</legend>
+                <input type="radio" name="service" value="free-guidance" id="free-guidance" required>
+                <label for="free-guidance">Free Guidance</label>
+                
+                <input type="radio" name="service" value="support-group-family" id="support-group-family">
+                <label for="support-group-family">Family Support Group</label>  
+                
+                <input type="radio" name="service" value="support-group-teens" id="support-group-teens">
+                <label for="support-group-teens">Teenage Support Group</label>  
+                
+                <input type="radio" name="service" value="support-group-adults" id="support-group-adults">
+                <label for="support-group-adults">Adult Support Group</label>  
+            </fieldset>
+        
+            <!-- Message -->
+            <div>
+                <label for="message-area">Message</label>
+                <textarea name="message-area" id="message-area"></textarea>
+            </div>
+        
+            <!-- Preferred Contact Method -->
+            <fieldset>
+                <legend>How do you prefer to be contacted?</legend>
+                <input type="radio" name="contact-method" value="email" id="contact-by-email" required>
+                <label for="contact-by-email">e-mail</label>
+                
+                <input type="radio" name="contact-method" value="phone" id="contact-by-phone">
+                <label for="contact-by-phone">phone</label>
+            </fieldset>
+        </form>
+        
     </main>
     <!--Footer-->
     <footer role="contentinfo">
