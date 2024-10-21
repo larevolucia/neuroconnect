@@ -40,7 +40,9 @@ h2 {
 section {
   margin-top: 0px;
 }
-
+main {
+  padding-top: 60px;
+}
 
 /* Link styling */
 a {
@@ -63,6 +65,7 @@ a:active {
 .hidden {
   display: none;
 }
+
 .align-center {
   margin: 0 auto;
   display: block;
@@ -79,28 +82,29 @@ a:active {
 }
 
 /*Accessibility: Skip to main content
+*/
 .skip-link {
   position: absolute;
-  top: -20px;
-  left: 50%;
-  background-color: white;
+  top: 8px;
+  left: 20%;
   padding: 10px;
-  z-index: 100;
+  z-index: 0;
   text-decoration: none;
-  font-size: 1rem;
+  color: transparent
 }
 
 .skip-link:focus {
-  top: 15px;
+  text-decoration: underline;
+  color: var(--primary-darker);
 }
-*/
+
 /*Navigation*/
 nav {
   position: sticky;
   left: 0;
   top: 0;
   z-index: 99;
-  height: 70px;
+  height: 60px;
   width: 100%;
   padding: 0 10px;
   background-color: #ffffff;
@@ -231,6 +235,7 @@ nav a:hover {
 
 #about-us p {
   padding: 0 8%;
+  margin: 0;
   text-align: center;
 }
 
@@ -353,6 +358,7 @@ i {
     width: auto;
     justify-content: flex-end;
     box-shadow: none;
+    background-color: transparent;
   }
 
   .nav-menu-list > li {
