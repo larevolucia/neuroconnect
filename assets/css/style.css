@@ -41,6 +41,7 @@ section {
   margin-top: 0px;
 }
 
+
 /* Link styling */
 a {
   color: var(--primary-normal);
@@ -77,6 +78,22 @@ a:active {
   display: grid;
 }
 
+/*Accessibility: Skip to main content
+.skip-link {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  background-color: white;
+  padding: 10px;
+  z-index: 100;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.skip-link:focus {
+  top: 15px;
+}
+*/
 /*Navigation*/
 nav {
   position: sticky;
@@ -98,15 +115,30 @@ nav {
   display: none;
 }
 
-#nav-toggle-label {
+i #nav-toggle-label {
   font-size: 2rem;
   cursor: pointer;
+}
+
+#nav-toggle-label {
+  margin-right: 10px;
 }
 
 nav .logo-name {
   font-size: 130%;
   margin-left: 10px;
   font-weight: bold;
+  display: none;
+}
+
+nav .logo-image {
+  margin-left: 15px;
+  height: 32px;
+  float:left;
+}
+
+nav ul   {
+  padding-left: 15px;
 }
 
 .nav-menu-list {
@@ -114,10 +146,11 @@ nav .logo-name {
   list-style-type: none;
   font-size: 120%;
   position: absolute;
-  top: 30px;
+  top: 32px;
   left: 0;
   background-color: #ffffff;
   width: 100%;
+  box-shadow: 0px 20px 20px -15px rgba(0, 0, 0, 0.2);
 }
 
 .nav-menu-list > li {
@@ -319,6 +352,7 @@ i {
     position: static;
     width: auto;
     justify-content: flex-end;
+    box-shadow: none;
   }
 
   .nav-menu-list > li {
@@ -363,6 +397,11 @@ i {
 /*Media query for large screens (screens 992px or larger)*/
 
 @media screen and (min-width: 992px) {
+
+  nav .logo-name {
+    display: inline-block;
+  }
+  
   main {
     margin: 0 auto;
     width: 85%;

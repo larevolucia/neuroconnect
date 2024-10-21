@@ -19,10 +19,13 @@
 </head>
 
 <body>
+  <!--Accessibility: Skip to main content
+  <a href="#main-content" class="skip-link">Skip to main content</a>-->
   <!--Navigation-->
   <nav>
     <a href="index.html">
-        <span class="logo-name">NeuroConnect</span>
+      <img class="logo-image" src="assets/images/puzzle_icon_navbar.png" alt="NeuroConnect logo">
+      <span class="logo-name">NeuroConnect</span>
     </a>
     <input type="checkbox" name="nav-toggle" id="nav-toggle" />
     <label for="nav-toggle" id="nav-toggle-label"><i class="fa-solid fa-bars" aria-hidden="true"></i></label>
@@ -45,7 +48,7 @@
       <p>Support hub for autistic expats and family</p>
     </div>
   </header>
-  <main role="main" class="flex-container">
+  <main id="main-content" role="main" class="flex-container">
     <section id="about-us" role="region">
       <h2 class="hidden">About us</h2>
       <p>NeuroConnect offers support and resources tailored to autistic individuals and their loved ones living abroad.
