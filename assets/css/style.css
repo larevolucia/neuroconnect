@@ -88,13 +88,18 @@ i {
 /*Accessibility: Skip to main content*/
 .skip-link {
   position: absolute;
-  top: 8px;
-  right: 20%;
+  top: -28px;
+  right: 50%;
   padding: 10px;
   font-size: 80%;
   z-index: 0;
   text-decoration: none;
   color: transparent;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 8px;
 }
 
 /*Navigation*/
@@ -212,7 +217,7 @@ nav a:hover {
     center left/cover;
 }
 #events-hero {
-  background: url("../images/pexels-leeloothefirst-7304974.jpg") no-repeat
+  background: url("../images/pexels-leeloothefirst-7304974.webp") no-repeat
     center center/cover;
 }
 
@@ -295,8 +300,6 @@ nav a:hover {
 #events-summary-body {
   order: 2;
 }
-
-/*services cards*/
 
 /*events cards*/
 
