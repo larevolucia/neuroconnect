@@ -36,7 +36,8 @@ h1, h2 {
 }
 h1 {
   font-family: var(--body-font);
-  font-size: 180%;
+  margin-top: 0;
+  font-size: 165%;
 }
 
 h2 {
@@ -84,7 +85,6 @@ i {
 .align-center {
   text-align: center;
 }
-
 .margin-top {
   margin-top: 20px;
 }
@@ -93,6 +93,10 @@ i {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-container {
@@ -235,7 +239,7 @@ nav a:hover {
     center center/cover;
 }
 
-#home-hero-heading {
+.hero-heading {
   position: absolute;
   bottom: 30px;
   right: 0;
@@ -247,13 +251,13 @@ nav a:hover {
   color: #ffffff;
   background-color: rgba(5, 82, 118, 0.9);
 }
-#home-hero-heading h1 {
+.hero-heading h1 {
   font-size: 140%;
   font-family: var(--body-font);
   color: #ffffff;
   letter-spacing: 0.1em;
 }
-#home-hero-heading p {
+.hero-heading p {
   font-size: 120%;
 }
 
@@ -522,7 +526,7 @@ footer ul {
   }
 
   /* Hero Cover */
-  #home-hero-heading {
+  .hero-heading {
     max-width: 360px;
     margin-right: 10%;
   }
