@@ -320,6 +320,7 @@ nav a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 150ms ease-in-out;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .button:active, .button-secondary:active, a .button:active, a .button-secondary:active {
@@ -409,10 +410,6 @@ legend
 font-weight: 600;  
 }
 
-form button {
-  margin: 0 auto;
-  font-size: 1rem;
-}
 
 /* Form validation styling */
 
