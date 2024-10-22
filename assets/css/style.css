@@ -425,6 +425,7 @@ input:user-valid {
   box-shadow: 0 0 0 0.2rem rgba(129, 199, 132, 0.25);
 }
 
+
 /*footer*/
 footer {
   background-color: var(--seconday-darker);

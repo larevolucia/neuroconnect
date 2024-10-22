@@ -94,8 +94,8 @@
             </div>
 
         </section>
-        <section id="service-selection">
-            <form method="POST" action="https://formdump.codeinstitute.net">
+        <section id="service-form-container">
+            <form id="request-service-form" method="POST" action="https://formdump.codeinstitute.net">
                 <h2 class="form-heading">Get in Touch</h2>
                 <fieldset id="form-personal-details">
                     <!-- Full Name -->
@@ -120,7 +120,7 @@
 
                 <!-- Select Service-->
                 <fieldset id="form-service-selection">
-                    <legend>Select a service</legend>
+                    <legend>Select a service:</legend>
                     <div>
                         <input type="radio" name="service" value="free-guidance" id="free-guidance" required>
                         <label for="free-guidance">Free Guidance</label>
@@ -163,10 +163,12 @@
                     </div>
                 </fieldset>
                 <div class="align-center">
-
                     <button class="button-secondary" id="form-submit-button" type="submit">Request service</button>
                 </div>
             </form>
+            <!-- <div id="success-message" class="hidden">
+                Thank you for your message!
+            </div> -->
         </section>
     </main>
     <!--Footer-->
@@ -204,7 +206,18 @@
         </div>
 
     </footer>
+    <!--Custom Script
+    <script>
+        function toggleVisibility(event){
+            serviceForm.classList.toggle('hidden')
+            successMessage.classList.toggle('hidden')
+        }
 
+        const serviceForm = document.querySelector('#request-service-form')
+        const successMessage = document.querySelector('#success-message')
+        serviceForm.addEventListener('submit', toggleVisibility)
+
+    </script>-->
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
 </body>
