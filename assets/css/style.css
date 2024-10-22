@@ -22,7 +22,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: var(--primary-font);
   color: var(--text-color);
   line-height: 1.5; /*adjust line spacing to 1.5 for better readibility*/
@@ -282,7 +282,6 @@ nav a:hover {
 
 .card-container {
   text-align: center;
-  flex-direction: column;
 }
 
 .card-padding {
@@ -536,7 +535,7 @@ footer ul {
   padding: 15px 25px;
   display: flex;
   align-items: center;
-  max-width: max-content; /* Ensurew container is as wide as content */
+  max-width: max-content; /* Ensures container is as wide as content */
 }
 
 .social-media-text {
@@ -597,7 +596,7 @@ footer ul {
     flex-basis: 28%;
     width: 28%;
   }
-
+  
   #free-guidance-body,
   #support-groups-body {
     flex-basis: 68%;
@@ -606,6 +605,7 @@ footer ul {
   .card-icon {
     margin: auto 0;
   }
+
 
   /*footer*/
   footer {
@@ -655,6 +655,16 @@ footer ul {
   #events-summary-body {
     flex-basis: 100%;
   }
+  
+  /*events content cards*/
+    #upcoming-events .card-container {
+      flex-basis: 45%;
+      margin: 15px auto;
+    }
+
+    #upcoming-events .card-body {
+      min-height: 250px;
+    }
 
   /*footer*/
   footer .grid-container {
