@@ -103,6 +103,8 @@ i {
   display: grid;
 }
 
+
+
 /*Accessibility: Skip to main content*/
 .skip-link {
   position: absolute;
@@ -288,7 +290,7 @@ nav a:hover {
 }
 
 .card-border {
-  margin: 0 25px;
+  margin: 20px 25px 0;
   border: 1px solid var(--text-color);
   border-radius: 5px;
   overflow: hidden;
@@ -337,6 +339,10 @@ nav a:hover {
   text-align: left;
   margin:0;
   font-family: var(--primary-font)
+}
+
+.card-subheading {
+  color: var(--primary-normal)
 }
 
 .maps-container iframe {
