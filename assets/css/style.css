@@ -7,8 +7,8 @@
   --seconday-darker: #19381b;
   --secondary-normal: #337136;
   --secondary-light: #81c784;
-  --body-font: "Lexend", sans-serif;
-  --heading-font: "Roboto Slab", serif;
+  --primary-font: "Lexend", sans-serif;
+  --secondary-font: "Roboto Slab", serif;
   --text-color: #4f4f4f;
 }
 
@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.1rem;
-  font-family: var(--body-font);
+  font-family: var(--primary-font);
   color: var(--text-color);
   line-height: 1.5; /*adjust line spacing to 1.5 for better readibility*/
   letter-spacing: 0.1em; /* Added spacing between characters to improve reading for people with dyslexia*/
@@ -35,13 +35,13 @@ h1, h2 {
   color: var(--primary-normal);
 }
 h1 {
-  font-family: var(--body-font);
+  font-family: var(--primary-font);
   margin-top: 0;
   font-size: 165%;
 }
 
 h2 {
-  font-family: var(--heading-font);
+  font-family: var(--secondary-font);
   font-size: 150%;
 }
 
@@ -253,7 +253,7 @@ nav a:hover {
 }
 .hero-heading h1 {
   font-size: 140%;
-  font-family: var(--body-font);
+  font-family: var(--primary-font);
   color: #ffffff;
   letter-spacing: 0.1em;
 }
@@ -277,22 +277,36 @@ nav a:hover {
 }
 
 /* Content Cards*/
-.card-container {
-  text-align: center;
-  padding: 0 25px;
-  margin-bottom: 20px;
-}
 
 .card-container {
+  text-align: center;
   flex-direction: column;
+}
+
+.card-padding {
+  padding: 0 25px;
+}
+
+.card-border {
+  margin: 0 25px;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .card-image,
 .card-icon {
   width: 100%;
   height: auto;
-  border-radius: 5px;
   object-fit: cover; /* avoids image distortion */
+}
+
+.image-border-radius {
+  border-radius: 5px;
+}
+.image-border-top-radius {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .card-icon {
@@ -305,6 +319,7 @@ nav a:hover {
   margin-bottom: 25px;
  }
 
+
 /* home cards */
 #services-summary-image,
 #events-summary-image {
@@ -315,6 +330,24 @@ nav a:hover {
   order: 2;
 }
 
+/*events cards*/
+
+.card-heading {
+  font-size: 120%;
+  text-align: left;
+  margin:0;
+  font-family: var(--primary-font)
+}
+
+.maps-container iframe {
+  width: 100%;
+  height: 150px; 
+  padding: 0;
+  border: none;
+  border-bottom-left-radius: 5px; 
+  border-bottom-right-radius: 5px; 
+  margin-bottom: -8px; 
+}
 
 /*buttons*/
 
@@ -448,6 +481,8 @@ input:user-valid {
   border-left: 4px solid rgba(129, 199, 132, 0.9);
   background-color: white;
 }
+
+
 
 /*Success page*/
 
