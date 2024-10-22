@@ -57,11 +57,14 @@
                             Our dedicated volunteers will guide you through every step, from understanding insurance
                             options and obtaining a diagnosis to finding the right specialists.</p>
                         <ul>
-                            <li><strong>Personalized Consultation</strong>: Book one-on-one sessions with our volunteers who can walk you
+                            <li><strong>Personalized Consultation</strong>: Book one-on-one sessions with our volunteers
+                                who can walk you
                                 through the basics of healthcare in the Netherlands.</li>
-                            <li><strong>Healthcare Navigation Workshops</strong>: Join our free workshops designed to help newcomers
+                            <li><strong>Healthcare Navigation Workshops</strong>: Join our free workshops designed to
+                                help newcomers
                                 understand local healthcare procedures, terminology, and resources.</li>
-                            <li><strong>Insurance Assistance</strong>: Get help finding the right insurance plans based on the required support for specialists.</li>
+                            <li><strong>Insurance Assistance</strong>: Get help finding the right insurance plans based
+                                on the required support for specialists.</li>
                         </ul>
                     </div>
                 </div>
@@ -73,13 +76,17 @@
                 <div class="card-body" id="support-groups-body">
                     <div class="card-text">
                         <h2>Support groups</h2>
-                        <p>Led by certified coaches, we offer three types of support groups, each designed to address specific needs within the autistic expat community.</p>
+                        <p>Led by certified coaches, we offer three types of support groups, each designed to address
+                            specific needs within the autistic expat community.</p>
                         <ul>
-                            <li><strong>Family Support Groups</strong>:  A supportive environment for families to connect, share advice, and navigate life with an autistic loved one.
+                            <li><strong>Family Support Groups</strong>: A supportive environment for families to
+                                connect, share advice, and navigate life with an autistic loved one.
                             </li>
-                            <li><strong>Teenage Support Groups</strong>: A safe space for autistic teens to discuss school, friendships, and social challenges.
+                            <li><strong>Teenage Support Groups</strong>: A safe space for autistic teens to discuss
+                                school, friendships, and social challenges.
                             </li>
-                            <li><strong>Support for Autistic Adults</strong>: A group designed for autistic adults to connect, share experiences, and discuss work, relationships, and daily life strategies.
+                            <li><strong>Support for Autistic Adults</strong>: A group designed for autistic adults to
+                                connect, share experiences, and discuss work, relationships, and daily life strategies.
                             </li>
                         </ul>
                     </div>
@@ -87,58 +94,80 @@
             </div>
 
         </section>
-        <form method="POST" action="">
-            <!-- Full Name -->
-            <div>
-                <label for="full-name">Full Name</label>
-                <input type="text" name="full-name" id="full-name" required>
-            </div>
-        
-            <!-- Phone Number -->
-            <div>
-                <label for="phone-number">Phone Number</label>
-                <input type="number" name="phone-number" id="phone-number" required>
-            </div>
-        
-            <!-- Email -->
-            <div>
-                <label for="email-address">E-mail</label>
-                <input type="email" name="email-address" id="email-address" required>
-            </div>
-        
-            <!-- Select Service-->
-            <fieldset>
-                <legend>Select a service</legend>
-                <input type="radio" name="service" value="free-guidance" id="free-guidance" required>
-                <label for="free-guidance">Free Guidance</label>
-                
-                <input type="radio" name="service" value="support-group-family" id="support-group-family">
-                <label for="support-group-family">Family Support Group</label>  
-                
-                <input type="radio" name="service" value="support-group-teens" id="support-group-teens">
-                <label for="support-group-teens">Teenage Support Group</label>  
-                
-                <input type="radio" name="service" value="support-group-adults" id="support-group-adults">
-                <label for="support-group-adults">Adult Support Group</label>  
-            </fieldset>
-        
-            <!-- Message -->
-            <div>
-                <label for="message-area">Message</label>
-                <textarea name="message-area" id="message-area"></textarea>
-            </div>
-        
-            <!-- Preferred Contact Method -->
-            <fieldset>
-                <legend>How do you prefer to be contacted?</legend>
-                <input type="radio" name="contact-method" value="email" id="contact-by-email" required>
-                <label for="contact-by-email">e-mail</label>
-                
-                <input type="radio" name="contact-method" value="phone" id="contact-by-phone">
-                <label for="contact-by-phone">phone</label>
-            </fieldset>
-        </form>
-        
+        <section id="service-selection">
+            <form method="POST" action="https://formdump.codeinstitute.net">
+                <h2 class="form-heading">Get in Touch</h2>
+                <fieldset id="form-personal-details">
+                    <!-- Full Name -->
+                    <div>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="full-name" id="full-name" required>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number" pattern="[\+][0-9]{2}[0-9]{9}"
+                            placeholder="+31645697890" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email-address">E-mail</label>
+                        <input type="email" name="email-address" id="email-address" required>
+                    </div>
+                </fieldset>
+
+                <!-- Select Service-->
+                <fieldset id="form-service-selection">
+                    <legend>Select a service</legend>
+                    <div>
+                        <input type="radio" name="service" value="free-guidance" id="free-guidance" required>
+                        <label for="free-guidance">Free Guidance</label>
+                    </div>
+                    <div>
+
+                        <input type="radio" name="service" value="support-group-family" id="support-group-family">
+                        <label for="support-group-family">Family Support Group</label>
+                    </div>
+                    <div>
+
+                        <input type="radio" name="service" value="support-group-teens" id="support-group-teens">
+                        <label for="support-group-teens">Teenage Support Group</label>
+                    </div>
+                    <div>
+
+                        <input type="radio" name="service" value="support-group-adults" id="support-group-adults">
+                        <label for="support-group-adults">Adult Support Group</label>
+                    </div>
+                    <!-- Message -->
+                    <div class="margin-top" >
+                        <label for="message-area">Message <small>(optional)</small></label>
+                        <textarea name="message-area" id="message-area"></textarea>
+                    </div>
+                </fieldset>
+
+
+                <!-- Preferred Contact Method -->
+                <fieldset id="form-contact-method">
+                    <legend>How do you prefer to be contacted?</legend>
+                    <div>
+
+                        <input type="radio" name="contact-method" value="email" id="contact-by-email" required>
+                        <label for="contact-by-email">e-mail</label>
+                    </div>
+                    <div>
+
+                        <input type="radio" name="contact-method" value="phone" id="contact-by-phone">
+                        <label for="contact-by-phone">phone</label>
+                    </div>
+                </fieldset>
+                <div class="align-center">
+
+                    <button class="button-secondary" id="form-submit-button" type="submit">Request service</button>
+                </div>
+            </form>
+        </section>
     </main>
     <!--Footer-->
     <footer role="contentinfo">
