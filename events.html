@@ -117,6 +117,64 @@
                 <div class="maps-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.90465003463!2d4.294450012718643!3d52.09966687183703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b74d1c0dd2c7%3A0xccfe81afc891bc40!2sMadurodam!5e0!3m2!1snl!2snl!4v1729605582529!5m2!1snl!2snl" width="400" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             </div>
         </section>
+        <section id="events-form-container" class="margin-top">
+            <form id="events-form" method="GET" action="success.html">
+                <h2 class="form-heading">Join our events</h2>
+                <fieldset id="form-personal-details">
+                    <!-- Full Name -->
+                    <div>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="full-name" id="full-name" required>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number" pattern="[\+][0-9]{2}[0-9]{9}"
+                            placeholder="+31645697890" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email-address">E-mail</label>
+                        <input type="email" name="email-address" id="email-address" required>
+                    </div>
+                </fieldset>
+
+                <!-- Select Event-->
+                <fieldset id="form-event-selection">
+                    <legend>Select an event:</legend>
+                    <div>
+                        <input type="radio" name="service" value="book-club-december" id="book-club" required>
+                        <label for="book-club">NeuroNarratives Book Club December</label>
+                    </div>
+                    <div>
+
+                        <input type="radio" name="service" value="nature-walk-twiske" id="nature-walks">
+                        <label for="nature-walks">Wanderers Nature Walks: Het Twiske</label>
+                    </div>
+                    <div>
+
+                        <input type="radio" name="service" value="game-night-christmas" id="game-night" disabled>
+                        <label for="game-night">Game night: Christmas Edition (at full capacity)</label>
+                    </div>
+                    <div>
+
+                        <input type="radio" name="service" value="day-out-the-hague" id="day-out">
+                        <label for="day-out">Day Out: The Hague & Madurodam</label>
+                    </div>
+                    <!-- Reservation Spots -->
+                    <div class="margin-top">
+                        <label for="spots">Reserving for how many people?</label>
+                        <input type="number" name="spots" id="spots">
+                    </div>
+                </fieldset>
+
+                <div class="align-center">
+                    <button class="button-secondary" id="form-submit-button" type="submit">Reserve a spot</button>
+                </div>
+            </form>
+        </section>
     </main>
     <!--Footer-->
     <footer role="contentinfo">
