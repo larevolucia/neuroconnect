@@ -100,8 +100,9 @@ i {
 
 .flex-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .flex-center {
   align-items: center;
@@ -392,7 +393,7 @@ nav a:hover {
   position: relative;
   margin: 0 auto;
   transform-style: preserve-3d;
-  transition: transform 5s ease;
+  transition: transform 3s ease;
 }
 
 /*hides checkbox*/
@@ -411,6 +412,7 @@ nav a:hover {
 
 .flip-card-container {
   display: inline-block;
+  margin-top: 20px;
 }
 
 .flip-card-front {
@@ -458,6 +460,18 @@ nav a:hover {
 }
 .flip-card label:hover {
   cursor: pointer;
+}
+
+.flip-card-front > label:hover > i {
+  border: 2px solid var(--primary-darker);
+  color: var(--primary-darker);
+  background-color: var(--primary-light);
+}
+
+.flip-card-back > label:hover > i {
+  border: 2px solid var(--seconday-darker);
+  color: var(--secondary-darker);
+  background-color: var(--secondary-light);
 }
 
 /*buttons*/
@@ -753,10 +767,15 @@ footer ul {
     flex-basis: 45%;
     margin: 15px auto;
   }
-
-  /* #upcoming-events .card-body {
-      min-height: 250px;
-    } */
+    .maps-container iframe {
+      height: 138px;
+    }
+    
+    .flip-card {
+      width: 345px;
+      height: 368px;
+    }
+  
 
   /*footer*/
   footer .grid-container {
@@ -779,6 +798,8 @@ footer ul {
   .card-text {
     min-height: auto;
   }
+
+
   /* equal space for sections*/
   .flex-container #free-guidance,
   .flex-container #support-groups {
