@@ -38,12 +38,19 @@ h2 {
 h1 {
   font-family: var(--primary-font);
   margin-top: 0;
-  font-size: 165%;
+  font-size: 1.65rem;
 }
 
 h2 {
   font-family: var(--secondary-font);
-  font-size: 150%;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: var(--secondary-font);
+  color: var(--secondary-normal);
+  font-family: 1.2rem;
+  margin: 15px 0;
 }
 
 section {
@@ -51,6 +58,7 @@ section {
 }
 main {
   padding-top: 60px;
+  margin: 0 8%;
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
 }
@@ -369,19 +377,17 @@ nav a:hover {
 
 .maps-container iframe {
   width: 100%;
-  height: 150px;
+  height: 120px;
   padding: 0;
-  border: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   margin-bottom: -8px;
+  box-sizing: border-box;
 }
 
 /*flip card test*/
 
 .flip-card {
   width: 300px;
-  height: 300px;
+  height: 320px;
   perspective: 1000px;
   position: relative;
   margin: 0 auto;
@@ -408,11 +414,12 @@ nav a:hover {
 }
 
 .flip-card-front {
-  background-color: #077bb0;
   z-index: 1; /*hides the back side of the card*/
+  border: 1px solid var(--primary-normal);
+  
 }
 .flip-card-back {
-  background-color: #81c784;
+  border: 1px solid var(--secondary-normal);
   transform: rotateY(180deg); /*pre-rotates backside*/
 }
 
@@ -423,6 +430,34 @@ nav a:hover {
   width: 100%;
   border-radius: 6px;
   backface-visibility: hidden;
+  box-sizing: border-box; 
+  
+}
+
+.flip-label {
+  border-radius: 50%;
+  font-size: 1.1rem;
+  padding: 4px;
+}
+
+.flip-card-front > label > i {
+  border: 2px solid var(--primary-normal);
+  color: var(--primary-normal);
+}
+
+.flip-card-back > label > i {
+  border: 2px solid var(--secondary-normal);
+  color: var(--secondary-normal);
+}
+
+/* Position label icon on the bottom right */
+.flip-card label {
+  position: absolute;
+  bottom: 10px; 
+  right: 10px;  
+}
+.flip-card label:hover {
+  cursor: pointer;
 }
 
 /*buttons*/
@@ -701,7 +736,7 @@ footer ul {
     flex-direction: column;
   }
   .card-text {
-    min-height: 180px;
+    min-height: 163px;
   }
   #services-summary-image,
   #events-summary-image {
@@ -741,9 +776,9 @@ footer ul {
   }
 
   /*card*/
-  /* .card-body {
+  .card-text {
     min-height: auto;
-  } */
+  }
   /* equal space for sections*/
   .flex-container #free-guidance,
   .flex-container #support-groups {
