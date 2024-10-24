@@ -467,13 +467,13 @@ textarea {
   height: 100px;
 }
 
-legend {
+.form-legend {
   font-weight: 600;
   padding-bottom: 8px;
 }
 
 label,
-legend {
+.form-legend {
   font-size: 0.9rem;
 }
 .form-container {

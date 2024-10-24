@@ -44,11 +44,12 @@
     </header>
     <main id="services-main-content" class="flex-container">
         <section id="services-page-summary">
+            <h2 class="hidden">About our services</h2>
             <p class="page-summary">At NeuroConnect, we provide tailored support for autistic expats and their families.
                 Navigating a new healthcare system can be overwhelming, but with our expert guidance and compassionate
                 community, you're not alone. Here's how we can support you:</p>
         </section>
-        <section id="free-guidance" class="margin-top">
+        <section id="free-guidance-services" class="margin-top">
             <div class="card-container card-side-padding  flex-container" id="free-guidance-card">
                 <i class="card-icon fa-solid fa-compass" id="free-guidance-icon" aria-hidden="true"></i>
                 <div class="card-body" id="free-guidance-body">
@@ -108,7 +109,7 @@
                         <!-- Phone Number -->
                         <div class="input-group" id="phone-service-form-group">
                             <label for="phone-number">Phone Number</label>
-                            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{20}"
+                            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{10}"
                                  required>
                         </div>
 
@@ -120,7 +121,7 @@
 
                     <!-- Select Service-->
                     <div class="input-group" id="service-form-selection-group">
-                        <legend>Select a service:</legend>
+                        <p class="form-legend">Select a service:</p>
                         <div>
                             <input type="radio" name="service" value="free-guidance" id="free-guidance" required>
                             <label for="free-guidance">Free Guidance</label>
@@ -150,7 +151,7 @@
 
                     <!-- Preferred Contact Method -->
                     <div class="input-group" id="service-form-contact-method">
-                        <legend>How do you prefer to be contacted?</legend>
+                        <p class="form-legend">How do you prefer to be contacted?</p>
                         <div>
 
                             <input type="radio" name="contact-method" value="email" id="contact-by-email" required>

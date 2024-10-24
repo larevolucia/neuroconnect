@@ -46,12 +46,13 @@
     </header>
     <main id="events-main-content">
         <section id="events-page-summary">
+            <h2 class="hidden">About our events</h2>
             <p class="page-summary">Join our vibrant community through a variety of inclusive events designed for
                 autistic expats and their families. Whether you're into books, nature walks, or fun-filled game nights,
                 we have something for everyone.</p>
         </section>
         <section id="upcoming-events" class="flex-container margin-top">
-            <div class="card-container card-border" id="book-club">
+            <div class="card-container card-border" id="book-club-card">
                 <div class="card-image-container">
                     <img src="assets/images/pexels-yaroslav-shuraev-9490665.webp"
                         alt="Two people hiding part of their faces behind books"
@@ -75,7 +76,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-container card-border" id="game-nights">
+            <div class="card-container card-border" id="game-nights-card">
                 <div class="card-image-container">
                     <img src="assets/images/pexels-rdne-6517901.webp"
                         alt="People wearing Christmas sweaters playing cards"
@@ -100,7 +101,7 @@
                 </div>
               
             </div>
-            <div class="card-container card-border" id="nature-walk">
+            <div class="card-container card-border" id="nature-walk-card">
                 <div class="card-image-container">
                     <img src="assets/images/pexels-rdne-7348737.webp" alt="Group of people walking in a nature reserve"
                         class="card-image image-border-top-radius">
@@ -121,7 +122,7 @@
                 </div>
              
             </div>
-            <div class="card-container card-border" id="day-out">
+            <div class="card-container card-border" id="city-trip-card">
                 <div class="card-image-container">
                     <img src="assets/images/pexels-gsn-travel-28688790.webp"
                         alt="Photo of the Ferris wheel on The Hague's beach" class="card-image image-border-top-radius">
@@ -153,7 +154,7 @@
                 <div class="form-container">
                     <div id="events-form-personal-details" class="grid-container">
                         <!-- Full Name -->
-                        <div class="input-group" if="event-form-name-group">
+                        <div class="input-group" id="event-form-name-group">
                             <label for="full-name">Full Name</label>
                             <input type="text" name="full-name" id="full-name" required>
                         </div>
@@ -173,7 +174,7 @@
                     </div>
                     <!-- Select Event-->
                     <div class="input-group grid-container" id="event-form-selection-group">
-                        <legend>Select an event:</legend>
+                        <p class="form-legend">Select an event:</p>
                         <div>
                             <input type="radio" name="service" value="book-club-december" id="book-club" required>
                             <label for="book-club">Book Club: Unmasking Autism</label>
@@ -207,7 +208,7 @@
         </section>
     </main>
     <!--Footer-->
-    <footer role="contentinfo">
+    <footer>
         <div class="grid-container">
             <div class="contact-address">
                 <p><strong>Address</strong><br>Kloveniersburgwal 43<br>
