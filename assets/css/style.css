@@ -380,103 +380,12 @@ nav a:hover {
   color: var(--primary-normal);
 }
 
-.maps-container iframe {
-  width: 100%;
-  height: 120px;
-  padding: 0;
-  margin-bottom: -8px;
-  box-sizing: border-box;
-}
-
-/*flip card test*/
-
-.flip-card {
-  width: 300px;
-  height: 320px;
-  perspective: 1000px;
-  position: relative;
-  margin: 0 auto;
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-}
-
-/*hides checkbox*/
-.flip-card-checkbox {
-  display: none;
-}
-
-.flip-card-checkbox:checked + .flip-card-back {
-  z-index: 1;
-}
-
-/* Applies flip when the checkbox is checked */
-.flip-card-checkbox:checked ~ .flip-card {
-  transform: rotateY(180deg);
-}
-
-.flip-card-container {
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.flip-card-front {
-  z-index: 1; /*hides the back side of the card*/
-  border: 1px solid var(--primary-normal);
-}
-.flip-card-back {
-  border: 1px solid var(--secondary-normal);
-  transform: rotateY(180deg); /*pre-rotates backside*/
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 6px;
-  backface-visibility: hidden;
-  box-sizing: border-box;
-}
-
-
-/* .flip-card-front > label > i {
-  border: 2px solid var(--primary-normal);
-  color: var(--primary-normal);
-}
-
-.flip-card-back > label > i {
-  border: 2px solid var(--secondary-normal);
-  color: var(--secondary-normal);
-} */
-
-/* Position label icon on the bottom right */
-.flip-card label {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-.flip-card label:hover {
-  cursor: pointer;
-}
-
-/* .flip-card-front > label:hover > i {
-  border: 2px solid var(--primary-darker);
-  color: var(--primary-darker);
-  background-color: var(--primary-light);
-}
-
-.flip-card-back > label:hover > i {
-  border: 2px solid var(--seconday-darker);
-  color: var(--secondary-darker);
-  background-color: var(--secondary-light);
-} */
-
 /*buttons*/
 
 .button,
 .button-secondary,
 a .button,
-a .button-secondary, .flip-label {
+a .button-secondary {
   display: inline-block; /* enables the transform to work on anchors as well as buttons*/
   padding: 10px 18px;
   border-radius: 28px;
@@ -500,12 +409,12 @@ a .button-secondary:active {
   box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.button, .flip-card-front > label > i  {
+.button {
   background-color: var(--primary-normal);
 }
 
 .button:hover,
-.button:focus, .flip-card-front > label:hover > i, .flip-card-front > label:focus > i {
+.button:focus {
   background-color: var(--primary-light);
   color: #000000;
   text-decoration: none;
@@ -516,12 +425,12 @@ a .button-secondary:active {
   color: #ffffff;
 }
 
-.button-secondary, .flip-card-back > label > i  {
+.button-secondary {
   background-color: var(--secondary-normal);
 }
 
 .button-secondary:hover,
-.button-secondary:focus, .flip-card-back > label:hover > i, .flip-card-back > label:focus > i {
+.button-secondary:focus {
   background-color: var(--secondary-light);
   color: #000000;
 }
@@ -531,11 +440,6 @@ a .button-secondary:active {
   color: #ffffff;
 }
 
-.flip-label {
-  border-radius: 50%;
-  font-size: 1.1rem;
-  padding: 15px;
-}
 
 /*Forms General styling*/
 
@@ -844,14 +748,6 @@ footer ul {
   #upcoming-events .card-container {
     flex-basis: 45%;
     margin: 15px auto;
-  }
-  .maps-container iframe {
-    height: 138px;
-  }
-
-  .flip-card {
-    width: 345px;
-    height: 368px;
   }
 
   /*forms*/
