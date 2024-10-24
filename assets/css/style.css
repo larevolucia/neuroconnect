@@ -598,6 +598,18 @@ input:user-invalid {
 input:user-valid {
   border-color: var(--secondary-light);
 }
+/*style for disabled option*/
+input:disabled + label,
+textarea:disabled + label,
+select:disabled + label {
+  opacity: 0.6;
+  cursor:not-allowed;
+}
+input:disabled,
+textarea:disabled,
+select:disabled  {
+  cursor:not-allowed;
+}
 
 /*Success page*/
 

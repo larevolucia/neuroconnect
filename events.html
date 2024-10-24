@@ -21,8 +21,7 @@
         <!--Accessibility: Skip to main content-->
         <a href="#events-main-content" class="skip-link">Skip to content</a>
         <a href="index.html">
-            <img class="logo-image" src="assets/images/icon_navbar.webp" alt="NeuroConnect logo" width="32"
-                height="32">
+            <img class="logo-image" src="assets/images/icon_navbar.webp" alt="NeuroConnect logo" width="32" height="32">
             <span class="logo-name">NeuroConnect</span>
         </a>
         <input type="checkbox" name="nav-toggle" id="nav-toggle">
@@ -148,58 +147,58 @@
         <section id="events-form-container" class="margin-top">
             <form id="events-form" method="GET" action="success-events.html">
                 <h2 class="form-heading">Join our events</h2>
-                <fieldset id="form-personal-details">
-                    <!-- Full Name -->
-                    <div>
-                        <label for="full-name">Full Name</label>
-                        <input type="text" name="full-name" id="full-name" required>
-                    </div>
+                <div class="form-container">
+                    <div id="form-personal-details">
+                        <!-- Full Name -->
+                        <div class="input-group" if="event-form-name-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="full-name" id="full-name" required>
+                        </div>
 
-                    <!-- Phone Number -->
-                    <div>
-                        <label for="phone-number">Phone Number</label>
-                        <input type="tel" name="phone-number" id="phone-number" pattern="[\+][0-9]{2}[0-9]{9}"
-                            placeholder="+31645697890" required>
-                    </div>
+                        <!-- Phone Number -->
+                        <div class="input-group" id="event-form-phone-group">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{10}"
+                             required>
+                        </div>
 
-                    <!-- Email -->
-                    <div>
-                        <label for="email-address">E-mail</label>
-                        <input type="email" name="email-address" id="email-address" required>
+                        <!-- Email -->
+                        <div class="input-group" id="event-form-email-group">
+                            <label for="email-address">E-mail</label>
+                            <input type="email" name="email-address" id="email-address" required>
+                        </div>
                     </div>
-                </fieldset>
+                    <!-- Select Event-->
+                    <div class="input-group" id="event-form-selection-group">
+                        <legend>Select an event:</legend>
+                        <div>
+                            <input type="radio" name="service" value="book-club-december" id="book-club" required>
+                            <label for="book-club">Book Club: Unmasking Autism</label>
+                        </div>
+                        <div>
 
-                <!-- Select Event-->
-                <fieldset id="form-event-selection">
-                    <legend>Select an event:</legend>
-                    <div>
-                        <input type="radio" name="service" value="book-club-december" id="book-club" required>
-                        <label for="book-club">NeuroNarratives Book Club December</label>
-                    </div>
-                    <div>
+                            <input type="radio" name="service" value="nature-walk-twiske" id="nature-walks">
+                            <label for="nature-walks">Hiking trip: Het Twiske</label>
+                        </div>
+                        <div>
 
-                        <input type="radio" name="service" value="nature-walk-twiske" id="nature-walks">
-                        <label for="nature-walks">Wanderers Nature Walks: Het Twiske</label>
-                    </div>
-                    <div>
+                            <input type="radio" name="service" value="game-night-christmas" id="game-night" disabled>
+                            <label for="game-night">Game night: Christmas Edition <small>(fully booked)</small></label>
+                        </div>
+                        <div>
 
-                        <input type="radio" name="service" value="game-night-christmas" id="game-night" disabled>
-                        <label for="game-night">Game night: Christmas Edition (at full capacity)</label>
+                            <input type="radio" name="service" value="day-out-the-hague" id="day-out">
+                            <label for="day-out">City Trip: The Hague & Madurodam</label>
+                        </div>
+                        <!-- Reservation Spots -->
+                        <div class="input-group" id="event-form-spots-group">
+                            <label for="spots">Reserving for how many people?</label>
+                            <input type="number" name="spots" id="spots" required>
+                        </div>
                     </div>
-                    <div>
-
-                        <input type="radio" name="service" value="day-out-the-hague" id="day-out">
-                        <label for="day-out">Day Trip: The Hague & Madurodam</label>
+                    <div class="input-group align-center" id="event-form-button">
+                        <button class="button-secondary" id="form-submit-button" type="submit">Reserve a spot</button>
                     </div>
-                    <!-- Reservation Spots -->
-                    <div class="margin-top">
-                        <label for="spots">Reserving for how many people?</label>
-                        <input type="number" name="spots" id="spots" required>
-                    </div>
-                </fieldset>
-
-                <div class="align-center">
-                    <button class="button-secondary" id="form-submit-button" type="submit">Reserve a spot</button>
                 </div>
             </form>
         </section>
