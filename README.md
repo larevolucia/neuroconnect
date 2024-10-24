@@ -8,4 +8,4 @@ This site aims to create a community hub for autistic expats and their families 
 
 ## Media
 
-[Favicon by Freepik](https://www.freepik.com/icon/puzzle_7114976)
+[Favicon by Freepik](https://www.freepik.com/icon/infinite_8438654)
