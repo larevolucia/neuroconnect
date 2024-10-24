@@ -241,8 +241,8 @@ nav a:hover {
     center center/cover;
 }
 #services-hero {
-  background: url("../images/pexels-jorgeural-9129566.webp") no-repeat
-    center center/cover;
+  background: url("../images/pexels-jorgeural-9129566.webp") no-repeat center
+    center/cover;
 }
 #events-hero {
   background: url("../images/pexels-rdne-7551752.webp") no-repeat center
@@ -418,7 +418,6 @@ nav a:hover {
 .flip-card-front {
   z-index: 1; /*hides the back side of the card*/
   border: 1px solid var(--primary-normal);
-  
 }
 .flip-card-back {
   border: 1px solid var(--secondary-normal);
@@ -432,8 +431,7 @@ nav a:hover {
   width: 100%;
   border-radius: 6px;
   backface-visibility: hidden;
-  box-sizing: border-box; 
-  
+  box-sizing: border-box;
 }
 
 .flip-label {
@@ -455,8 +453,8 @@ nav a:hover {
 /* Position label icon on the bottom right */
 .flip-card label {
   position: absolute;
-  bottom: 10px; 
-  right: 10px;  
+  bottom: 10px;
+  right: 10px;
 }
 .flip-card label:hover {
   cursor: pointer;
@@ -536,14 +534,10 @@ a .button-secondary:active {
 
 /*Forms General styling*/
 
-.form-heading {
-  color: var(--secondary-normal);
-}
-
 form {
   padding: 10px 10px 40px 10px;
   margin: 0 auto;
-  width: 90%;
+  max-width: 900px;
   background-color: #eaf6ea;
   border-radius: 5px;
 }
@@ -551,16 +545,9 @@ form {
 input,
 textarea {
   margin: 6px 0;
-  padding: 0.35rem 0.75rem;
-  background-clip: padding-box;
+  padding: 0.75rem 0.75rem;
   border: 1px solid #ced4da;
   border-radius: 4px;
-  transition: all 0.15s ease-in-out;
-}
-
-input div,
-textarea {
-  display: block;
 }
 
 textarea {
@@ -568,13 +555,31 @@ textarea {
   width: 100%;
 }
 
-fieldset {
-  padding: 16px;
-  border: none;
-}
-
 legend {
   font-weight: 600;
+  padding-bottom: 8px;
+}
+
+label,
+legend {
+  font-size: 0.9rem;
+}
+.form-container {
+  padding: 0 10px;
+  margin: 0 3%;
+}
+
+.form-heading {
+  color: var(--secondary-normal);
+}
+
+.input-group > label,
+.input-group > input,
+textarea {
+  display: block;
+}
+.input-group {
+  margin-top: 15px;
 }
 
 /* Form input feedback */
@@ -588,12 +593,10 @@ textarea:focus {
 
 input:user-invalid {
   border-color: rgb(225, 88, 101);
-  box-shadow: 0 0 0 0.2rem rgba(225, 88, 101, 0.25);
 }
 
 input:user-valid {
   border-color: var(--secondary-light);
-  box-shadow: 0 0 0 0.2rem rgba(129, 199, 132, 0.25);
 }
 
 /*Success page*/
@@ -713,6 +716,29 @@ footer ul {
     margin: auto 0;
   }
 
+  /*forms*/
+
+  #service-form-container .form-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #service-form-selection-group,
+  #message-service-form-group,
+  #service-form-contact-method,
+  #service-form-button {
+    grid-column: span 3;
+  }
+
+  #message-service-form-group {
+    margin-right: 20px;
+  }
+
+  #service-form-button {
+    text-align: center;
+  }
+
   /*footer*/
   footer {
     padding: 3rem;
@@ -767,15 +793,29 @@ footer ul {
     flex-basis: 45%;
     margin: 15px auto;
   }
-    .maps-container iframe {
-      height: 138px;
-    }
-    
-    .flip-card {
-      width: 345px;
-      height: 368px;
-    }
+  .maps-container iframe {
+    height: 138px;
+  }
+
+  .flip-card {
+    width: 345px;
+    height: 368px;
+  }
+
+  /*forms*/
+  #service-form-container .form-container {
+    gap: 20px;
+  }
+ 
+  #service-form-selection-group, #message-service-form-group,  #service-form-contact-method {
+    grid-column: span 1;
+  }
   
+
+  #service-form-button {
+    grid-column: span 3;
+  }
+
 
   /*footer*/
   footer .grid-container {
@@ -799,11 +839,15 @@ footer ul {
     min-height: auto;
   }
 
-
   /* equal space for sections*/
   .flex-container #free-guidance,
   .flex-container #support-groups {
     flex-basis: 48%; /* Each section takes almost half the width */
   }
-}
 
+  /*form*/
+  #service-form-container .form-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+  }
+}
