@@ -53,8 +53,9 @@ The colors selected for the site were chosen based on research done with autisti
 
 <details>
   <summary>Color Palette</summary>
-![image](https://github.com/user-attachments/assets/34c8d774-5cb1-4708-a237-c90b31f3326c)
+<img width="783" alt="image" src="https://github.com/user-attachments/assets/34c8d774-5cb1-4708-a237-c90b31f3326c">
 </details>
+
 
 ### Fonts
 
