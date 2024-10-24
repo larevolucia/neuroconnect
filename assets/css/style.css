@@ -25,13 +25,13 @@ body {
   font-size: 1rem;
   font-family: var(--primary-font);
   color: var(--text-color);
-  line-height: 1.5; /*adjust line spacing to 1.5 for better readibility*/
-  letter-spacing: 0.1em; /* Added spacing between characters to improve reading for people with dyslexia*/
+  line-height: 1.5; 
+  letter-spacing: 0.1em; 
 }
 
 h1,
 h2 {
-  letter-spacing: 0.2em; /* Adjusts spacing between characters for better readibility*/
+  letter-spacing: 0.2em; 
   text-align: center;
   color: var(--primary-normal);
 }
@@ -52,7 +52,6 @@ section {
 main {
   padding-top: 60px;
   margin: 0 8%;
-  /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
 }
 
@@ -135,7 +134,7 @@ nav {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Aligns logo and menu in the center */
+  align-items: center; 
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -223,7 +222,6 @@ nav a:hover {
 /* Hero Cover */
 
 .hero-image {
-  /* Add padding at the top to prevent content from being covered by the navbar */
   padding-top: 47px;
   height: 600px;
   width: 100%;
@@ -249,7 +247,7 @@ nav a:hover {
   width: 70%;
   min-height: 160px;
   margin-right: 15px;
-  padding: 15px; /*Adjusts padding to avoid content overflow*/
+  padding: 15px;
   box-sizing: border-box; /* Ensures padding is included in width calculations */
   color: #ffffff;
   background-color: rgba(5, 82, 118, 0.9);
@@ -379,7 +377,7 @@ nav a:hover {
 .button-secondary,
 a .button,
 a .button-secondary {
-  display: inline-block; /* enables the transform to work on anchors as well as buttons*/
+  display: inline-block; 
   padding: 10px 18px;
   border-radius: 28px;
   transition: all 100ms ease-in-out;
@@ -626,7 +624,7 @@ footer ul {
   #events-summary-image {
     order: 1;
     flex-basis: 48%;
-    width: 48%; /*ensures that images takes only half screen*/
+    width: 48%; 
   }
   #services-summary-body,
   #events-summary-body {
@@ -717,7 +715,7 @@ footer ul {
   /* equal space for sections*/
   .flex-container #services-summary,
   .flex-container #events-summary {
-    flex-basis: 48%; /* Each section takes almost half the width */
+    flex-basis: 48%; 
   }
   /* home content cards */
   .flex-container #services-summary-card,
@@ -801,7 +799,7 @@ footer ul {
   /* equal space for sections*/
   .flex-container #free-guidance-services,
   .flex-container #support-groups {
-    flex-basis: 48%; /* Each section takes almost half the width */
+    flex-basis: 48%; 
   }
 
   /*form*/
