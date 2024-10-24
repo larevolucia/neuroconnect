@@ -90,7 +90,9 @@ TBD
 
 ## Testing
 
-TBD
+### Bugs
+
+- Label click was not selecting corresponding radio button option. Using the W3 check I found that it was due to duplication of ids on content cards and radio buttons. I renamed the content cards id's to be able to fix it. More on [issue #21](https://github.com/larevolucia/neuroconnect/issues/21#issue-2612109157)
 
 ## Technologies Used
 
