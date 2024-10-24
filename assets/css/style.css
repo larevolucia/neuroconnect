@@ -46,13 +46,6 @@ h2 {
   font-size: 1.5rem;
 }
 
-h3 {
-  font-family: var(--secondary-font);
-  color: var(--secondary-normal);
-  font-family: 1.2rem;
-  margin: 15px 0;
-}
-
 section {
   margin-top: 0px;
 }
@@ -806,7 +799,7 @@ footer ul {
   }
 
   /* equal space for sections*/
-  .flex-container #free-guidance,
+  .flex-container #free-guidance-services,
   .flex-container #support-groups {
     flex-basis: 48%; /* Each section takes almost half the width */
   }
