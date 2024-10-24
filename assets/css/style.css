@@ -292,8 +292,12 @@ nav a:hover {
   text-align: center;
 }
 
-.card-padding {
-  padding: 0 25px;
+.card-side-padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.card-top-padding {
+  padding-top: 25px;
 }
 
 .card-border {
@@ -393,7 +397,7 @@ nav a:hover {
   position: relative;
   margin: 0 auto;
   transform-style: preserve-3d;
-  transition: transform 3s ease;
+  transition: transform 1s ease;
 }
 
 /*hides checkbox*/
@@ -434,13 +438,8 @@ nav a:hover {
   box-sizing: border-box;
 }
 
-.flip-label {
-  border-radius: 50%;
-  font-size: 1.1rem;
-  padding: 4px;
-}
 
-.flip-card-front > label > i {
+/* .flip-card-front > label > i {
   border: 2px solid var(--primary-normal);
   color: var(--primary-normal);
 }
@@ -448,7 +447,7 @@ nav a:hover {
 .flip-card-back > label > i {
   border: 2px solid var(--secondary-normal);
   color: var(--secondary-normal);
-}
+} */
 
 /* Position label icon on the bottom right */
 .flip-card label {
@@ -460,7 +459,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-.flip-card-front > label:hover > i {
+/* .flip-card-front > label:hover > i {
   border: 2px solid var(--primary-darker);
   color: var(--primary-darker);
   background-color: var(--primary-light);
@@ -470,14 +469,14 @@ nav a:hover {
   border: 2px solid var(--seconday-darker);
   color: var(--secondary-darker);
   background-color: var(--secondary-light);
-}
+} */
 
 /*buttons*/
 
 .button,
 .button-secondary,
 a .button,
-a .button-secondary {
+a .button-secondary, .flip-label {
   display: inline-block; /* enables the transform to work on anchors as well as buttons*/
   padding: 10px 18px;
   border-radius: 28px;
@@ -501,12 +500,12 @@ a .button-secondary:active {
   box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.button {
+.button, .flip-card-front > label > i  {
   background-color: var(--primary-normal);
 }
 
 .button:hover,
-.button:focus {
+.button:focus, .flip-card-front > label:hover > i, .flip-card-front > label:focus > i {
   background-color: var(--primary-light);
   color: #000000;
   text-decoration: none;
@@ -517,12 +516,12 @@ a .button-secondary:active {
   color: #ffffff;
 }
 
-.button-secondary {
+.button-secondary, .flip-card-back > label > i  {
   background-color: var(--secondary-normal);
 }
 
 .button-secondary:hover,
-.button-secondary:focus {
+.button-secondary:focus, .flip-card-back > label:hover > i, .flip-card-back > label:focus > i {
   background-color: var(--secondary-light);
   color: #000000;
 }
@@ -532,14 +531,23 @@ a .button-secondary:active {
   color: #ffffff;
 }
 
+.flip-label {
+  border-radius: 50%;
+  font-size: 1.1rem;
+  padding: 15px;
+}
+
 /*Forms General styling*/
 
 form {
   padding: 10px 10px 40px 10px;
   margin: 0 auto;
   max-width: 900px;
-  background-color: #eaf6ea;
   border-radius: 5px;
+  background-color: #eaf6ea;
+}
+#events-form-container {
+  padding-top: 60px;
 }
 
 input,
@@ -591,7 +599,13 @@ input[type="tel"] {
 input[type="number"] {
   width: 65px;
 }
+ form button {
+  margin-top: 20px;
+ }
 
+ .join-us {
+  text-align: center;
+ }
 /* Form input feedback */
 
 input:focus,
@@ -602,12 +616,13 @@ textarea:focus {
 }
 
 input:user-invalid {
-  border-color: rgb(225, 88, 101);
+  border: 2px solid rgb(225, 88, 101);
 }
 
 input:user-valid {
-  border-color: var(--secondary-light);
+  border: 2px solid var(--secondary-light);
 }
+
 /*style for disabled option*/
 input:disabled + label,
 textarea:disabled + label,
@@ -737,7 +752,10 @@ footer ul {
   .card-icon {
     margin: auto 0;
   }
-
+/*events*/
+#upcoming-events {
+  grid-template-columns: 1fr 1fr;
+}
   /*forms*/
 
   #service-form-container .form-container {
@@ -865,7 +883,9 @@ footer ul {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: span 3;
   }
-
+  .join-us {
+    display: none;
+   }
 
   /*footer*/
   footer .grid-container {
