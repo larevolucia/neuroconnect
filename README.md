@@ -69,17 +69,17 @@ For additional information check [Design Research](https://github.com/larevoluci
 
 <details>
   <summary>Home</summary>
-  ![Home_final](https://github.com/user-attachments/assets/6f67b120-dfc1-44f1-ad89-fe88870f80a5)
+<img width="783" alt="image" src="https://github.com/user-attachments/assets/6f67b120-dfc1-44f1-ad89-fe88870f80a5">
 
 </details>
 <details>
   <summary>Services</summary>
-  ![Services_final](https://github.com/user-attachments/assets/724006ef-d82a-4765-bf6b-4734d58f33b3)
+<img width="783" alt="image" src="https://github.com/user-attachments/assets/724006ef-d82a-4765-bf6b-4734d58f33b3">
 
 </details>
 <details>
   <summary>Events</summary>
-  ![Events_final](https://github.com/user-attachments/assets/1bbc0616-cecc-4411-8591-6ad47bce59a2)
+<img width="783" alt="image" src="https://github.com/user-attachments/assets/1bbc0616-cecc-4411-8591-6ad47bce59a2">
 
 </details>
 
