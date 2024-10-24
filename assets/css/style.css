@@ -551,8 +551,8 @@ textarea {
 }
 
 textarea {
-  height: 100px;
   width: 100%;
+  height: 100px;
 }
 
 legend {
@@ -582,6 +582,16 @@ textarea {
   margin-top: 15px;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 90%;
+}
+
+input[type="number"] {
+  width: 65px;
+}
+
 /* Form input feedback */
 
 input:focus,
@@ -603,12 +613,12 @@ input:disabled + label,
 textarea:disabled + label,
 select:disabled + label {
   opacity: 0.6;
-  cursor:not-allowed;
+  cursor: not-allowed;
 }
 input:disabled,
 textarea:disabled,
-select:disabled  {
-  cursor:not-allowed;
+select:disabled {
+  cursor: not-allowed;
 }
 
 /*Success page*/
@@ -747,8 +757,20 @@ footer ul {
     margin-right: 20px;
   }
 
-  #service-form-button {
-    text-align: center;
+  #service-form-button,
+  #event-form-button, #event-form-spots-group {
+    margin: 0 auto;
+  }
+
+  #reserve-event-form .form-container {
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #event-form-spots-group, #event-form-button {
+    grid-column: span 2;
   }
 
   /*footer*/
@@ -818,13 +840,29 @@ footer ul {
   #service-form-container .form-container {
     gap: 20px;
   }
- 
-  #service-form-selection-group, #message-service-form-group,  #service-form-contact-method {
+
+  #service-form-selection-group,
+  #message-service-form-group,
+  #service-form-contact-method {
     grid-column: span 1;
   }
-  
 
   #service-form-button {
+    grid-column: span 3;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    max-width: 280px;
+  }
+
+  #events-form-container .form-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  #events-form-personal-details {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column: span 3;
   }
 
@@ -862,4 +900,5 @@ footer ul {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
   }
+
 }

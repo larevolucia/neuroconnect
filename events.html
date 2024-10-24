@@ -145,10 +145,10 @@
             </div>
         </section>
         <section id="events-form-container" class="margin-top">
-            <form id="events-form" method="GET" action="success-events.html">
+            <form id="reserve-event-form" method="GET" action="success-events.html">
                 <h2 class="form-heading">Join our events</h2>
                 <div class="form-container">
-                    <div id="form-personal-details">
+                    <div id="events-form-personal-details" class="grid-container">
                         <!-- Full Name -->
                         <div class="input-group" if="event-form-name-group">
                             <label for="full-name">Full Name</label>
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                     <!-- Select Event-->
-                    <div class="input-group" id="event-form-selection-group">
+                    <div class="input-group grid-container" id="event-form-selection-group">
                         <legend>Select an event:</legend>
                         <div>
                             <input type="radio" name="service" value="book-club-december" id="book-club" required>
@@ -190,14 +190,14 @@
                             <input type="radio" name="service" value="day-out-the-hague" id="day-out">
                             <label for="day-out">City Trip: The Hague & Madurodam</label>
                         </div>
-                        <!-- Reservation Spots -->
-                        <div class="input-group" id="event-form-spots-group">
-                            <label for="spots">Reserving for how many people?</label>
-                            <input type="number" name="spots" id="spots" required>
-                        </div>
+                    </div>
+                    <!-- Reservation Spots -->
+                    <div class="input-group" id="event-form-spots-group">
+                        <label for="spots">Reserving for how many people?</label>
+                        <input type="number" name="spots" id="spots" min="1" max="10" required>
                     </div>
                     <div class="input-group align-center" id="event-form-button">
-                        <button class="button-secondary" id="form-submit-button" type="submit">Reserve a spot</button>
+                        <button class="button-secondary" id="form-submit-button" type="submit">Reserve spot</button>
                     </div>
                 </div>
             </form>
