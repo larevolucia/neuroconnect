@@ -19,7 +19,8 @@
         <!--Accessibility: Skip to main content-->
         <a href="#services-main-content" class="skip-link">Skip to content</a>
         <a href="index.html">
-            <img class="logo-image" src="assets/images/icon_navbar.webp" alt="NeuroConnect logo" width="32" height="32">
+            <img loading="lazy" class="logo-image" src="assets/images/icon_navbar.webp" alt="NeuroConnect logo"
+                width="32" height="32">
             <span class="logo-name">NeuroConnect</span>
         </a>
         <input type="checkbox" name="nav-toggle" id="nav-toggle">
@@ -100,24 +101,23 @@
             <form id="request-service-form" method="GET" action="success-services.html">
                 <h2 class="form-heading">Get in Touch</h2>
                 <div class="form-container">
-                        <!-- Full Name -->
-                        <div class="input-group" id="name-service-form-group">
-                            <label for="full-name">Full Name</label>
-                            <input type="text" name="full-name" id="full-name" required>
-                        </div>
+                    <!-- Full Name -->
+                    <div class="input-group" id="name-service-form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="full-name" id="full-name" required>
+                    </div>
 
-                        <!-- Phone Number -->
-                        <div class="input-group" id="phone-service-form-group">
-                            <label for="phone-number">Phone Number</label>
-                            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{10}"
-                                 required>
-                        </div>
+                    <!-- Phone Number -->
+                    <div class="input-group" id="phone-service-form-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{10}" required>
+                    </div>
 
-                        <!-- Email -->
-                        <div class="input-group" id="email-service-form-group">
-                            <label for="email-address">E-mail</label>
-                            <input type="email" name="email-address" id="email-address" required>
-                        </div>
+                    <!-- Email -->
+                    <div class="input-group" id="email-service-form-group">
+                        <label for="email-address">E-mail</label>
+                        <input type="email" name="email-address" id="email-address" required>
+                    </div>
 
                     <!-- Select Service-->
                     <div class="input-group" id="service-form-selection-group">
@@ -142,11 +142,11 @@
                             <label for="support-group-adults">Adult Support Group</label>
                         </div>
                     </div>
-                        <!-- Message -->
-                        <div class="input-group" id="message-service-form-group">
-                            <label for="message-area">Message <small>(optional)</small></label>
-                            <textarea name="message-area" id="message-area"></textarea>
-                        </div>
+                    <!-- Message -->
+                    <div class="input-group" id="message-service-form-group">
+                        <label for="message-area">Message <small>(optional)</small></label>
+                        <textarea name="message-area" id="message-area"></textarea>
+                    </div>
 
 
                     <!-- Preferred Contact Method -->
