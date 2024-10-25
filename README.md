@@ -65,6 +65,13 @@ Both fonts are imported via [Google Fonts](https://fonts.google.com/)
 
 For additional information check [Design Research](https://github.com/larevolucia/neuroconnect/issues/3#issue-2571162628)
 
+### Buttons States
+
+TBD
+
+### Anchor States
+
+TBD
 
 ## Wireframes
 
@@ -86,13 +93,117 @@ For additional information check [Design Research](https://github.com/larevoluci
 
 ## Features
 
-TBD
+### Navigation
+
+- Fully responsive navigation bar with design optimitization is achieve by the use of media queries. 
+- Small screens use a left side logo and a right side menu icon to optimize space. 
+- Click behavior on menu icon on smaller screen are achieve by using a checkbox input that is set to hidden. The icon is set as checkbox label. 
+- Larger screens display site's name along with logo and display site's section horizontally. Menu icon is hidden using media queries.
+- Distinctive color is used to indicate active page. Softer color is used to indicate cursor hover.
+- Fixed navigation was achieven using position:sticky together with left and top attributes to set its position on screen.
+- It was decided not to nest ```<nav>``` element in the ```<header>```, due to [accessibility recommendations](https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-nav-6cp).
+
+Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main/3.6-making-the-header-responsive)
+
+
+### Skip to Main Content
+
+- A link to skip to the main content was included to facilitate navigation using keyboard. 
+- Link has fixed position with negative top value, making it hidden for users. Link becomes visible if user press tab on page first load due to change on fixed position using :focus pseudo class.
+
+Inspiration: [BBC](https://www.bbc.com/) / [a11y-collective](https://www.a11y-collective.com/blog/skip-to-main-content/)
+
+### Header 
+
+- All pages follow the same ```<header>``` structure for design consistency necessary to reduce cognitive load when navigating in a new site.
+- Hero banner uses ```background-image``` property to populate the HTML with it's content using distinctive ids.
+- Overlay text is positioned near the bottom right corner of the image using ```position: absolute```. A semi-transparent ```background-color``` is applied to the text container to ensure readability.   
+
+Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main/3.6-making-the-header-responsive)
+
+### Page Summary
+
+- All pages have a summary positioned as the first ```<section>``` in the ```<main>``` element.
+- ```<h2>``` titles were added as hidden to comply with SEO best practices. They were made visible to reduce noise on pages.
+
+### Pages Summary
+
+- To ensure that user would get all the essential information in the home, it was included an area with a summary of Services and Events pages.
+- Responsive design was achieved using ```display: flex``` applied to content cards. 
+- Anchor links styled as buttons redirect user to the specific pages within the website.
+
+### Services 
+
+- More in-depth information about the services is provided in ```<main>``` element of the Services pages.
+- Responsive design was achieved using ```display: flex``` applied to content cards. 
+- As the page is more text heavy, it was decided to use [Fontawesome](https://fontawesome.com/) icons as visual conterparts to reduce visual stimuli on page.
+- Unordered list was used to list services in each category with ```<strong>``` markers highlighting the main content.
+
+### Get in Touch Form
+
+- Form with responsive design was included as an interactive element which enables user to request one of the listed services.
+- Responsive design was achieve using ```display:grid``` on form's container.
+- Form fields includes: 
+  - Full Name ```<input type="text">```
+  - Phone Number ```<input type="tel">```
+  - Service options ```<input type="radio">```
+  - Message ```<textarea>```
+  - Method of contact ```<input type="radio">```
+- All fields, except the message is marked as ```required```.
+- Pattern was included in phone number field using regular expression. 
+- Style was applied to visually indicate field validation status to user using the pseudo-classes ```:user-valid``` and ```:user-invalid```.
+- Style for field ```:focus``` was modified using a ```border-color``` and ```box-shadow```.
+
+Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/components/card/) / [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/form-control/)
+
+### Events 
+
+- Summary of the events is displayed as content cards on Events page. 
+- Responsive design is achieve by using ```display: flex```
+- Content card contains:
+  - One landscape image to visually communicate the event's activity
+  - Overlay box using ```position: absolute``` and semi-transparent ```background-color``` providing events' date and location 
+  - Event title
+  - Short summary of the event
+  - Button to sign-up for event (small/medium screens only)
+- Content cards suffered redesign through out the development process due to negative feedback received by target audience. Process is documented in [issue #19](https://github.com/larevolucia/neuroconnect/issues/19#issue-2608656036)
+
+
+### Join Event Form
+
+- Form responsive design was achieve using ```display:grid```
+- Validation styles used for **Get in Touch Form** were also used in this form
+- Form fields includes: 
+  - Full Name ```<input type="text">```
+  - Phone Number ```<input type="tel">```
+  - Events options ```<input type="radio">```
+  - Spots to reserve ```<input type="number">```
+- All field are marked as ```required```.
+- Field destinated for the amount of spots to reserve had additional ```min``` and ```max``` values to ensure that user reserves for at least 1 spot and not more than 10.
+- One of the events radio buttons is marked as ```disabled``` to indicate that is already fully booked.
+- Form submission leads to a success page with message and anchor link styled as button to redirect user back to main page. 
+- An attempt to provide the feedback on the same page was made using javascript on commit 3839167. Attempt is document in [issue #9](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684)
+
+
+Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/boardwalk-games-v1-sourcecode/tree/main)
+
+### Footer
+
+- Footer includes address, contact e-mail, site map and social media links.
+- Responsive design of ```<footer>``` is achieve by using ```display: grid```
+- Contact e-mail link uses ```mailto:``` to open e-mail server with empty draft
+
 
 ## Testing
 
 ### Bugs
 
+All issues are documented in this [Project View](https://github.com/users/larevolucia/projects/3/views/4)
+
+- Jigsaw CSS validator error: unkown pseudo-class :user-valid More on [issue #20](https://github.com/larevolucia/neuroconnect/issues/20#issue-2611899383)
 - Label click was not selecting corresponding radio button option. Using the W3 check I found that it was due to duplication of ids on content cards and radio buttons. I renamed the content cards id's to be able to fix it. More on [issue #21](https://github.com/larevolucia/neuroconnect/issues/21#issue-2612109157)
+- Home button alignment on large screens [issue #22](https://github.com/larevolucia/neuroconnect/issues/22#issue-2614516551)
+
 
 ## Technologies Used
 
@@ -113,6 +224,8 @@ This project was deployed using GitHub pages. Steps to deploy are as follow:
 
 ## Credits
 
+TBD
+
 ### Icons
 - Favicon design by [Freepik](https://www.freepik.com/icon/infinite_8438654) and converted using [favicon.io](https://favicon.io/)
 - Social media icons, burger menu and icons used on Service Page are from [FontAwesome](https://fontawesome.com/)
@@ -120,11 +233,21 @@ This project was deployed using GitHub pages. Steps to deploy are as follow:
 ### Photos
 All photos on site are from [Pexels](https://www.pexels.com/)
 
-*Home*
-- ..
-*Services*
-- ..
-*Events*
-- ..
+**Home**
+- TBD
+**Services**
+- TBD
+**Events**
+- TBD
 
 ## Resources Used
+
+- [Mozilla](https://developer.mozilla.org/en-US/)
+- [w3.org](https://www.w3.org/)
+- [Dev.to](https://dev.to/)
+- [StackOverflow](stackoverflow.com)
+- [a11y-collective](https://www.a11y-collective.com/blog/skip-to-main-content/)
+- ChatGPT to assist with creation of content
+- [Tinypng](https://tinypng.com/) to optmize the images
+- [Responsinator](http://www.responsinator.com/) to test responsiveness
+
