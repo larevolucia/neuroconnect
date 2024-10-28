@@ -224,8 +224,6 @@ This project was deployed using GitHub pages. Steps to deploy are as follow:
 
 ## Credits
 
-TBD
-
 ### Icons
 - Favicon design by [Freepik](https://www.freepik.com/icon/infinite_8438654) and converted using [favicon.io](https://favicon.io/)
 - Social media icons, burger menu and icons used on Service Page are from [FontAwesome](https://fontawesome.com/)
@@ -247,7 +245,7 @@ All photos on site are from [Pexels](https://www.pexels.com/)
 - [Dev.to](https://dev.to/)
 - [StackOverflow](stackoverflow.com)
 - [a11y-collective](https://www.a11y-collective.com/blog/skip-to-main-content/)
-- ChatGPT to assist with creation of content
 - [Tinypng](https://tinypng.com/) to optmize the images
 - [Responsinator](http://www.responsinator.com/) to test responsiveness
+- ChatGPT to assist with creation of content
 
