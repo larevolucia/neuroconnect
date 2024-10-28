@@ -22,7 +22,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: large; 
   font-family: var(--primary-font);
   color: var(--text-color);
   line-height: 1.5; 
@@ -510,14 +510,6 @@ textarea:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-input:user-invalid {
-  border: 2px solid rgb(225, 88, 101);
-}
-
-input:user-valid {
-  border: 2px solid var(--secondary-light);
-}
-
 /*style for disabled option*/
 input:disabled + label,
 textarea:disabled + label,
@@ -530,8 +522,6 @@ textarea:disabled,
 select:disabled {
   cursor: not-allowed;
 }
-
-
 
 
 /*Success page*/
