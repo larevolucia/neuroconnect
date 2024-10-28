@@ -370,6 +370,51 @@ nav a:hover {
 .card-subheading {
   color: var(--primary-normal);
 }
+/*services unordered lists*/
+.services-list {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.services-list li {
+  margin-top: 1.5rem;
+}
+/* collapsible descriptions */
+
+.toggle-description {
+  display: none;
+}
+
+.collapsible-description {
+  display: none;
+}
+
+/* Show the description */
+.toggle-description:checked + .toggle-label + .collapsible-description {
+  display: block;
+}
+
+
+/* toggle labels */
+
+.toggle-label::before {
+  content: "\2b"; /* Font Awesome "plus" icon */
+  font-weight: 900;
+  /* font-family: "FontAwesome 6 Free"; */
+  font-family: "FontAwesome";
+  font-size: larger;
+  color: var(--primary-normal);
+}
+.toggle-label:hover {
+  color: var(--secondary-normal);
+
+}
+
+.toggle-description:checked + .toggle-label::before {
+  font-weight: 900;
+  content: "\f068";
+}
+
 
 /*buttons*/
 
@@ -644,6 +689,7 @@ footer ul {
 #upcoming-events {
   grid-template-columns: 1fr 1fr;
 }
+
   /*forms*/
 
   #service-form-container .form-container {
