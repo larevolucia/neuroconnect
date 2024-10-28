@@ -786,7 +786,7 @@ footer ul {
 
   /*card*/
   .card-text {
-    min-height: auto;
+    min-height: 207px;
   }
 
   /* equal space for sections*/
