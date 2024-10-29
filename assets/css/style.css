@@ -371,19 +371,11 @@ nav a:hover {
   color: var(--primary-normal);
 }
 /*service page*/
-.services-heading-grid {
-  grid-template-columns: 2fr 5fr; 
-  align-items: center;
-  color:var(--primary-normal);
-  padding: 0 1.5rem;
-  gap:20px;
+
+#free-guidance-services h2 i, #support-groups h2 i {
+  margin-left: 1rem;
 }
-.services-heading-grid i {
-  justify-self: end;
-}
-.services-heading-grid h2 {
-  justify-self: start;
-}
+
 .services-description {
   padding: 0 1rem;
   text-align: center;
@@ -628,6 +620,10 @@ footer .grid-container {
 footer a {
   color: var(--primary-light);
 }
+footer a:active {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
 
 footer a:hover,
 footer a:focus {
@@ -805,6 +801,7 @@ footer ul {
     margin: 15px auto;
   }
   /*services*/
+
 .collapsible-container  {
   width: 80%;
 }
