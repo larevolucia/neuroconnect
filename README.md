@@ -67,11 +67,14 @@ For additional information check [Design Research](https://github.com/larevoluci
 
 ### Buttons States
 
-TBD
+<img width="489" alt="image" src="https://github.com/user-attachments/assets/cc6cfacb-e7ff-4193-9751-919f92b84a05">
 
 ### Anchor States
 
-TBD
+<img width="283" alt="image" src="https://github.com/user-attachments/assets/70dbfe17-9c03-4c28-94d7-754f6b7c3062">
+
+<img width="257" alt="image" src="https://github.com/user-attachments/assets/1ca1af53-8644-47e7-9ea8-f657490224ea">
+
 
 ## Wireframes
 
@@ -103,6 +106,8 @@ TBD
 - Fixed navigation was achieven using position:sticky together with left and top attributes to set its position on screen.
 - It was decided not to nest ```<nav>``` element in the ```<header>```, due to [accessibility recommendations](https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-nav-6cp).
 
+![navigation](https://github.com/user-attachments/assets/c1be2633-87ef-4696-81ed-0084fd3d43da)
+
 Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main/3.6-making-the-header-responsive)
 
 
@@ -110,6 +115,9 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 
 - A link to skip to the main content was included to facilitate navigation using keyboard. 
 - Link has fixed position with negative top value, making it hidden for users. Link becomes visible if user press tab on page first load due to change on fixed position using :focus pseudo class.
+
+  ![accessibility-skip-content](https://github.com/user-attachments/assets/bc66199c-8c93-4226-a250-a24725435fd4)
+
 
 Inspiration: [BBC](https://www.bbc.com/) / [a11y-collective](https://www.a11y-collective.com/blog/skip-to-main-content/)
 
@@ -125,8 +133,9 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 
 - All pages have a summary positioned as the first ```<section>``` in the ```<main>``` element.
 - ```<h2>``` titles were added as hidden to comply with SEO best practices. They were made visible to reduce noise on pages.
+- 
 
-### Pages Summary
+### Summary of Services and Events
 
 - To ensure that user would get all the essential information in the home, it was included an area with a summary of Services and Events pages.
 - Responsive design was achieved using ```display: flex``` applied to content cards. 
@@ -135,9 +144,13 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 ### Services 
 
 - More in-depth information about the services is provided in ```<main>``` element of the Services pages.
-- Responsive design was achieved using ```display: flex``` applied to content cards. 
+- Responsive design was achieved using ```display: flex``` applied to ```<main>```. 
 - As the page is more text heavy, it was decided to use [Fontawesome](https://fontawesome.com/) icons as visual conterparts to reduce visual stimuli on page.
-- Unordered list was used to list services in each category with ```<strong>``` markers highlighting the main content.
+- Feedback of initial design was still deemed text-heavy, so a new design with a collapsible element was implemented on commit 5d11e3a. More on [issue #25](https://github.com/larevolucia/neuroconnect/issues/25#issue-2619050363)
+
+![collapsible-items](https://github.com/user-attachments/assets/2e30ac0b-1a90-486b-8a8c-6363eb30ce38)
+
+Inspiration: [SVB.nl](https://www.svb.nl/nl/algemeen/over-onze-website) / [Digitalocean](https://www.digitalocean.com/community/tutorials/css-collapsible) / [Stackoverflow](https://stackoverflow.com/questions/14736496/use-font-awesome-icons-in-css) 
 
 ### Get in Touch Form
 
