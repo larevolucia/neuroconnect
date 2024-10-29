@@ -83,6 +83,8 @@ TBD
 <details>
   <summary>Services</summary>
 <img width="783" alt="image" src="https://github.com/user-attachments/assets/724006ef-d82a-4765-bf6b-4734d58f33b3">
+![Services_new](https://github.com/user-attachments/assets/51aea832-bd1e-446b-8bcf-c1756aa25d73)
+
 
 </details>
 <details>
