@@ -710,7 +710,11 @@ footer ul {
 #upcoming-events {
   grid-template-columns: 1fr 1fr;
 }
+/*services*/
+.collapsible-container  {
 
+  width: 90%;
+}
   /*forms*/
 
   #service-form-container .form-container {
@@ -800,6 +804,10 @@ footer ul {
     flex-basis: 45%;
     margin: 15px auto;
   }
+  /*services*/
+.collapsible-container  {
+  width: 80%;
+}
 
   /*forms*/
   #service-form-container .form-container {
