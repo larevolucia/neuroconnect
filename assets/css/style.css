@@ -423,6 +423,7 @@ nav a:hover {
 .toggle-label {
   margin-right: 0.5rem; 
   cursor: pointer;
+  font-size: large;
 }
 
 .toggle-label::before {
@@ -430,14 +431,9 @@ nav a:hover {
   font-weight: 900;
   /* font-family: "FontAwesome 6 Free"; */
   font-family: "FontAwesome";
-  font-size: larger;
   color: var(--primary-normal);
 }
 
-.toggle-label:hover {
-  color: var(--secondary-normal);
-
-}
 
 .toggle-description:checked + .toggle-label::before {
   content: "\f068";
