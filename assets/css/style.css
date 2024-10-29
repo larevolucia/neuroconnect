@@ -513,6 +513,11 @@ form {
 #events-form-container {
   padding-top: 60px;
 }
+fieldset{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 
 input,
 textarea {
