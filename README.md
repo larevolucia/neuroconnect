@@ -32,7 +32,7 @@ Live Link to access site [here](https://larevolucia.github.io/neuroconnect/)
 - [As a potential member, I want to be able to easily understand which services are provided, so I can decide which service is the best for my individual needs.](https://github.com/larevolucia/neuroconnect/issues/6#issue-2572505207)
 - [As a potential member, I want to know how to get in contact with them, so I can request additional information or request their services.](https://github.com/larevolucia/neuroconnect/issues/8#issue-2572575084)
 
-### Returning Visitor
+### Community Member 
 
 - [As community member, I would like to learn about events in the autistic community so I can find a safe space and create a social network that understands me.](https://github.com/larevolucia/neuroconnect/issues/7#issue-2572530226)
 - [As a community member, I want to know how can I participate on activities, so I can build a social network and feel part of a community.](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684)
@@ -82,9 +82,7 @@ TBD
 </details>
 <details>
   <summary>Services</summary>
-<img width="783" alt="image" src="https://github.com/user-attachments/assets/724006ef-d82a-4765-bf6b-4734d58f33b3">
-![Services_new](https://github.com/user-attachments/assets/51aea832-bd1e-446b-8bcf-c1756aa25d73)
-
+<img width="783" alt="image" src="https://github.com/user-attachments/assets/51aea832-bd1e-446b-8bcf-c1756aa25d73">
 
 </details>
 <details>
