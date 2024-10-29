@@ -284,11 +284,11 @@ nav a:hover {
 }
 
 .card-side-padding {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .card-top-padding {
-  padding-top: 25px;
+  padding-top: 1.5rem;
 }
 
 .card-border {
@@ -370,15 +370,45 @@ nav a:hover {
 .card-subheading {
   color: var(--primary-normal);
 }
+/*service page*/
+.services-heading-grid {
+  grid-template-columns: 2fr 5fr; 
+  align-items: center;
+  color:var(--primary-normal);
+  padding: 0 1.5rem;
+  gap:20px;
+}
+.services-heading-grid i {
+  justify-self: end;
+}
+.services-heading-grid h2 {
+  justify-self: start;
+}
+.services-description {
+  padding: 0 1rem;
+  text-align: center;
+}
+.services-description p {
+  text-align: center;
+}
+
 /*services unordered lists*/
 .services-list {
   list-style-type: none;
-  padding-left: 1.5rem;
+  padding-left: 0;
 }
 
 .services-list li {
   margin-top: 1.5rem;
+
 }
+.collapsible-container  {
+  border-bottom: 2px solid var(--primary-normal);
+  display: inline-block;
+  padding-bottom: 0.45rem;
+  width: 100%;
+}
+
 /* collapsible descriptions */
 
 .toggle-description {
@@ -387,15 +417,21 @@ nav a:hover {
 
 .collapsible-description {
   display: none;
+  margin-top: 0.8rem;
 }
 
 /* Show the description */
-.toggle-description:checked + .toggle-label + .collapsible-description {
+.collapsible-container .toggle-description:checked ~ .collapsible-description {
   display: block;
 }
 
 
 /* toggle labels */
+
+.toggle-label {
+  margin-right: 0.5rem; 
+  cursor: pointer;
+}
 
 .toggle-label::before {
   content: "\2b"; /* Font Awesome "plus" icon */
@@ -405,13 +441,13 @@ nav a:hover {
   font-size: larger;
   color: var(--primary-normal);
 }
+
 .toggle-label:hover {
   color: var(--secondary-normal);
 
 }
 
 .toggle-description:checked + .toggle-label::before {
-  font-weight: 900;
   content: "\f068";
 }
 
@@ -669,22 +705,7 @@ footer ul {
     flex-basis: 48%;
     order: 2;
   }
-  /*services content cards */
-  #free-guidance-icon,
-  #support-groups-icon {
-    order: 1;
-    flex-basis: 28%;
-    width: 28%;
-  }
 
-  #free-guidance-body,
-  #support-groups-body {
-    flex-basis: 68%;
-    order: 2;
-  }
-  .card-icon {
-    margin: auto 0;
-  }
 /*events*/
 #upcoming-events {
   grid-template-columns: 1fr 1fr;
