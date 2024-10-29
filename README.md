@@ -67,14 +67,23 @@ For additional information check [Design Research](https://github.com/larevoluci
 
 ### Buttons States
 
+<details>
+  <summary>Primary Button States</summary>
 <img width="489" alt="image" src="https://github.com/user-attachments/assets/cc6cfacb-e7ff-4193-9751-919f92b84a05">
+</details>
+
 
 ### Anchor States
 
+<details>
+  <summary>Primary Anchor States</summary>
 <img width="283" alt="image" src="https://github.com/user-attachments/assets/70dbfe17-9c03-4c28-94d7-754f6b7c3062">
+</details>
 
+<details>
+  <summary>Secondary Anchor States</summary>
 <img width="257" alt="image" src="https://github.com/user-attachments/assets/1ca1af53-8644-47e7-9ea8-f657490224ea">
-
+</details>
 
 ## Wireframes
 
@@ -148,7 +157,7 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 - As the page is more text heavy, it was decided to use [Fontawesome](https://fontawesome.com/) icons as visual conterparts to reduce visual stimuli on page.
 - Feedback of initial design was still deemed text-heavy, so a new design with a collapsible element was implemented on commit 5d11e3a. More on [issue #25](https://github.com/larevolucia/neuroconnect/issues/25#issue-2619050363)
 
-![collapsible-items](https://github.com/user-attachments/assets/2e30ac0b-1a90-486b-8a8c-6363eb30ce38)
+![collapsible-items-](https://github.com/user-attachments/assets/79fbf5d1-dfb9-4706-baf7-8cc50a312f30)
 
 Inspiration: [SVB.nl](https://www.svb.nl/nl/algemeen/over-onze-website) / [Digitalocean](https://www.digitalocean.com/community/tutorials/css-collapsible) / [Stackoverflow](https://stackoverflow.com/questions/14736496/use-font-awesome-icons-in-css) 
 
