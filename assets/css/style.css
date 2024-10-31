@@ -7,8 +7,8 @@
   --seconday-darker: #19381b;
   --secondary-normal: #337136;
   --secondary-light: #81c784;
-  --primary-font: "Lexend", sans-serif;
-  --secondary-font: "Roboto Slab", serif;
+  --primary-font: "Lexend", Arial, sans-serif;
+  --secondary-font: "Roboto Slab", Georgia, serif;
   --text-color: #4f4f4f;
 }
 
@@ -298,7 +298,7 @@ nav a:hover {
   overflow: hidden;
 }
 
-.card-image,
+.card-image, picture,
 .card-icon {
   width: 100%;
   height: auto;
@@ -346,13 +346,13 @@ nav a:hover {
   position: absolute;
   bottom: 6px;
   right: 0;
-  background-color: rgba(5, 82, 118, 0.9);
+  background-color: rgba(5, 82, 118, 0.85);
   color: white;
   padding: 5px;
   text-align: center;
   font-family: var(--primary-font);
   font-weight: bold;
-
+  font-size: small;
   width: 70%;
 }
 
@@ -706,6 +706,9 @@ footer ul {
 /*events*/
 #upcoming-events {
   grid-template-columns: 1fr 1fr;
+}
+.card-overlay{
+  font-size: larger;
 }
 /*services*/
 .collapsible-container  {
