@@ -37,6 +37,15 @@ Live Link to access site [here](https://larevolucia.github.io/neuroconnect/)
 - [As community member, I would like to learn about events in the autistic community so I can find a safe space and create a social network that understands me.](https://github.com/larevolucia/neuroconnect/issues/7#issue-2572530226)
 - [As a community member, I want to know how can I participate on activities, so I can build a social network and feel part of a community.](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684)
 
+
+### Backlog 
+
+- [FAQ page](https://github.com/larevolucia/neuroconnect/issues/15#issue-2575964343)
+- [About the team](https://github.com/larevolucia/neuroconnect/issues/11#issue-2572631278)
+- [Newsletter sign-up](https://github.com/larevolucia/neuroconnect/issues/12#issue-2572647336)
+- [Volunteer form](https://github.com/larevolucia/neuroconnect/issues/14#issue-2572676949)
+- [Testimonials](https://github.com/larevolucia/neuroconnect/issues/13#issue-2572653776)
+
 ## Design
 
 Design choices took in consideration insights from web design research done with autistic individuals. There's a minimal page structure variation and use of imagery to reduce cognitive load.
@@ -148,6 +157,7 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 
 - To ensure that user would get all the essential information in the home, it was included an area with a summary of Services and Events pages.
 - Responsive design was achieved using ```display: flex``` applied to content cards. 
+- For performance optmization, images on content cards are inside of ```picture``` element, with a ```source``` for bigger screens, another for smaller screens and a ```<img>``` as fallback.
 - Anchor links styled as buttons redirect user to the specific pages within the website.
 
 ### Services 
@@ -172,8 +182,7 @@ Inspiration: [SVB.nl](https://www.svb.nl/nl/algemeen/over-onze-website) / [Digit
   - Message ```<textarea>```
   - Method of contact ```<input type="radio">```
 - All fields, except the message is marked as ```required```.
-- Pattern was included in phone number field using regular expression. 
-- Style was applied to visually indicate field validation status to user using the pseudo-classes ```:user-valid``` and ```:user-invalid```.
+- Pattern was included in phone number field using regular expression to allow only digits. ```title``` was included to the ```input``` element, to show feedback to user about the required pattern.
 - Style for field ```:focus``` was modified using a ```border-color``` and ```box-shadow```.
 
 Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/components/card/) / [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/form-control/)
@@ -189,12 +198,13 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
   - Short summary of the event
   - Button to sign-up for event (small/medium screens only)
 - Content cards suffered redesign through out the development process due to negative feedback received by target audience. Process is documented in [issue #19](https://github.com/larevolucia/neuroconnect/issues/19#issue-2608656036)
+- For performance optmization, images on content cards are inside of ```picture``` element, with a ```source``` for bigger screens, another for smaller screens and a ```<img>``` as fallback.
 
 
 ### Join Event Form
 
 - Form responsive design was achieve using ```display:grid```
-- Validation styles used for **Get in Touch Form** were also used in this form
+- Focus style used for **Get in Touch Form** were also used in this form
 - Form fields includes: 
   - Full Name ```<input type="text">```
   - Phone Number ```<input type="tel">```
@@ -218,13 +228,56 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
 
 ## Testing
 
-### Bugs
+
+### Manual Testing [issue #18](https://github.com/larevolucia/neuroconnect/issues/18#issue-2575994140)
+
+- Tested all internal links lead to a valid page
+- Tested that all external links open in a new window
+- Checked for aria-labels in buttons
+- Checked for aria-labels in anchors
+- Tested form for required fields
+- Tested for submission leads to success page
+- Tested responsive design using Chrome DevTools, Firefox DevTools and Responsinator.
+- Tested multiple browsers: Chrome, Edge, Safari, Firefox
+- Tested multiple devices: iPhone, Android Galaxy22, Windows Desktop
+
+### Automated Testing  [issue #17](https://github.com/larevolucia/neuroconnect/issues/17#issue-2575988664)
+
+- [HTML Validator](https://validator.w3.org/nu/#textarea)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
+- [Accessibility Checker](https://www.accessibilitychecker.org/): Avg score 85%. No Critical issues. 
+- Lighthouse Score: 
+
+
+### Accessibility Testing  [issue #16](https://github.com/larevolucia/neuroconnect/issues/16#issue-2575978267)
+
+- Checked if buttons, links and labels used ```aria-labels```.
+- Check if all images had ```alt-text```.
+- Used [Contrast Checker](https://webaim.org/resources/contrastchecker/) to validate text visibility.
+- Checked the usage of Semantic elements.
+- Checked visual order follows DOM order using [WAVE](https://wave.webaim.org/) 
+- Validated [Design for Target Group #3](https://github.com/larevolucia/neuroconnect/issues/3#issue-2571162628) with autistic friends
+- Checked for errors and alerts on [WAVE](https://wave.webaim.org/) 
+
+### Peer Review and User Feedback
+
+The code was submitted for peer review in the Code Institute community and also received feedback from friends and acquaintances that match the target audience (autistic community).
+
+- Lack of user feedback on required format for phone number. Removed required on 351398a and reintroduce with added user feedback on 351398a
+- Puzzle pieces might be considered offensive. Fixed on ccd7a82.
+- Overwhelming design on Events page. Fixed on ec50ab1. More on [isue #19](https://github.com/larevolucia/neuroconnect/issues/19#issue-2608656036)
+- Text heavy design on Services page. Fixed on 5d11e3a. More on [issue #25](https://github.com/larevolucia/neuroconnect/issues/25#issue-2619050363)
+
+### Bugs & Issues
 
 All issues are documented in this [Project View](https://github.com/users/larevolucia/projects/3/views/4)
 
-- Jigsaw CSS validator error: unkown pseudo-class :user-valid More on [issue #20](https://github.com/larevolucia/neuroconnect/issues/20#issue-2611899383)
-- Label click was not selecting corresponding radio button option. Using the W3 check I found that it was due to duplication of ids on content cards and radio buttons. I renamed the content cards id's to be able to fix it. More on [issue #21](https://github.com/larevolucia/neuroconnect/issues/21#issue-2612109157)
-- Home button alignment on large screens [issue #22](https://github.com/larevolucia/neuroconnect/issues/22#issue-2614516551)
+- Jigsaw CSS validator error: unkown pseudo-class :user-valid. Although documentation on it can be found online at [W3 School](https://www.w3schools.com/cssref/sel_user-valid.php) and and [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/:user-valid), I chose to remove it and simplify the form validation experience. Documented on [issue #20](https://github.com/larevolucia/neuroconnect/issues/20#issue-2611899383)
+- Click on label was not selecting corresponding radio button option on forms. Using the W3 check I found that it was due to duplication of ids on content cards and radio buttons. I renamed the content cards id's to be able to fix it. Documented on [issue #21](https://github.com/larevolucia/neuroconnect/issues/21#issue-2612109157)
+- Code clean-up lead to home button misalignment on large screens. To fix it I added a ```min-heigh``` to the ```.card-text``` class on media query for large screens. Documented on [issue #22](https://github.com/larevolucia/neuroconnect/issues/22#issue-2614516551)
+- Initial mobile score for performance was around 75. To improve the score I converted images to webp format, set ```loading="lazy"``` and added difference sources depending on screen size using ```<picture>``` + ```<source>```. Documented on [issue #24](https://github.com/larevolucia/neuroconnect/issues/24#issue-2618947783)
+- [WAVE](https://wave.webaim.org/) flagged label used for burger menu as an error. To fix it, I added a span to add the text "Menu". To hide it from users, I added a class with ```display: none```. Docummented on [issue #26](https://github.com/larevolucia/neuroconnect/issues/26#issue-2626933126)
+- [WAVE](https://wave.webaim.org/) flagged ```alt-text``` from a image on home with an alert. To fix it, I changed the text to remove redundancy of "Image of" and made more concise. Docummented on [issue #26](https://github.com/larevolucia/neuroconnect/issues/26#issue-2626933126)
 
 
 ## Technologies Used
