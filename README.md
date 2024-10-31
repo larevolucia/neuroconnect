@@ -299,6 +299,9 @@ This project was deployed using GitHub pages. Steps to deploy are as follow:
 
 ## Credits
 
+### Content
+Content of the page is fictional and created by me. ChatGPT was used on creation of content for consistency of language and character count. 
+
 ### Icons
 - Favicon design by [Freepik](https://www.freepik.com/icon/infinite_8438654) and converted using [favicon.io](https://favicon.io/)
 - Social media icons, burger menu and icons used on Service Page are from [FontAwesome](https://fontawesome.com/)
@@ -307,11 +310,17 @@ This project was deployed using GitHub pages. Steps to deploy are as follow:
 All photos on site are from [Pexels](https://www.pexels.com/)
 
 **Home**
-- TBD
+- Banner:[Leeloo The First](https://www.pexels.com/photo/a-woman-holding-cardboard-pieces-with-drawings-7304974/)
+- Services: [Alex Green](https://www.pexels.com/photo/ethnic-female-psychotherapist-listening-to-black-clients-explanation-5699479/)
+- Events: [Rachel Claire](https://www.pexels.com/photo/people-using-kayak-ok-a-lake-7263736/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
 **Services**
-- TBD
+- Banner: [Jorge Urosa](https://www.pexels.com/photo/a-text-on-a-letter-board-9129566/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
 **Events**
-- TBD
+- Banner: [RDNE Stock project](https://www.pexels.com/photo/group-of-people-wearing-blue-and-red-shirts-7551752/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
+- Book Club: [Yaroslav Shuraev](https://www.pexels.com/photo/women-covering-their-faces-with-books-9490665/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
+- Game Night:[RDNE Stock project](https://www.pexels.com/photo/man-and-women-playing-cards-at-meeting-in-christmas-6517901/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
+- Hiking Trip:[RDNE Stock project](https://www.pexels.com/photo/people-walking-on-a-pathway-7348737/)
+- City Trip: [Sergey Guk](https://www.pexels.com/photo/ferris-wheel-at-sunset-on-the-hague-beach-pier-28688790/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
 
 ## Resources Used
 
