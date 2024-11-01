@@ -143,7 +143,19 @@ Inspiration: [BBC](https://www.bbc.com/) / [a11y-collective](https://www.a11y-co
 
 - All pages follow the same ```<header>``` structure for design consistency necessary to reduce cognitive load when navigating in a new site.
 - Hero banner uses ```background-image``` property to populate the HTML with it's content using distinctive ids.
-- Overlay text is positioned near the bottom right corner of the image using ```position: absolute```. A semi-transparent ```background-color``` is applied to the text container to ensure readability.   
+- Overlay text is positioned near the bottom right corner of the image using ```position: absolute```. A semi-transparent ```background-color``` is applied to the text container to ensure readability.
+
+<img width="378" alt="image" src="https://github.com/user-attachments/assets/20de1a4a-4247-4b54-906f-6a217f97c34c">
+
+<details>
+  <summary>Service Page Header</summary>
+<img width="377" alt="image" src="https://github.com/user-attachments/assets/7c425d03-f555-4a54-a661-c69d13800ba7">
+</details>
+
+<details>
+  <summary>Events Page Header</summary>
+<img width="374" alt="image" src="https://github.com/user-attachments/assets/5bedb7a9-89bd-4e40-8b18-48a708b90d9e">
+</details>
 
 Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main/3.6-making-the-header-responsive)
 
@@ -151,7 +163,18 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 
 - All pages have a summary positioned as the first ```<section>``` in the ```<main>``` element.
 - ```<h2>``` titles were added as hidden to comply with SEO best practices. They were made visible to reduce noise on pages.
-- 
+
+<img width="376" alt="image" src="https://github.com/user-attachments/assets/b087b6be-5251-42f0-bf5a-2e5b610fe9fd">
+
+<details>
+  <summary>Service Page Summary</summary>
+<img width="376" alt="image" src="https://github.com/user-attachments/assets/8f898a26-5dbe-417d-802b-cc4431a49424">
+</details>
+
+<details>
+  <summary>Events Page Summary</summary>
+<img width="377" alt="image" src="https://github.com/user-attachments/assets/0c60b3d4-6a65-428a-a304-723de070b811">
+</details>
 
 ### Summary of Services and Events
 
@@ -159,6 +182,9 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 - Responsive design was achieved using ```display: flex``` applied to content cards. 
 - For performance optmization, images on content cards are inside of ```picture``` element, with a ```source``` for bigger screens, another for smaller screens and a ```<img>``` as fallback.
 - Anchor links styled as buttons redirect user to the specific pages within the website.
+
+  <img width="356" alt="image" src="https://github.com/user-attachments/assets/ba338e9b-1a23-4209-971b-72ce45af2d89">
+
 
 ### Services 
 
@@ -183,7 +209,10 @@ Inspiration: [SVB.nl](https://www.svb.nl/nl/algemeen/over-onze-website) / [Digit
   - Method of contact ```<input type="radio">```
 - All fields, except the message is marked as ```required```.
 - Pattern was included in phone number field using regular expression to allow only digits. ```title``` was included to the ```input``` element, to show feedback to user about the required pattern.
-- Style for field ```:focus``` was modified using a ```border-color``` and ```box-shadow```.
+- Style for field ```:focus``` was modified using a ```border-color``` and ```box-shadow.
+- An attempt to provide the feedback on the same page was made using javascript on commit [3839167](https://github.com/larevolucia/neuroconnect/commit/383916767a50d356ed5d5551eb1499fc06b8d206). Attempt is document in [issue #9](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684). Experience was simplified and when submitted, form leads user to a success page with message and anchor link styled as button to redirect user back to main page.
+
+![get-in-touch-form](https://github.com/user-attachments/assets/5f70036e-5d37-4028-8121-87744748b556)
 
 Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/components/card/) / [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/form-control/)
 
@@ -200,6 +229,10 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
 - Content cards suffered redesign through out the development process due to negative feedback received by target audience. Process is documented in [issue #19](https://github.com/larevolucia/neuroconnect/issues/19#issue-2608656036)
 - For performance optmization, images on content cards are inside of ```picture``` element, with a ```source``` for bigger screens, another for smaller screens and a ```<img>``` as fallback.
 
+<img width="1253" alt="image" src="https://github.com/user-attachments/assets/594285a6-009b-4c29-a9cc-335cbdfe427a">
+
+![events-cards](https://github.com/user-attachments/assets/3bb2295d-8a58-43a4-ab61-db045ff777d3)
+
 
 ### Join Event Form
 
@@ -214,8 +247,8 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
 - Field destinated for the amount of spots to reserve had additional ```min``` and ```max``` values to ensure that user reserves for at least 1 spot and not more than 10.
 - One of the events radio buttons is marked as ```disabled``` to indicate that is already fully booked.
 - Form submission leads to a success page with message and anchor link styled as button to redirect user back to main page. 
-- An attempt to provide the feedback on the same page was made using javascript on commit [3839167](https://github.com/larevolucia/neuroconnect/commit/383916767a50d356ed5d5551eb1499fc06b8d206). Attempt is document in [issue #9](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684)
 
+![events-form](https://github.com/user-attachments/assets/1746cedb-2d57-4f77-b6d8-71bddf9086b0)
 
 Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/boardwalk-games-v1-sourcecode/tree/main)
 
@@ -225,6 +258,7 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
 - Responsive design of ```<footer>``` is achieve by using ```display: grid```
 - Contact e-mail link uses ```mailto:``` to open e-mail server with empty draft
 
+<img width="1206" alt="image" src="https://github.com/user-attachments/assets/962192fa-39f6-4e4e-9dda-81c6929b7dd6">
 
 ## Testing
 
@@ -247,7 +281,53 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
 - [HTML Validator](https://validator.w3.org/nu/#textarea)
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 - [Accessibility Checker](https://www.accessibilitychecker.org/): Avg score 85%. No Critical issues. 
-- Lighthouse Score: 
+- Lighthouse Scores:
+
+    <details>
+      <summary>Home Mobile</summary>
+      <img width="437" alt="home_mobile_lh" src="https://github.com/user-attachments/assets/50d60bda-e065-4a3e-bbca-f9c3da5d7870">
+    </details>
+    <details>
+      <summary>Home Desktop</summary>
+      <img width="473" alt="home_desktop_lh" src="https://github.com/user-attachments/assets/d6eafeaa-e7c8-4c62-82a7-3f8553b90f11">
+    </details>
+    <details>
+      <summary>Services Mobile</summary>
+      <img width="473" alt="services_mobile_lh" src="https://github.com/user-attachments/assets/583b7a68-e0b3-49aa-b32c-daf98ea2b4f4">
+    
+    </details>
+    <details>
+      <summary>Services Desktop</summary>
+      <img width="428" alt="services_desktop_lh" src="https://github.com/user-attachments/assets/e9ff6c09-b969-40bb-bca6-a2055ab58ece">
+    </details>
+    
+    <details>
+      <summary>Events Mobile</summary>
+      <img width="461" alt="events_mobile_lh" src="https://github.com/user-attachments/assets/a45abf62-98b8-4a12-91a6-b21617fabb40">
+    </details>
+    
+    <details>
+      <summary>Events Desktop</summary>
+      <img width="457" alt="events_desktop_lh" src="https://github.com/user-attachments/assets/4babb2b7-378e-4454-aac0-42f88dd76e06">
+     </details>
+    
+    <details>
+      <summary>Sucess Page (Services) Mobile</summary>
+      <img width="473" alt="sucess-services_mobile_lh" src="https://github.com/user-attachments/assets/da06be16-ad34-4fd6-9051-d598de9947a9">
+    </details>
+    <details>
+      <summary>Sucess Page (Services) Desktop</summary>
+       <img width="431" alt="sucess-services_desktop_lh" src="https://github.com/user-attachments/assets/987a0e36-addb-445d-b79d-3f761d35689c">
+    </details>
+    <details>
+      <summary>Sucess Page (Events) Mobile</summary>
+      <img width="466" alt="success-events_mobile_lh" src="https://github.com/user-attachments/assets/89be02e2-bd2f-42a4-8417-9e646a46091a">
+    </details>
+    <details>
+      <summary>Sucess Page (Events) Desktop</summary>
+       <img width="454" alt="success-events_desktop_lh" src="https://github.com/user-attachments/assets/29224b54-5ae1-4949-a471-c88742c9e30f">
+    </details>
+
 
 
 ### Accessibility Testing  
