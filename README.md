@@ -340,7 +340,7 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
 
 The code was submitted for peer review in the Code Institute community and also received feedback from friends and acquaintances that match the target audience (autistic community).
 
-- Lack of user feedback on required format for phone number. Removed phone pattern checked on [351398a](https://github.com/larevolucia/neuroconnect/commit/351398a) and reintroduce with added user feedback on [48a1d4f](https://github.com/larevolucia/neuroconnect/commit/48a1d4f9acb4d91f04431e66e8f9219ff2f36841)
+- Missing feedback on required format for phone number on forms. Removed phone pattern checked on [351398a](https://github.com/larevolucia/neuroconnect/commit/351398a) and reintroduce with added user feedback on [48a1d4f](https://github.com/larevolucia/neuroconnect/commit/48a1d4f9acb4d91f04431e66e8f9219ff2f36841)
 - Puzzle pieces might be considered offensive. Fixed on [ccd7a82](https://github.com/larevolucia/neuroconnect/commit/ccd7a82).
 - Overwhelming design on Events page. Fixed on [ec50ab1](https://github.com/larevolucia/neuroconnect/commit/ec50ab1). More on [isue #19](https://github.com/larevolucia/neuroconnect/issues/19#issue-2608656036)
 - Text heavy design on Services page. Fixed on [5d11e3a](https://github.com/larevolucia/neuroconnect/commit/5d11e3a). More on [issue #25](https://github.com/larevolucia/neuroconnect/issues/25#issue-2619050363)
