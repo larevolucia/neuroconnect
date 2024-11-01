@@ -361,6 +361,7 @@ All issues are documented in this [Project View](https://github.com/users/larevo
 - [WAVE](https://wave.webaim.org/) flagged label used for burger menu as an error. To fix it, I added a span to add the text "Menu". To hide it from users, I added a class with ```display: none```. Docummented on [issue #26](https://github.com/larevolucia/neuroconnect/issues/26#issue-2626933126)
 - [WAVE](https://wave.webaim.org/) flagged ```alt-text``` from a image on home with an alert. To fix it, I changed the text to remove redundancy of "Image of" and made more concise. Docummented on [issue #26](https://github.com/larevolucia/neuroconnect/issues/26#issue-2626933126)
 - After changing image cards to use ```<picture>``` with specific ```source``` for screen distinct screen sizes, the image on home for the events was broken on mobiles. That was due to a broken url, which was fixed on [61c780d](https://github.com/larevolucia/neuroconnect/commit/61c780df34f5e0a4931dca4c1acae4fae431ad9f). Documented on [issue #27](https://github.com/larevolucia/neuroconnect/issues/27)
+- Error on HTML validator on Services page: ```div``` cannot be child of ```span```. Replaced ```span``` with ```div``` to fix the issue. Documented on [issue #28](https://github.com/larevolucia/neuroconnect/issues/28)
 
 ## Deployment
 
