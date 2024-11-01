@@ -212,10 +212,8 @@ Inspiration: [SVB.nl](https://www.svb.nl/nl/algemeen/over-onze-website) / [Digit
 - Style for field ```:focus``` was modified using a ```border-color``` and ```box-shadow.
 - An attempt to provide the feedback on the same page was made using javascript on commit [3839167](https://github.com/larevolucia/neuroconnect/commit/383916767a50d356ed5d5551eb1499fc06b8d206). Attempt is document in [issue #9](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684). Experience was simplified and when submitted, form leads user to a success page with message and anchor link styled as button to redirect user back to main page.
 
-    <details>
-      <summary>Form Interaction</summary>
-      ![get-in-touch-form](https://github.com/user-attachments/assets/5f70036e-5d37-4028-8121-87744748b556)
-    </details>
+  
+<img src="https://github.com/user-attachments/assets/5f70036e-5d37-4028-8121-87744748b556" width="680">
 
 
 Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/components/card/) / [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/form-control/)
@@ -232,11 +230,8 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
   - Button to sign-up for event (small/medium screens only)
 - Content cards suffered redesign through out the development process due to negative feedback received by target audience. Process is documented in [issue #19](https://github.com/larevolucia/neuroconnect/issues/19#issue-2608656036)
 - For performance optmization, images on content cards are inside of ```picture``` element, with a ```source``` for bigger screens, another for smaller screens and a ```<img>``` as fallback.
-
-    <details>
-      <summary>Events Cards Interaction</summary>
-      ![events-cards](https://github.com/user-attachments/assets/3bb2295d-8a58-43a4-ab61-db045ff777d3)
-    </details>
+  
+<img src="https://github.com/user-attachments/assets/3bb2295d-8a58-43a4-ab61-db045ff777d3" width="680">
 
 
 ### Join Event Form
@@ -253,10 +248,8 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
 - One of the events radio buttons is marked as ```disabled``` to indicate that is already fully booked.
 - Form submission leads to a success page with message and anchor link styled as button to redirect user back to main page. 
 
-    <details>
-      <summary>Form Interaction</summary>
-      ![events-form](https://github.com/user-attachments/assets/1746cedb-2d57-4f77-b6d8-71bddf9086b0)
-    </details>
+<img src="https://github.com/user-attachments/assets/1746cedb-2d57-4f77-b6d8-71bddf9086b0" height="680">
+
 
 Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/boardwalk-games-v1-sourcecode/tree/main)
 
