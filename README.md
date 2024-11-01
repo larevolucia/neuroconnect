@@ -212,7 +212,11 @@ Inspiration: [SVB.nl](https://www.svb.nl/nl/algemeen/over-onze-website) / [Digit
 - Style for field ```:focus``` was modified using a ```border-color``` and ```box-shadow.
 - An attempt to provide the feedback on the same page was made using javascript on commit [3839167](https://github.com/larevolucia/neuroconnect/commit/383916767a50d356ed5d5551eb1499fc06b8d206). Attempt is document in [issue #9](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684). Experience was simplified and when submitted, form leads user to a success page with message and anchor link styled as button to redirect user back to main page.
 
-![get-in-touch-form](https://github.com/user-attachments/assets/5f70036e-5d37-4028-8121-87744748b556)
+    <details>
+      <summary>Form Interaction</summary>
+      ![get-in-touch-form](https://github.com/user-attachments/assets/5f70036e-5d37-4028-8121-87744748b556)
+    </details>
+
 
 Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/components/card/) / [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/form-control/)
 
@@ -229,7 +233,10 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
 - Content cards suffered redesign through out the development process due to negative feedback received by target audience. Process is documented in [issue #19](https://github.com/larevolucia/neuroconnect/issues/19#issue-2608656036)
 - For performance optmization, images on content cards are inside of ```picture``` element, with a ```source``` for bigger screens, another for smaller screens and a ```<img>``` as fallback.
 
-![events-cards](https://github.com/user-attachments/assets/3bb2295d-8a58-43a4-ab61-db045ff777d3)
+    <details>
+      <summary>Events Cards Interaction</summary>
+      ![events-cards](https://github.com/user-attachments/assets/3bb2295d-8a58-43a4-ab61-db045ff777d3)
+    </details>
 
 
 ### Join Event Form
@@ -246,7 +253,10 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
 - One of the events radio buttons is marked as ```disabled``` to indicate that is already fully booked.
 - Form submission leads to a success page with message and anchor link styled as button to redirect user back to main page. 
 
-![events-form](https://github.com/user-attachments/assets/1746cedb-2d57-4f77-b6d8-71bddf9086b0)
+    <details>
+      <summary>Form Interaction</summary>
+      ![events-form](https://github.com/user-attachments/assets/1746cedb-2d57-4f77-b6d8-71bddf9086b0)
+    </details>
 
 Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/boardwalk-games-v1-sourcecode/tree/main)
 
@@ -283,16 +293,15 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
 
     <details>
       <summary>Home Mobile</summary>
-      <img width="437" alt="home_mobile_lh" src="https://github.com/user-attachments/assets/50d60bda-e065-4a3e-bbca-f9c3da5d7870">
+      <img width="459" alt="image" src="https://github.com/user-attachments/assets/a2f0a205-777d-4789-ad8a-e40f1d45d191">
     </details>
     <details>
       <summary>Home Desktop</summary>
       <img width="473" alt="home_desktop_lh" src="https://github.com/user-attachments/assets/d6eafeaa-e7c8-4c62-82a7-3f8553b90f11">
-    </details>
+    </details>  
     <details>
       <summary>Services Mobile</summary>
       <img width="473" alt="services_mobile_lh" src="https://github.com/user-attachments/assets/583b7a68-e0b3-49aa-b32c-daf98ea2b4f4">
-    
     </details>
     <details>
       <summary>Services Desktop</summary>
@@ -310,19 +319,19 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
      </details>
     
     <details>
-      <summary>Sucess Page (Services) Mobile</summary>
+      <summary>Success Page (Services) Mobile</summary>
       <img width="473" alt="sucess-services_mobile_lh" src="https://github.com/user-attachments/assets/da06be16-ad34-4fd6-9051-d598de9947a9">
     </details>
     <details>
-      <summary>Sucess Page (Services) Desktop</summary>
+      <summary>Success Page (Services) Desktop</summary>
        <img width="431" alt="sucess-services_desktop_lh" src="https://github.com/user-attachments/assets/987a0e36-addb-445d-b79d-3f761d35689c">
     </details>
     <details>
-      <summary>Sucess Page (Events) Mobile</summary>
+      <summary>Success Page (Events) Mobile</summary>
       <img width="466" alt="success-events_mobile_lh" src="https://github.com/user-attachments/assets/89be02e2-bd2f-42a4-8417-9e646a46091a">
     </details>
     <details>
-      <summary>Sucess Page (Events) Desktop</summary>
+      <summary>Success Page (Events) Desktop</summary>
        <img width="454" alt="success-events_desktop_lh" src="https://github.com/user-attachments/assets/29224b54-5ae1-4949-a471-c88742c9e30f">
     </details>
 
