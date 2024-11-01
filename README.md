@@ -165,7 +165,7 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 - More in-depth information about the services is provided in ```<main>``` element of the Services pages.
 - Responsive design was achieved using ```display: flex``` applied to ```<main>```. 
 - As the page is more text heavy, it was decided to use [Fontawesome](https://fontawesome.com/) icons as visual conterparts to reduce visual stimuli on page.
-- Feedback of initial design was still deemed text-heavy, so a new design with a collapsible element was implemented on commit 5d11e3a. More on [issue #25](https://github.com/larevolucia/neuroconnect/issues/25#issue-2619050363)
+- Feedback of initial design was still deemed text-heavy, so a new design with a collapsible element was implemented on commit [5d11e3a](https://github.com/larevolucia/neuroconnect/commit/5d11e3a1214a45294f81af5cc2b01f3dee0ec9ef). More on [issue #25](https://github.com/larevolucia/neuroconnect/issues/25#issue-2619050363)
 
 ![collapsible-items-](https://github.com/user-attachments/assets/79fbf5d1-dfb9-4706-baf7-8cc50a312f30)
 
@@ -214,7 +214,7 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
 - Field destinated for the amount of spots to reserve had additional ```min``` and ```max``` values to ensure that user reserves for at least 1 spot and not more than 10.
 - One of the events radio buttons is marked as ```disabled``` to indicate that is already fully booked.
 - Form submission leads to a success page with message and anchor link styled as button to redirect user back to main page. 
-- An attempt to provide the feedback on the same page was made using javascript on commit 3839167. Attempt is document in [issue #9](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684)
+- An attempt to provide the feedback on the same page was made using javascript on commit [3839167](https://github.com/larevolucia/neuroconnect/commit/383916767a50d356ed5d5551eb1499fc06b8d206). Attempt is document in [issue #9](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684)
 
 
 Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/boardwalk-games-v1-sourcecode/tree/main)
@@ -228,8 +228,8 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
 
 ## Testing
 
-
-### Manual Testing [issue #18](https://github.com/larevolucia/neuroconnect/issues/18#issue-2575994140)
+### Manual Testing 
+[issue #18](https://github.com/larevolucia/neuroconnect/issues/18#issue-2575994140)
 
 - Tested all internal links lead to a valid page
 - Tested that all external links open in a new window
@@ -241,7 +241,8 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
 - Tested multiple browsers: Chrome, Edge, Safari, Firefox
 - Tested multiple devices: iPhone, Android Galaxy22, Windows Desktop
 
-### Automated Testing  [issue #17](https://github.com/larevolucia/neuroconnect/issues/17#issue-2575988664)
+### Automated Testing  
+[issue #17](https://github.com/larevolucia/neuroconnect/issues/17#issue-2575988664)
 
 - [HTML Validator](https://validator.w3.org/nu/#textarea)
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
@@ -249,7 +250,8 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
 - Lighthouse Score: 
 
 
-### Accessibility Testing  [issue #16](https://github.com/larevolucia/neuroconnect/issues/16#issue-2575978267)
+### Accessibility Testing  
+[issue #16](https://github.com/larevolucia/neuroconnect/issues/16#issue-2575978267)
 
 - Checked if buttons, links and labels used ```aria-labels```.
 - Check if all images had ```alt-text```.
@@ -263,10 +265,10 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
 
 The code was submitted for peer review in the Code Institute community and also received feedback from friends and acquaintances that match the target audience (autistic community).
 
-- Lack of user feedback on required format for phone number. Removed required on 351398a and reintroduce with added user feedback on 351398a
-- Puzzle pieces might be considered offensive. Fixed on ccd7a82.
-- Overwhelming design on Events page. Fixed on ec50ab1. More on [isue #19](https://github.com/larevolucia/neuroconnect/issues/19#issue-2608656036)
-- Text heavy design on Services page. Fixed on 5d11e3a. More on [issue #25](https://github.com/larevolucia/neuroconnect/issues/25#issue-2619050363)
+- Lack of user feedback on required format for phone number. Removed phone pattern checked on [351398a](https://github.com/larevolucia/neuroconnect/commit/351398a) and reintroduce with added user feedback on [48a1d4f](https://github.com/larevolucia/neuroconnect/commit/48a1d4f9acb4d91f04431e66e8f9219ff2f36841)
+- Puzzle pieces might be considered offensive. Fixed on [ccd7a82](https://github.com/larevolucia/neuroconnect/commit/ccd7a82).
+- Overwhelming design on Events page. Fixed on [ec50ab1](https://github.com/larevolucia/neuroconnect/commit/ec50ab1). More on [isue #19](https://github.com/larevolucia/neuroconnect/issues/19#issue-2608656036)
+- Text heavy design on Services page. Fixed on [5d11e3a](https://github.com/larevolucia/neuroconnect/commit/5d11e3a). More on [issue #25](https://github.com/larevolucia/neuroconnect/issues/25#issue-2619050363)
 
 ### Bugs & Issues
 
@@ -278,12 +280,7 @@ All issues are documented in this [Project View](https://github.com/users/larevo
 - Initial mobile score for performance was around 75. To improve the score I converted images to webp format, set ```loading="lazy"``` and added difference sources depending on screen size using ```<picture>``` + ```<source>```. Documented on [issue #24](https://github.com/larevolucia/neuroconnect/issues/24#issue-2618947783)
 - [WAVE](https://wave.webaim.org/) flagged label used for burger menu as an error. To fix it, I added a span to add the text "Menu". To hide it from users, I added a class with ```display: none```. Docummented on [issue #26](https://github.com/larevolucia/neuroconnect/issues/26#issue-2626933126)
 - [WAVE](https://wave.webaim.org/) flagged ```alt-text``` from a image on home with an alert. To fix it, I changed the text to remove redundancy of "Image of" and made more concise. Docummented on [issue #26](https://github.com/larevolucia/neuroconnect/issues/26#issue-2626933126)
-
-
-## Technologies Used
-
-- HTML5
-- CSS
+- After changing image cards to use ```<picture>``` with specific ```source``` for screen distinct screen sizes, the image on home for the events was broken on mobiles. That was due to a broken url, which was fixed on [61c780d](https://github.com/larevolucia/neuroconnect/commit/61c780df34f5e0a4931dca4c1acae4fae431ad9f). Documented on [issue #27](https://github.com/larevolucia/neuroconnect/issues/27)
 
 ## Deployment
 
@@ -296,6 +293,30 @@ This project was deployed using GitHub pages. Steps to deploy are as follow:
 5. Ensure that the selected folder is /root
 6. Once done, click on 'Save'.
 7. You should receive a deployment confirmation, followed by the web address.
+
+## Technologies Used
+
+### Languages
+
+- HTML5
+- CSS
+
+## Resources Used
+
+- [Mozilla](https://developer.mozilla.org/en-US/)
+- [w3.org](https://www.w3.org/)
+- [Dev.to](https://dev.to/)
+- [StackOverflow](stackoverflow.com)
+- [a11y-collective](https://www.a11y-collective.com/)
+- [Coolors](https://coolors.co/)
+- [Google Fonts](https://fonts.google.com/)
+- [Freepik](https://www.freepik.com/)
+- [favicon.io](https://favicon.io/)
+- [FontAwesome](https://fontawesome.com/)
+- [Pexels](https://www.pexels.com/)
+- [Tinypng](https://tinypng.com/) to optmize the images
+- [Responsinator](http://www.responsinator.com/) to test responsiveness
+- ChatGPT to assist with creation of content
 
 ## Credits
 
@@ -313,8 +334,10 @@ All photos on site are from [Pexels](https://www.pexels.com/)
 - Banner:[Leeloo The First](https://www.pexels.com/photo/a-woman-holding-cardboard-pieces-with-drawings-7304974/)
 - Services: [Alex Green](https://www.pexels.com/photo/ethnic-female-psychotherapist-listening-to-black-clients-explanation-5699479/)
 - Events: [Rachel Claire](https://www.pexels.com/photo/people-using-kayak-ok-a-lake-7263736/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
+
 **Services**
 - Banner: [Jorge Urosa](https://www.pexels.com/photo/a-text-on-a-letter-board-9129566/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
+
 **Events**
 - Banner: [RDNE Stock project](https://www.pexels.com/photo/group-of-people-wearing-blue-and-red-shirts-7551752/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
 - Book Club: [Yaroslav Shuraev](https://www.pexels.com/photo/women-covering-their-faces-with-books-9490665/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
@@ -322,14 +345,8 @@ All photos on site are from [Pexels](https://www.pexels.com/)
 - Hiking Trip:[RDNE Stock project](https://www.pexels.com/photo/people-walking-on-a-pathway-7348737/)
 - City Trip: [Sergey Guk](https://www.pexels.com/photo/ferris-wheel-at-sunset-on-the-hague-beach-pier-28688790/?utm_campaign=feedback_request_on_downloads&utm_content=How%20did%20you%20use%20these%20downloads%3F&utm_medium=email&utm_source=pexels)
 
-## Resources Used
+## Acknowledgments
 
-- [Mozilla](https://developer.mozilla.org/en-US/)
-- [w3.org](https://www.w3.org/)
-- [Dev.to](https://dev.to/)
-- [StackOverflow](stackoverflow.com)
-- [a11y-collective](https://www.a11y-collective.com/blog/skip-to-main-content/)
-- [Tinypng](https://tinypng.com/) to optmize the images
-- [Responsinator](http://www.responsinator.com/) to test responsiveness
-- ChatGPT to assist with creation of content
+My mentor Antonio, for his support and guidance.
 
+Code Institute community for the feedback and helpful advices.
