@@ -145,16 +145,16 @@ Inspiration: [BBC](https://www.bbc.com/) / [a11y-collective](https://www.a11y-co
 - Hero banner uses ```background-image``` property to populate the HTML with it's content using distinctive ids.
 - Overlay text is positioned near the bottom right corner of the image using ```position: absolute```. A semi-transparent ```background-color``` is applied to the text container to ensure readability.
 
-<img width="378" alt="image" src="https://github.com/user-attachments/assets/20de1a4a-4247-4b54-906f-6a217f97c34c">
+<img width="1255" alt="image" src="https://github.com/user-attachments/assets/60a8c0aa-46d1-4f4d-acde-478e209a90bb">
 
 <details>
   <summary>Service Page Header</summary>
-<img width="377" alt="image" src="https://github.com/user-attachments/assets/7c425d03-f555-4a54-a661-c69d13800ba7">
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/7c425d03-f555-4a54-a661-c69d13800ba7">
 </details>
 
 <details>
   <summary>Events Page Header</summary>
-<img width="374" alt="image" src="https://github.com/user-attachments/assets/5bedb7a9-89bd-4e40-8b18-48a708b90d9e">
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/5bedb7a9-89bd-4e40-8b18-48a708b90d9e">
 </details>
 
 Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main/3.6-making-the-header-responsive)
@@ -164,16 +164,16 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 - All pages have a summary positioned as the first ```<section>``` in the ```<main>``` element.
 - ```<h2>``` titles were added as hidden to comply with SEO best practices. They were made visible to reduce noise on pages.
 
-<img width="376" alt="image" src="https://github.com/user-attachments/assets/b087b6be-5251-42f0-bf5a-2e5b610fe9fd">
+<img width="1198" alt="image" src="https://github.com/user-attachments/assets/bf5bcbff-9e2e-494b-9556-bcf6f6a58e73">
 
 <details>
   <summary>Service Page Summary</summary>
-<img width="376" alt="image" src="https://github.com/user-attachments/assets/8f898a26-5dbe-417d-802b-cc4431a49424">
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/8f898a26-5dbe-417d-802b-cc4431a49424">
 </details>
 
 <details>
   <summary>Events Page Summary</summary>
-<img width="377" alt="image" src="https://github.com/user-attachments/assets/0c60b3d4-6a65-428a-a304-723de070b811">
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/0c60b3d4-6a65-428a-a304-723de070b811">
 </details>
 
 ### Summary of Services and Events
@@ -183,7 +183,7 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 - For performance optmization, images on content cards are inside of ```picture``` element, with a ```source``` for bigger screens, another for smaller screens and a ```<img>``` as fallback.
 - Anchor links styled as buttons redirect user to the specific pages within the website.
 
-  <img width="356" alt="image" src="https://github.com/user-attachments/assets/ba338e9b-1a23-4209-971b-72ce45af2d89">
+<img width="734" alt="image" src="https://github.com/user-attachments/assets/aae59c5c-f5d2-4101-8b8c-df4cf8b6641d">
 
 
 ### Services 
@@ -228,8 +228,6 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
   - Button to sign-up for event (small/medium screens only)
 - Content cards suffered redesign through out the development process due to negative feedback received by target audience. Process is documented in [issue #19](https://github.com/larevolucia/neuroconnect/issues/19#issue-2608656036)
 - For performance optmization, images on content cards are inside of ```picture``` element, with a ```source``` for bigger screens, another for smaller screens and a ```<img>``` as fallback.
-
-<img width="1253" alt="image" src="https://github.com/user-attachments/assets/594285a6-009b-4c29-a9cc-335cbdfe427a">
 
 ![events-cards](https://github.com/user-attachments/assets/3bb2295d-8a58-43a4-ab61-db045ff777d3)
 
