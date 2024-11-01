@@ -696,6 +696,7 @@ footer ul {
     order: 1;
     flex-basis: 48%;
     width: 48%; 
+    margin-top: 1.5rem
   }
   #services-summary-body,
   #events-summary-body {
@@ -782,17 +783,18 @@ footer ul {
     flex-basis: 48%; 
   }
   /* home content cards */
-  .flex-container #services-summary-card,
-  .flex-container #events-summary-card {
-    flex-direction: column;
-  }
-  .card-text {
-    min-height: 163px;
-  }
-  #services-summary-image,
-  #events-summary-image {
-    flex-basis: 100%;
-    width: 100%;
+    .flex-container #services-summary-card,
+    .flex-container #events-summary-card {
+      flex-direction: column;
+    }
+    .card-text {
+      min-height: 163px;
+    }
+    #services-summary-image,
+    #events-summary-image {
+      flex-basis: 100%;
+      width: 100%;
+      margin-top: 0;
   }
   #services-summary-body,
   #events-summary-body {
