@@ -50,7 +50,7 @@ Live Link to access site [here](https://larevolucia.github.io/neuroconnect/)
 
 Design choices took in consideration insights from web design research done with autistic individuals. There's a minimal page structure variation and use of imagery to reduce cognitive load.
 
-## Images
+### Images
 
 Research with target audience on preference of information in text vs in image is not conclusive. With that in mind, it was chosen to use images withou excess to convey additional information for individuals that process through images, while keeping a suscint text for those who process through written communication. 
 
@@ -85,12 +85,7 @@ For additional information check [Design Research](https://github.com/larevoluci
 ### Anchor States
 
 <details>
-  <summary>Primary Anchor States</summary>
-<img width="283" alt="image" src="https://github.com/user-attachments/assets/70dbfe17-9c03-4c28-94d7-754f6b7c3062">
-</details>
-
-<details>
-  <summary>Secondary Anchor States</summary>
+  <summary>Anchor States</summary>
 <img width="257" alt="image" src="https://github.com/user-attachments/assets/1ca1af53-8644-47e7-9ea8-f657490224ea">
 </details>
 
@@ -382,7 +377,7 @@ This project was deployed using GitHub pages. Steps to deploy are as follow:
 - HTML5
 - CSS
 
-## Resources Used
+### Resources Used
 
 - [Mozilla](https://developer.mozilla.org/en-US/)
 - [w3.org](https://www.w3.org/)
