@@ -217,8 +217,8 @@ Inspiration: [SVB.nl](https://www.svb.nl/nl/algemeen/over-onze-website) / [Digit
 - Style for field ```:focus``` was modified using a ```border-color``` and ```box-shadow.
 - An attempt to provide the feedback on the same page was made using javascript on commit [3839167](https://github.com/larevolucia/neuroconnect/commit/383916767a50d356ed5d5551eb1499fc06b8d206). Attempt is document in [issue #9](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684). Experience was simplified and when submitted, form leads user to a success page with message and anchor link styled as button to redirect user back to main page.
 
-  
-<img src="https://github.com/user-attachments/assets/5f70036e-5d37-4028-8121-87744748b556" width="680">
+
+<img src="https://github.com/user-attachments/assets/cbb5e15c-79c5-4207-9ae4-bcb8089718af" width="680">
 
 
 Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/components/card/) / [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/form-control/)
@@ -257,6 +257,17 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
 
 
 Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/boardwalk-games-v1-sourcecode/tree/main)
+
+
+### Success Pages
+
+- Success pages were created for each form. Initially it was considered to have a single page, but it was later split into two different pages to provide a more specific feedback to user.
+- Each page has a success message and indication of what contact to expect next.
+- A button redirecting to the home was added at the bottom of the message
+- To better position the text in different screen sizes, it was used ```display: flex``` with ```align-items: center``` and ```justify-content: center```. This way, the content would always be in the center of the screen, regardless of the device used to access the website. 
+
+<img width="714" alt="image" src="https://github.com/user-attachments/assets/4cfdcae8-64a0-47e7-93f6-72805fb1878c">
+
 
 ### Footer
 
