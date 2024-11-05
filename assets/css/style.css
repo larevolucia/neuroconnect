@@ -353,6 +353,10 @@ picture,
   height: auto;
 }
 
+#upcoming-events .card-container {
+  font-size: medium;
+}
+
 /* Overlay for displaying the event date */
 .card-overlay {
   position: absolute;
@@ -799,9 +803,11 @@ footer ul {
   .flex-container #events-summary-card {
     flex-direction: column;
   }
-  .card-text {
-    min-height: 163px;
+  #services-summary .card-text,
+  #events-summary .card-text {
+    min-height: 261px;
   }
+
   #services-summary-image,
   #events-summary-image {
     flex-basis: 100%;
@@ -870,17 +876,18 @@ footer ul {
 
 @media screen and (min-width: 1200px) {
   footer .grid-container {
-  max-width: 1595px;
+    max-width: 1595px;
   }
-  
+
   .page-summary {
     text-align: left;
     padding: 0 20%;
   }
 
   /*card*/
-  .card-text {
-    min-height: 180px;
+  #services-summary .card-text,
+  #events-summary .card-text {
+    min-height: 208px;
   }
 
   /* equal space for sections*/
