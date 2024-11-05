@@ -620,6 +620,13 @@ select:disabled {
   padding-top: 10px;
 }
 
+.success-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /*footer*/
 footer {
   background-color: var(--seconday-darker);
