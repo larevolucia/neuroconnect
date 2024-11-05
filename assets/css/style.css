@@ -332,6 +332,9 @@ nav a:hover {
 #events-summary-body {
   order: 2;
 }
+.learn-more {
+  order: 3;
+}
 
 /*events cards*/
 
@@ -669,7 +672,6 @@ footer ul {
   /*home content cards*/
   #services-summary-image,
   #events-summary-image {
-    order: 1;
     flex-basis: 48%;
     width: 48%; 
     margin-top: 1.5rem
@@ -677,7 +679,6 @@ footer ul {
   #services-summary-body,
   #events-summary-body {
     flex-basis: 48%;
-    order: 2;
   }
 
 /*events*/
@@ -840,7 +841,7 @@ footer ul {
 
   /*card*/
   .card-text {
-    min-height: 207px;
+    min-height: 180px;
   }
 
   /* equal space for sections*/
