@@ -80,12 +80,20 @@ For additional information check [Design Research](https://github.com/larevoluci
   <summary>Primary Button States</summary>
 <img width="489" alt="image" src="https://github.com/user-attachments/assets/cc6cfacb-e7ff-4193-9751-919f92b84a05">
 </details>
+<details>
+  <summary>Secondary Button States</summary>
+</details>
 
 
 ### Anchor States
 
 <details>
-  <summary>Anchor States</summary>
+  <summary>Primary Anchor States</summary>
+<img width="283" alt="image" src="https://github.com/user-attachments/assets/70dbfe17-9c03-4c28-94d7-754f6b7c3062">
+</details>
+
+<details>
+  <summary>Secondary Anchor States</summary>
 <img width="257" alt="image" src="https://github.com/user-attachments/assets/1ca1af53-8644-47e7-9ea8-f657490224ea">
 </details>
 
