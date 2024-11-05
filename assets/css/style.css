@@ -868,6 +868,10 @@ footer ul {
 /*Media query for XL screens (screens 1200px or larger)*/
 
 @media screen and (min-width: 1200px) {
+  footer .grid-container {
+  max-width: 1595px;
+  }
+  
   .page-summary {
     text-align: left;
     padding: 0 20%;
