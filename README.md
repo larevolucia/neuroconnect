@@ -82,6 +82,7 @@ For additional information check [Design Research](https://github.com/larevoluci
 </details>
 <details>
   <summary>Secondary Button States</summary>
+ <img width="489" alt="image" src="https://github.com/user-attachments/assets/be8fa822-c899-47bb-9cb7-49dced4d7d01">
 </details>
 
 
