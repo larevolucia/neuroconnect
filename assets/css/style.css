@@ -769,6 +769,7 @@ footer ul {
   }
   footer .grid-container {
     grid-template-columns: 1fr 1fr;
+    align-items: start;
     gap: 2rem;
   }
 }
