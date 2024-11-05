@@ -127,6 +127,7 @@ For additional information check [Design Research](https://github.com/larevoluci
 - Distinctive color is used to indicate active page. Softer color is used to indicate cursor hover.
 - Fixed navigation was achieven using position:sticky together with left and top attributes to set its position on screen.
 - It was decided not to nest ```<nav>``` element in the ```<header>```, due to [accessibility recommendations](https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-nav-6cp).
+- To comply with accessibility best practices, a ```.sr-only``` class was created, using the suggested code from [WebAIM - Invisible Content Techniques](https://webaim.org/techniques/css/invisiblecontent/). This will ensure that screen readers can still read the content.
 
 ![navigation](https://github.com/user-attachments/assets/c1be2633-87ef-4696-81ed-0084fd3d43da)
 
@@ -166,7 +167,7 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 ### Page Summary
 
 - All pages have a summary positioned as the first ```<section>``` in the ```<main>``` element.
-- ```<h2>``` titles were added as hidden to comply with SEO best practices. They were made visible to reduce noise on pages.
+- ```<h2>``` titles were added as hidden to comply with SEO best practices. They were made invisible to reduce noise on pages. 
 
 <img width="1198" alt="image" src="https://github.com/user-attachments/assets/bf5bcbff-9e2e-494b-9556-bcf6f6a58e73">
 
@@ -362,7 +363,7 @@ All issues are documented in this [Project View](https://github.com/users/larevo
 - Click on label was not selecting corresponding radio button option on forms. Using the W3 check I found that it was due to duplication of ids on content cards and radio buttons. I renamed the content cards id's to be able to fix it. Documented on [issue #21](https://github.com/larevolucia/neuroconnect/issues/21#issue-2612109157)
 - Code clean-up lead to home button misalignment on large screens. To fix it I added a ```min-heigh``` to the ```.card-text``` class on media query for large screens. Documented on [issue #22](https://github.com/larevolucia/neuroconnect/issues/22#issue-2614516551)
 - Initial mobile score for performance was around 75. To improve the score I converted images to webp format, set ```loading="lazy"``` and added difference sources depending on screen size using ```<picture>``` + ```<source>```. Documented on [issue #24](https://github.com/larevolucia/neuroconnect/issues/24#issue-2618947783)
-- [WAVE](https://wave.webaim.org/) flagged label used for burger menu as an error. To fix it, I added a span to add the text "Menu". To hide it from users, I added a class with ```display: none```. Docummented on [issue #26](https://github.com/larevolucia/neuroconnect/issues/26#issue-2626933126)
+- [WAVE](https://wave.webaim.org/) flagged label used for burger menu as an error. To fix it, I added a span to add the text "Menu". To hide it from users, I added a class with ```display: none```. After Code Institute Slack Community feedback, I changed this to a ```sr-only``` class that positions the content outside of the screen. This will enable screen readers to read it. Docummented on [issue #26](https://github.com/larevolucia/neuroconnect/issues/26#issue-2626933126)
 - [WAVE](https://wave.webaim.org/) flagged ```alt-text``` from a image on home with an alert. To fix it, I changed the text to remove redundancy of "Image of" and made more concise. Docummented on [issue #26](https://github.com/larevolucia/neuroconnect/issues/26#issue-2626933126)
 - After changing image cards to use ```<picture>``` with specific ```source``` for screen distinct screen sizes, the image on home for the events was broken on mobiles. That was due to a broken url, which was fixed on [61c780d](https://github.com/larevolucia/neuroconnect/commit/61c780df34f5e0a4931dca4c1acae4fae431ad9f). Documented on [issue #27](https://github.com/larevolucia/neuroconnect/issues/27)
 - [WAVE](https://wave.webaim.org/) alerted the paragraphs for Date and Location on event content cards as possible headings. Peer review provided feedback on the elements, suggesting using semantic elements. Applying the suggestion eliminated the alert. Documented on [issue #29](https://github.com/larevolucia/neuroconnect/issues/29#issue-2635708429)

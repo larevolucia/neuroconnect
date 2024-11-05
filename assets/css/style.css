@@ -22,16 +22,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-size: large; 
+  font-size: large;
   font-family: var(--primary-font);
   color: var(--text-color);
-  line-height: 1.5; 
-  letter-spacing: 0.1em; 
+  line-height: 1.5;
+  letter-spacing: 0.1em;
 }
 
 h1,
 h2 {
-  letter-spacing: 0.2em; 
+  letter-spacing: 0.2em;
   text-align: center;
   color: var(--primary-normal);
 }
@@ -81,6 +81,14 @@ i {
 /*utility class*/
 .hidden {
   display: none;
+}
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .align-center {
@@ -134,7 +142,7 @@ nav {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -248,7 +256,7 @@ nav a:hover {
   min-height: 160px;
   margin-right: 15px;
   padding: 15px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   color: #ffffff;
   background-color: rgba(5, 82, 118, 0.9);
 }
@@ -298,11 +306,12 @@ nav a:hover {
   overflow: hidden;
 }
 
-.card-image, picture,
+.card-image,
+picture,
 .card-icon {
   width: 100%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .image-border-radius {
@@ -355,17 +364,17 @@ nav a:hover {
   text-align: center;
   font-family: var(--primary-font);
   font-weight: bold;
-  font-size:small;
+  font-size: small;
   width: 70%;
 }
 
-
-address, time {
- font-style: normal;
- padding: 10px 0;
+address,
+time {
+  font-style: normal;
+  padding: 10px 0;
 }
 
-address{
+address {
   text-transform: uppercase;
 }
 
@@ -381,7 +390,8 @@ address{
 }
 /*service page*/
 
-#free-guidance-services h2 i, #support-groups h2 i {
+#free-guidance-services h2 i,
+#support-groups h2 i {
   margin-left: 1rem;
 }
 
@@ -401,9 +411,8 @@ address{
 
 .services-list li {
   margin-top: 1.5rem;
-
 }
-.collapsible-container  {
+.collapsible-container {
   border-bottom: 2px solid var(--primary-normal);
   display: inline-block;
   padding-bottom: 0.45rem;
@@ -426,27 +435,24 @@ address{
   display: block;
 }
 
-
 /* toggle labels */
 
 .toggle-label {
-  margin-right: 0.5rem; 
+  margin-right: 0.5rem;
   cursor: pointer;
   font-size: large;
 }
 
 .toggle-label::before {
-  content: "\2b"; 
+  content: "\2b";
   font-weight: 900;
   font-family: "FontAwesome";
   color: var(--primary-normal);
 }
 
-
 .toggle-description:checked + .toggle-label::before {
   content: "\f068";
 }
-
 
 /*buttons*/
 
@@ -454,7 +460,7 @@ address{
 .button-secondary,
 a .button,
 a .button-secondary {
-  display: inline-block; 
+  display: inline-block;
   padding: 10px 18px;
   border-radius: 28px;
   transition: all 100ms ease-in-out;
@@ -508,7 +514,6 @@ a .button-secondary:active {
   color: #ffffff;
 }
 
-
 /*Forms General styling*/
 
 form {
@@ -521,7 +526,7 @@ form {
 #events-form-container {
   padding-top: 60px;
 }
-fieldset{
+fieldset {
   border: none;
   margin: 0;
   padding: 0;
@@ -576,13 +581,13 @@ input[type="tel"] {
 input[type="number"] {
   width: 65px;
 }
- form button {
+form button {
   margin-top: 20px;
- }
+}
 
- .join-us {
+.join-us {
   text-align: center;
- }
+}
 /* Form input feedback */
 
 input:focus,
@@ -604,7 +609,6 @@ textarea:disabled,
 select:disabled {
   cursor: not-allowed;
 }
-
 
 /*Success page*/
 
@@ -656,7 +660,7 @@ footer ul {
   padding: 15px 25px;
   display: flex;
   align-items: center;
-  max-width: max-content; 
+  max-width: max-content;
 }
 
 .social-media-text {
@@ -702,26 +706,26 @@ footer ul {
   #services-summary-image,
   #events-summary-image {
     flex-basis: 48%;
-    width: 48%; 
-    margin-top: 1.5rem
+    width: 48%;
+    margin-top: 1.5rem;
   }
   #services-summary-body,
   #events-summary-body {
     flex-basis: 48%;
   }
 
-/*events*/
-#upcoming-events {
-  grid-template-columns: 1fr 1fr;
-}
-address, time {
-  font-size: large;
- }
-/*services*/
-.collapsible-container  {
-
-  width: 90%;
-}
+  /*events*/
+  #upcoming-events {
+    grid-template-columns: 1fr 1fr;
+  }
+  address,
+  time {
+    font-size: large;
+  }
+  /*services*/
+  .collapsible-container {
+    width: 90%;
+  }
   /*forms*/
 
   #service-form-container .form-container {
@@ -742,7 +746,8 @@ address, time {
   }
 
   #service-form-button,
-  #event-form-button, #event-form-spots-group {
+  #event-form-button,
+  #event-form-spots-group {
     margin: 0 auto;
   }
 
@@ -753,7 +758,8 @@ address, time {
     grid-template-columns: 1fr 1fr;
   }
 
-  #event-form-spots-group, #event-form-button {
+  #event-form-spots-group,
+  #event-form-button {
     grid-column: span 2;
   }
 
@@ -786,21 +792,21 @@ address, time {
   /* equal space for sections*/
   .flex-container #services-summary,
   .flex-container #events-summary {
-    flex-basis: 48%; 
+    flex-basis: 48%;
   }
   /* home content cards */
-    .flex-container #services-summary-card,
-    .flex-container #events-summary-card {
-      flex-direction: column;
-    }
-    .card-text {
-      min-height: 163px;
-    }
-    #services-summary-image,
-    #events-summary-image {
-      flex-basis: 100%;
-      width: 100%;
-      margin-top: 0;
+  .flex-container #services-summary-card,
+  .flex-container #events-summary-card {
+    flex-direction: column;
+  }
+  .card-text {
+    min-height: 163px;
+  }
+  #services-summary-image,
+  #events-summary-image {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 0;
   }
   #services-summary-body,
   #events-summary-body {
@@ -814,9 +820,9 @@ address, time {
   }
   /*services*/
 
-.collapsible-container  {
-  width: 80%;
-}
+  .collapsible-container {
+    width: 80%;
+  }
 
   /*forms*/
   #service-form-container .form-container {
@@ -849,7 +855,7 @@ address, time {
   }
   .join-us {
     display: none;
-   }
+  }
 
   /*footer*/
   footer .grid-container {
@@ -876,7 +882,7 @@ address, time {
   /* equal space for sections*/
   .flex-container #free-guidance-services,
   .flex-container #support-groups {
-    flex-basis: 48%; 
+    flex-basis: 48%;
   }
 
   /*form*/
@@ -884,5 +890,4 @@ address, time {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
   }
-
 }
