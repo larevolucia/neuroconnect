@@ -494,7 +494,7 @@ This project was deployed using GitHub pages. Steps to deploy are as follow:
 - [Pexels](https://www.pexels.com/)
 - [Tinypng](https://tinypng.com/) to optmize the images
 - [Responsinator](http://www.responsinator.com/) to test responsiveness
-- ChatGPT to assist with creation of content
+- ChatGPT for site's content feedback (spellcheck, rewrite to fit characther count, etc.)
 
 ## Credits
 
