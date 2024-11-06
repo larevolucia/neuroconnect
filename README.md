@@ -460,6 +460,12 @@ All issues are documented in this [Project View](https://github.com/users/larevo
 - [WAVE](https://wave.webaim.org/) alerted the paragraphs for Date and Location on event content cards as possible headings. Peer review provided feedback on the elements, suggesting using semantic elements. Applying the suggestion eliminated the alert. Documented on [issue #29](https://github.com/larevolucia/neuroconnect/issues/29#issue-2635708429)
 - Error on HTML validator on Services page: ```div``` cannot be child of ```span```. Replaced ```span``` with ```div``` to fix the issue. Documented on [issue #28](https://github.com/larevolucia/neuroconnect/issues/28)
 
+
+### Unfixed issues
+
+- [Jigsaw CSS validator](https://jigsaw.w3.org/) warns that due to their dynamic nature, CSS variables are currently not statically checked. As they seem to be working, no action seems to be required.
+- [WAVE](https://wave.webaim.org/) alerts on duplication of links on header due to both the icon/name ```<a>``` element and the first ```<li>``` leading to home. It was not fixed due to an understanding that it is common practice to have a logo on the left leading to the home. Particularly for autistic people it is also benefitial to have a explicit link saying "Home". 
+
 ## Deployment
 
 This project was deployed using GitHub pages. Steps to deploy are as follow:
