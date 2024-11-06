@@ -120,12 +120,13 @@ For additional information check [Design Research](https://github.com/larevoluci
 
 ### Navigation
 
-- Fully responsive navigation bar with design optimitization is achieve by the use of media queries. 
-- Small screens use a left side logo and a right side menu icon to optimize space. 
+Provides a responsive and accessible navigation bar for seamless access to site sections, improving user experience across devices. The design dynamically adapts to screen size, ensuring intuitive and space-efficient navigation on both small and large screens.
+
+
 - Click behavior on menu icon on smaller screen are achieve by using a checkbox input that is set to hidden. The icon is set as checkbox label. 
 - Larger screens display site's name along with logo and display site's section horizontally. Menu icon is hidden using media queries.
 - Distinctive color is used to indicate active page. Softer color is used to indicate cursor hover.
-- Fixed navigation was achieven using position:sticky together with left and top attributes to set its position on screen.
+- Fixed navigation was achieven using ```position:sticky``` together with left and top attributes to set its position on screen.
 - It was decided not to nest ```<nav>``` element in the ```<header>```, due to [accessibility recommendations](https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-nav-6cp).
 - To comply with accessibility best practices, a ```.sr-only``` class was created, using the suggested code from [WebAIM - Invisible Content Techniques](https://webaim.org/techniques/css/invisiblecontent/). This will ensure that screen readers can still read the content.
 
@@ -133,8 +134,16 @@ For additional information check [Design Research](https://github.com/larevoluci
 
 Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main/3.6-making-the-header-responsive)
 
+Related Commits:
+
+- [5d11e3a](https://github.com/larevolucia/neuroconnect/commit/54974da16797a6c50a4a2b54ac69699fb2312ee8): Initial implementation of the fully responsive navigation bar using media queries.
+- [129d3c8](https://github.com/larevolucia/neuroconnect/commit/129d3c852da059d1344556046ad786552a9aec26): Design improvements applied in media queries.
+- [488ae1d](https://github.com/larevolucia/neuroconnect/commit/488ae1d2b01ebfd53e0ccb9f31df08a91ac220cc): Made navbar sticky.
+
 
 ### Skip to Main Content
+
+Enhances keyboard accessibility by allowing users to skip directly to the main content, reducing navigation friction for users with disabilities. This feature becomes visible upon pressing "Tab," making the site more user-friendly for screen reader and keyboard-only users.
 
 - A link to skip to the main content was included to facilitate navigation using keyboard. 
 - Link has fixed position with negative top value, making it hidden for users. Link becomes visible if user press tab on page first load due to change on fixed position using :focus pseudo class.
@@ -144,9 +153,16 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 
 Inspiration: [BBC](https://www.bbc.com/) / [a11y-collective](https://www.a11y-collective.com/blog/skip-to-main-content/)
 
+Related Commits:
+
+- [f2cb5b5](https://github.com/larevolucia/neuroconnect/commit/f2cb5b54402ddc67ab4709478ad3f850f65196bd): Implements a skip-to-main-content link for improved accessibility.
+- [ee14f2a](https://github.com/larevolucia/neuroconnect/commit/ee14f2a8b1c1c5e477cba7fb9a37b7e43ced107e): Positioned skip-to-main-content off the screen to avoid accidental clicks.
+
+
 ### Header 
 
-- All pages follow the same ```<header>``` structure for design consistency necessary to reduce cognitive load when navigating in a new site.
+Establishes the page's identity and atmosphere with a consistent hero banner and relevant imagery across pages. Positioned text overlays ensure readability, conveying each page’s purpose clearly and minimizing cognitive load for users.
+
 - Hero banner uses ```background-image``` property to populate the HTML with it's content using distinctive ids.
 - Overlay text is positioned near the bottom right corner of the image using ```position: absolute```. A semi-transparent ```background-color``` is applied to the text container to ensure readability.
 
@@ -164,10 +180,18 @@ Inspiration: [BBC](https://www.bbc.com/) / [a11y-collective](https://www.a11y-co
 
 Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main/3.6-making-the-header-responsive)
 
+Related commit:
+
+- [f0de1db](https://github.com/larevolucia/neuroconnect/commit/f0de1db46c55d37e3694655dd7165658e5cbe642#diff-a72d4ee198d130c997b203ecb2f5c54d84617b3cdf7bd9eaab804be78e2709ae): Initial header structureis introduced.
+- [a7c7f4f](https://github.com/larevolucia/neuroconnect/commit/a7c7f4f): This change ensures a consistent header structure on all pages, aiding in user orientation and reducing cognitive load.
+
 ### Page Summary
+
+Offers a brief, clear overview of each page's content to set expectations and provide context, specifically benefiting users with cognitive and neurodiverse needs by fostering a sense of structure and predictability.
 
 - All pages have a summary positioned as the first ```<section>``` in the ```<main>``` element.
 - ```<h2>``` titles were added as hidden to comply with SEO best practices. They were made invisible to reduce noise on pages. 
+
 
 <img width="1198" alt="image" src="https://github.com/user-attachments/assets/bf5bcbff-9e2e-494b-9556-bcf6f6a58e73">
 
@@ -181,30 +205,49 @@ Inspiration: [Love Running](https://github.com/Code-Institute-Solutions/love-run
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/0c60b3d4-6a65-428a-a304-723de070b811">
 </details>
 
+Related Commits:
+
+- [d766516](https://github.com/larevolucia/neuroconnect/commit/d76651671b4e231adddbb3d3b01cf47329c9cd43): Created page summaries structure to provide users with clear and accessible content overviews.
+
 ### Summary of Services and Events
 
-- To ensure that user would get all the essential information in the home, it was included an area with a summary of Services and Events pages.
+Ensures that user gets all the Summarizes essential information about services and events on the homepage, allowing users to access key content at a glance. Responsive content cards support easy exploration and quick access to detailed pages.
+
 - Responsive design was achieved using ```display: flex``` applied to content cards. 
 - For performance optmization, images on content cards are inside of ```picture``` element, with a ```source``` for bigger screens, another for smaller screens and a ```<img>``` as fallback.
 - Anchor links styled as buttons redirect user to the specific pages within the website.
 
 <img width="734" alt="image" src="https://github.com/user-attachments/assets/aae59c5c-f5d2-4101-8b8c-df4cf8b6641d">
 
+Related Commits:
+
+- [f9a3e5c](https://github.com/larevolucia/neuroconnect/commit/f9a3e5c07f0af99f552a23ab86e9896333f8cd7a): Initial structure for content cards implementation.
+- [e327694](https://github.com/larevolucia/neuroconnect/commit/e327694e1669908479b429df6cf5e5b623c585e6): Adapted the design of content cards for medium size screens
+- [46b484a](https://github.com/larevolucia/neuroconnect/commit/46b484ad47088989774600c72019849e14e60965): Optmized design of content card used to summarize services and events on the homepage for easier navigation.
 
 ### Services 
 
-- More in-depth information about the services is provided in ```<main>``` element of the Services pages.
+Delivers in-depth, structured information on available services, using icons and collapsible sections to reduce visual clutter. This feature is optimized for readability and accessibility, enhancing the user experience for information-dense pages.
+
 - Responsive design was achieved using ```display: flex``` applied to ```<main>```. 
 - As the page is more text heavy, it was decided to use [Fontawesome](https://fontawesome.com/) icons as visual conterparts to reduce visual stimuli on page.
-- Feedback of initial design was still deemed text-heavy, so a new design with a collapsible element was implemented on commit [5d11e3a](https://github.com/larevolucia/neuroconnect/commit/5d11e3a1214a45294f81af5cc2b01f3dee0ec9ef). More on [issue #25](https://github.com/larevolucia/neuroconnect/issues/25#issue-2619050363)
+- Feedback of initial design was still deemed text-heavy, so a new design with a collapsible element was implemented. More on [issue #25](https://github.com/larevolucia/neuroconnect/issues/25#issue-2619050363)
 
 ![collapsible-items-](https://github.com/user-attachments/assets/79fbf5d1-dfb9-4706-baf7-8cc50a312f30)
 
 Inspiration: [SVB.nl](https://www.svb.nl/nl/algemeen/over-onze-website) / [Digitalocean](https://www.digitalocean.com/community/tutorials/css-collapsible) / [Stackoverflow](https://stackoverflow.com/questions/14736496/use-font-awesome-icons-in-css) 
 
+Related Commits:
+
+- [737e6ea](https://github.com/larevolucia/neuroconnect/commit/737e6ea08b3837f7f0c9140904f097cb84ea12e1): Initial service page implementation with media queries for responsive design.
+- [5d11e3a](https://github.com/larevolucia/neuroconnect/commit/5d11e3a): Implemented collapsible sections to streamline service information and reduce visual clutter.
+- [efca153](https://github.com/larevolucia/neuroconnect/commit/efca153f4363ba88f0d1ba0fd24724e5b322921f): Changed collapsible elements structure in HTML to work with click on text instead of only the icon.
+
+
 ### Get in Touch Form
 
-- Form with responsive design was included as an interactive element which enables user to request one of the listed services.
+Facilitates direct communication for service inquiries, allowing users to specify their needs in a user-friendly, accessible form. Responsive design ensures a smooth experience across devices, and visual feedback supports usability during form interactions.
+
 - Responsive design was achieve using ```display:grid``` on form's container.
 - Form fields includes: 
   - Full Name ```<input type="text">```
@@ -215,15 +258,22 @@ Inspiration: [SVB.nl](https://www.svb.nl/nl/algemeen/over-onze-website) / [Digit
 - All fields, except the message is marked as ```required```.
 - Pattern was included in phone number field using regular expression to allow only digits. ```title``` was included to the ```input``` element, to show feedback to user about the required pattern.
 - Style for field ```:focus``` was modified using a ```border-color``` and ```box-shadow.
-- An attempt to provide the feedback on the same page was made using javascript on commit [3839167](https://github.com/larevolucia/neuroconnect/commit/383916767a50d356ed5d5551eb1499fc06b8d206). Attempt is document in [issue #9](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684). Experience was simplified and when submitted, form leads user to a success page with message and anchor link styled as button to redirect user back to main page.
 
 
 <img src="https://github.com/user-attachments/assets/cbb5e15c-79c5-4207-9ae4-bcb8089718af" width="680">
 
 
-Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/components/card/) / [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/form-control/)
+Related Commits:
+
+- [e6cbf09](https://github.com/larevolucia/neuroconnect/commit/e6cbf09a8e3cf88c7ae4853f46d3fbf56568d49b): Created initial form structure.
+- [3839167](https://github.com/larevolucia/neuroconnect/commit/383916767a50d356ed5d5551eb1499fc06b8d206): Attempt to provide the feedback on the same page was made using javascript on commit . Attempt is document in [issue #9](https://github.com/larevolucia/neuroconnect/issues/9#issue-2572587684). 
+- [d048ea6](https://github.com/larevolucia/neuroconnect/commit/d048ea6bfad29227332d994702c1b22fbeb64461): Simplified submission feedback with form leading user to a success page.
+- [8ca195b](https://github.com/larevolucia/neuroconnect/commit/8ca195b9428bd9a1636a51955988fae9b2e00b7b): Styled form for responsive design.
+- [48a1d4f](https://github.com/larevolucia/neuroconnect/commit/48a1d4f9acb4d91f04431e66e8f9219ff2f36841): Added pattern and title for phone validation in forms.
 
 ### Events 
+
+Displays upcoming community events with accessible summaries, enhancing user engagement through visually appealing content cards and clear sign-up options. Optimized for performance and responsiveness, ensuring a cohesive experience on all devices.
 
 - Summary of the events is displayed as content cards on Events page. 
 - Responsive design is achieve by using ```display: flex```
@@ -238,8 +288,18 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
   
 <img src="https://github.com/user-attachments/assets/3bb2295d-8a58-43a4-ab61-db045ff777d3" width="680">
 
+Related Commits:
+
+- [3db2d23](https://github.com/larevolucia/neuroconnect/commit/3db2d2336a83489005604643fb6910c94e44bd50): Created initial content cards with iframe element for google maps. 
+- [e98742e](https://github.com/larevolucia/neuroconnect/commit/e98742e3d352149e452807efbb0955e30853fdfc): 
+Created a flip-card variant as an alternative design to test it with target audience.
+- [ec50ab1](https://github.com/larevolucia/neuroconnect/commit/ec50ab15e26350dcc0f3bea29609c0c1c1a4b986): Final design for events page with content cards to display upcoming community events.
+
 
 ### Join Event Form
+
+Enables users to easily reserve spots for themselves and guests at upcoming events, providing a seamless registration experience. Responsive grid design and clear validation ensure a smooth, accessible process for all users.
+
 
 - Form responsive design was achieve using ```display:grid```
 - Focus style used for **Get in Touch Form** were also used in this form
@@ -258,8 +318,15 @@ Inspiration: [Bootstrap Content Cards](https://getbootstrap.com/docs/5.3/compone
 
 Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/boardwalk-games-v1-sourcecode/tree/main)
 
+Related Commits:
+
+- [cac6a4e](https://github.com/larevolucia/neuroconnect/commit/cac6a4e4246810382a966eb902aca38b9f3d2f80): Implemented 'Join Event' form to allow users to reserve spots for events.
+- [bec6d98](https://github.com/larevolucia/neuroconnect/commit/bec6d981cbf2445c1409f610e6d5a5185175b223): Styled form for responsive design.
+- [48a1d4f](https://github.com/larevolucia/neuroconnect/commit/48a1d4f9acb4d91f04431e66e8f9219ff2f36841): Added pattern and title for phone validation in forms.
 
 ### Success Pages
+
+Confirms successful form submission with clear guidance on next steps, providing users with a reassuring and informative message. Centered content with responsive design enhances readability on all devices.
 
 - Success pages were created for each form. Initially it was considered to have a single page, but it was later split into two different pages to provide a more specific feedback to user.
 - Each page has a success message and indication of what contact to expect next.
@@ -268,14 +335,27 @@ Inspiration: [Boardwalk Games](https://github.com/Code-Institute-Solutions/board
 
 <img width="714" alt="image" src="https://github.com/user-attachments/assets/4cfdcae8-64a0-47e7-93f6-72805fb1878c">
 
+Related Commits:
+
+- [d048ea6](https://github.com/larevolucia/neuroconnect/commit/d048ea6bfad29227332d994702c1b22fbeb64461): Initial success page implementation, with generic message and link to home.
+- [f0799cd](https://github.com/larevolucia/neuroconnect/commit/f0799cd211a4d4a1f7987e322665b738b8ecf457): Split success pages for a specific message confirming form submissions and guide users on next steps.
+- [c5477b7](https://github.com/larevolucia/neuroconnect/commit/c5477b773f00433d164e5dd693c0c3c916f3cc93): Finalized success pages design to optmize real state for different screen sizes.
 
 ### Footer
+
+Displays essential contact information, social media links, and a site map in a structured, responsive footer. Designed for accessibility, it allows users to easily navigate to key sections or contact options from any page.
 
 - Footer includes address, contact e-mail, site map and social media links.
 - Responsive design of ```<footer>``` is achieve by using ```display: grid```
 - Contact e-mail link uses ```mailto:``` to open e-mail server with empty draft
 
 <img width="1206" alt="image" src="https://github.com/user-attachments/assets/962192fa-39f6-4e4e-9dda-81c6929b7dd6">
+
+Related Commits:
+
+- [22ca62c](https://github.com/larevolucia/neuroconnect/commit/22ca62c402da9461deaa4f07907627974e3fe439): Introduced Footer structure.
+- [82a4010](https://github.com/larevolucia/neuroconnect/commit/82a4010e94d3d27e3162f1188a7a0819e9ba0563): Finished adding content to footer with contact information and social media links to enhance site navigation.
+- [8e25bbe](https://github.com/larevolucia/neuroconnect/commit/8e25bbe5df7864b5cd66deb930aa86d3b5a2290b): Pushed footer to bottom by making ```<main>``` element take all surplus space.
 
 ## Testing
 
