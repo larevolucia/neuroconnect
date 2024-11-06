@@ -1,5 +1,12 @@
+/* -------------------------------
+   Import Fonts
+---------------------------------- */
+
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap");
 
+/* -------------------------------
+   CSS Variables
+---------------------------------- */
 :root {
   --primary-darker: #055276;
   --primary-normal: #077bb0;
@@ -12,7 +19,10 @@
   --text-color: #4f4f4f;
 }
 
-/*General Styling*/
+/* -------------------------------
+   General Styling
+---------------------------------- */
+
 * {
   box-sizing: border-box;
 }
@@ -28,6 +38,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.1em;
 }
+
+/* -------------------------------
+   Headings
+---------------------------------- */
 
 h1,
 h2 {
@@ -46,6 +60,10 @@ h2 {
   font-size: 1.5rem;
 }
 
+/* -------------------------------
+   Layout Elements
+---------------------------------- */
+
 section {
   margin-top: 0px;
 }
@@ -55,7 +73,9 @@ main {
   flex: 1 0 auto;
 }
 
-/* Link styling */
+/* -------------------------------
+   Link Styling
+---------------------------------- */
 a {
   color: var(--primary-normal);
   text-decoration: none;
@@ -78,13 +98,16 @@ i {
   font-size: 1.8rem;
 }
 
-/*utility class*/
+/* -------------------------------
+   Utility Classes
+---------------------------------- */
+
 .hidden {
   display: none;
 }
 
 .sr-only {
-  /*webaim code: Accessible Invisible Content*/
+  /* Accessible Invisible Content (WEBAIM) */
   position: absolute;
   left: -10000px;
   top: auto;
@@ -99,6 +122,10 @@ i {
 .margin-top {
   margin-top: 20px;
 }
+
+/* -------------------------------
+   Flexbox and Grid Containers
+---------------------------------- */
 
 .flex-container {
   display: flex;
@@ -115,7 +142,10 @@ i {
   display: grid;
 }
 
-/*Accessibility: Skip to main content*/
+/* -------------------------------
+   Accessibility: Skip to Main Content
+---------------------------------- */
+
 .skip-link {
   position: absolute;
   top: -50px;
@@ -132,7 +162,9 @@ i {
   top: 8px;
 }
 
-/*Navigation*/
+/* -------------------------------
+   Navigation
+---------------------------------- */
 nav {
   position: sticky;
   left: 0;
@@ -229,7 +261,9 @@ nav a:hover {
   display: block;
 }
 
-/* Hero Cover */
+/* -------------------------------
+   Hero Cover Styling
+---------------------------------- */
 
 .hero-image {
   padding-top: 47px;
@@ -272,14 +306,18 @@ nav a:hover {
   font-size: 120%;
 }
 
-/* sections */
+/* -------------------------------
+   Sections
+---------------------------------- */
 
 .flex-container section {
   flex-basis: 100%;
   margin-bottom: 20px;
 }
 
-/*Page summaries */
+/* -------------------------------
+   Page Summaries
+---------------------------------- */
 
 .page-summary {
   padding: 0 8%;
@@ -287,7 +325,9 @@ nav a:hover {
   text-align: center;
 }
 
-/* Content Cards*/
+/* -------------------------------
+   Content Cards
+---------------------------------- */
 
 .card-container {
   text-align: center;
@@ -334,7 +374,7 @@ picture,
   margin-bottom: 25px;
 }
 
-/* home cards */
+/* Content Cards [HOME] */
 #services-summary-image,
 #events-summary-image {
   order: 1;
@@ -347,7 +387,7 @@ picture,
   order: 3;
 }
 
-/*events cards*/
+/* Content Cards [Events]*/
 
 .card-image-container {
   position: relative;
@@ -394,7 +434,10 @@ address {
 .card-subheading {
   color: var(--primary-normal);
 }
-/*service page*/
+
+/* -------------------------------
+   Service Page
+---------------------------------- */
 
 #free-guidance-services h2 i,
 #support-groups h2 i {
@@ -409,7 +452,7 @@ address {
   text-align: center;
 }
 
-/*services unordered lists*/
+/* Services Collapsible items (unordered lists) */
 .services-list {
   list-style-type: none;
   padding-left: 0;
@@ -425,7 +468,7 @@ address {
   width: 100%;
 }
 
-/* collapsible descriptions */
+/* Collapsible Descriptions */
 
 .toggle-description {
   display: none;
@@ -436,12 +479,12 @@ address {
   margin-top: 0.8rem;
 }
 
-/* Show the description */
+/* Show Description */
 .collapsible-container .toggle-description:checked ~ .collapsible-description {
   display: block;
 }
 
-/* toggle labels */
+/* Toggle labels */
 
 .toggle-label {
   margin-right: 0.5rem;
@@ -460,8 +503,9 @@ address {
   content: "\f068";
 }
 
-/*buttons*/
-
+/* -------------------------------
+   Buttons - General Styling
+---------------------------------- */
 .button,
 .button-secondary,
 a .button,
@@ -520,7 +564,9 @@ a .button-secondary:active {
   color: #ffffff;
 }
 
-/*Forms General styling*/
+/* -------------------------------
+   Forms - General Styling
+---------------------------------- */
 
 form {
   padding: 10px 10px 40px 10px;
@@ -594,7 +640,8 @@ form button {
 .join-us {
   text-align: center;
 }
-/* Form input feedback */
+
+/* Forms state style */
 
 input:focus,
 textarea:focus {
@@ -603,7 +650,7 @@ textarea:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-/*style for disabled option*/
+/* Form Input Disabled */
 input:disabled + label,
 textarea:disabled + label,
 select:disabled + label {
@@ -616,8 +663,9 @@ select:disabled {
   cursor: not-allowed;
 }
 
-/*Success page*/
-
+/* -------------------------------
+   Success Page
+---------------------------------- */
 #success-main-content {
   padding-top: 10px;
 }
@@ -629,7 +677,9 @@ select:disabled {
   text-align: center;
 }
 
-/*footer*/
+/* -------------------------------
+   Footer
+---------------------------------- */
 footer {
   background-color: var(--seconday-darker);
   padding: 3rem 1.5rem;
@@ -681,10 +731,12 @@ footer ul {
   margin-right: 5px;
 }
 
-/*Media query for tablets (screens 768px or larger)*/
+/* -------------------------------
+   Media Queries - Tablet (min-width: 768px)
+---------------------------------- */
 
 @media screen and (min-width: 768px) {
-  /*Navbar*/
+  /* Navbar */
   #nav-toggle-label {
     display: none;
   }
@@ -709,13 +761,12 @@ footer ul {
     margin-right: 10%;
   }
 
-  /* content cards */
-
+  /* Content Cards */
   .flex-container {
     flex-direction: row;
   }
 
-  /*home content cards*/
+  /* Content Cards [HOME] */
   #services-summary-image,
   #events-summary-image {
     flex-basis: 48%;
@@ -727,7 +778,7 @@ footer ul {
     flex-basis: 48%;
   }
 
-  /*events*/
+  /* Content Cards [EVENTS] */
   #upcoming-events {
     grid-template-columns: 1fr 1fr;
   }
@@ -735,12 +786,13 @@ footer ul {
   time {
     font-size: large;
   }
-  /*services*/
+
+  /* Service Page */
   .collapsible-container {
     width: 90%;
   }
-  /*forms*/
 
+  /* Forms*/
   #service-form-container .form-container {
     display: grid;
     gap: 10px;
@@ -776,7 +828,7 @@ footer ul {
     grid-column: span 2;
   }
 
-  /*footer*/
+  /* Footer */
   footer {
     padding: 3rem;
   }
@@ -787,9 +839,12 @@ footer ul {
   }
 }
 
-/*Media query for large screens (screens 992px or larger)*/
+/* -------------------------------
+   Media Queries - Large Screens (min-width: 992px)
+---------------------------------- */
 
 @media screen and (min-width: 992px) {
+  /* Navbar */
   nav .logo-name {
     display: inline-block;
   }
@@ -797,21 +852,25 @@ footer ul {
     left: 40%;
   }
 
+  /* Layout Elements */
+
   main {
     margin: 0 auto;
     width: 85%;
   }
 
-  /* equal space for sections*/
+  /* Content Cards [HOME] */
+
   .flex-container #services-summary,
   .flex-container #events-summary {
     flex-basis: 48%;
   }
-  /* home content cards */
+
   .flex-container #services-summary-card,
   .flex-container #events-summary-card {
     flex-direction: column;
   }
+
   #services-summary .card-text,
   #events-summary .card-text {
     min-height: 261px;
@@ -823,23 +882,25 @@ footer ul {
     width: 100%;
     margin-top: 0;
   }
+
   #services-summary-body,
   #events-summary-body {
     flex-basis: 100%;
   }
 
-  /*events content cards*/
+  /* Content Cards [EVENTS] */
   #upcoming-events .card-container {
     flex-basis: 45%;
     margin: 15px auto;
   }
-  /*services*/
+
+  /* Services Page */
 
   .collapsible-container {
     width: 80%;
   }
 
-  /*forms*/
+  /* Forms [Services] */
   #service-form-container .form-container {
     gap: 20px;
   }
@@ -860,6 +921,8 @@ footer ul {
     max-width: 280px;
   }
 
+  /* Forms [EVENTS] */
+
   #events-form-container .form-container {
     grid-template-columns: 1fr 1fr;
     gap: 5px;
@@ -868,11 +931,12 @@ footer ul {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: span 3;
   }
+
   .join-us {
     display: none;
   }
 
-  /*footer*/
+  /* Footer */
   footer .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -881,33 +945,36 @@ footer ul {
     order: -2;
   }
 }
-/*Media query for XL screens (screens 1200px or larger)*/
+
+/* -------------------------------
+   Media Queries - XL Screens (min-width: 1200px)
+---------------------------------- */
 
 @media screen and (min-width: 1200px) {
-  footer .grid-container {
-    max-width: 1595px;
-  }
-
   .page-summary {
     text-align: left;
     padding: 0 20%;
   }
 
-  /*card*/
+  /* Content Card [SERVICES] */
   #services-summary .card-text,
   #events-summary .card-text {
     min-height: 208px;
   }
 
-  /* equal space for sections*/
   .flex-container #free-guidance-services,
   .flex-container #support-groups {
     flex-basis: 48%;
   }
 
-  /*form*/
+  /* Forms */
   #service-form-container .form-container {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
+  }
+
+  /* Footer */
+  footer .grid-container {
+    max-width: 1595px;
   }
 }
